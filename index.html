@@ -1,112 +1,182 @@
 <!doctype html>
-<html lang="ru">
+<html lang="uk">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Store — Клон</title>
+  <title>Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Store.</h1>
-      <nav class="top-nav">
+    <div class="container header-row">
+      <div class="logo">Store.</div>
+      <nav class="top-nav" aria-label="Головна навігація">
         <a href="#">Mac</a>
-        <a href="#">iPhone</a>
         <a href="#">iPad</a>
+        <a href="#">iPhone</a>
         <a href="#">Watch</a>
         <a href="#">AirPods</a>
+        <a href="#">TV &amp; Home</a>
+        <a href="#">Розваги</a>
+        <a href="#">Аксесуари</a>
+        <a href="#">Підтримка</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero container">
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="hero-title">
       <div class="hero-left">
-        <h2 class="hero-title">The best way to buy the products you love.</h2>
-        <p class="hero-desc">Краткое описание акции или слоган. Помести сюда важный текст.</p>
+        <h1 id="hero-title" class="hero-title"><span class="rgb">Store.</span> Найкращий спосіб купувати улюблені продукти.</h1>
+        <p class="hero-desc">Огляд новинок та актуальні пропозиції — швидко та зручно.</p>
       </div>
       <div class="hero-right">
-        <img src="images/hero-sample.jpg" alt="Hero" />
+        <img src="hero.png" alt="Hero image" />
       </div>
     </section>
 
-    <section class="latest container">
-      <h3 class="section-title">The latest. Take a look at what's new right now.</h3>
+    <!-- Product strip (горизонтальна лента з іконками) -->
+    <section class="product-strip container" aria-label="Категорії продуктів">
+      <div class="strip-scroll">
+        <div class="product-item">
+          <img src="store-card-13-mac-nav-202503 1.png" alt="Mac" />
+          <span>Mac</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-iphone-nav-202502 1.png" alt="iPhone" />
+          <span>iPhone</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-ipad-nav-202405 1.png" alt="iPad" />
+          <span>iPad</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-watch-nav-202409 1.png" alt="Watch" />
+          <span>Apple Watch</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-airpods-nav-202409 1.png" alt="AirPods" />
+          <span>AirPods</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-airtags-nav-202108 1.png" alt="AirTag" />
+          <span>AirTag</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-appletv-nav-202210 1.png" alt="TV" />
+          <span>Apple TV</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-homepod-nav-202301 1.png" alt="HomePod" />
+          <span>HomePod</span>
+        </div>
+        <div class="product-item">
+          <img src="store-card-13-accessories-nav-202503 1.png" alt="Accessories" />
+          <span>Аксесуари</span>
+        </div>
+      </div>
+    </section>
 
-      <div class="cards-grid">
-        <!-- Card 1 -->
-        <article class="card">
+    <!-- Latest / Cards carousel -->
+    <section class="latest container">
+      <h2 class="section-title"><span class="bold">Новинки.</span> Подивіться, що нового зараз.</h2>
+
+      <div class="cards-carousel" aria-label="Карусель новинок">
+        <!-- Карточка 1 -->
+        <article class="card large">
           <div class="card-media">
             <img src="store-card-40-iphone-16-pro-202409 1.png" alt="iPhone 16 Pro" />
           </div>
           <div class="card-overlay">
-            <h4 class="card-title">iPhone 16 Pro</h4>
-            <p class="card-sub">Новый дизайн. Pro характеристики.</p>
+            <h3 class="card-title">iPhone 16 Pro</h3>
+            <p class="card-sub">Apple Intelligence — від $999.00</p>
           </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Карточка 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="store-card-40-bts-offer-featured-202505_GEO_IN 1.png" alt="Акція Mac і iPad" />
+          </div>
+          <div class="card-overlay">
+            <div class="kicker">LIMITED‑TIME OFFER</div>
+            <h3 class="card-title">Знижки на Mac та iPad</h3>
+            <p class="card-sub">Виберіть AirPods або аксесуар у подарунок.</p>
+          </div>
+        </article>
+
+        <!-- Карточка 3 -->
         <article class="card">
           <div class="card-media">
             <img src="store-card-40-macbook-air-202503 1.png" alt="MacBook Air" />
           </div>
           <div class="card-overlay">
-            <h4 class="card-title">MacBook Air</h4>
-            <p class="card-sub">Тонкий, лёгкий и мощный.</p>
+            <h3 class="card-title">MacBook Air</h3>
+            <p class="card-sub">Від $999.00</p>
           </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Карточка 4 -->
         <article class="card">
-          <div class="card-media">
-            <img src="images/airpods.jpg" alt="AirPods" />
-          </div>
-          <div class="card-overlay">
-            <h4 class="card-title">AirPods</h4>
-            <p class="card-sub">Отличный звук и шумоподавление.</p>
-          </div>
-        </article>
-        
-        <!-- Card 4 -->
-       <article class="card">
           <div class="card-media">
             <img src="store-card-40-ipad-air-202503 1.png" alt="iPad Air" />
           </div>
           <div class="card-overlay">
-            <h4 class="card-title">iPad Air</h4>
-            <p class="card-sub">Для творчества и работы.</p>
+            <h3 class="card-title">iPad Air</h3>
+            <p class="card-sub">Ідеальний для творчості.</p>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- Help / info cards -->
     <section class="help container">
-      <h3 class="section-title">Help is here.</h3>
+      <h2 class="section-title"><span class="bold">Допомога поруч.</span> Коли і як вам потрібно.</h2>
       <div class="help-grid">
         <div class="help-card">
-          <h4>Shop one on one with a Specialist online.</h4>
-          <p>Получите персональную консультацию.</p>
+          <h4>Персональна консультація онлайн</h4>
+          <p>Замовте сеанс з фахівцем для підбору пристрою.</p>
         </div>
         <div class="help-card">
-          <h4>Shop with a Specialist over video.</h4>
-          <p>Покупки через видеосвязь — удобно.</p>
+          <h4>Покупки по відео</h4>
+          <p>Обирайте пристрій у відеосесії з консультантом.</p>
         </div>
         <div class="help-card">
-          <h4>Explore</h4>
-          <p>Дополнительные возможности.</p>
+          <h4>Відвідайте магазин</h4>
+          <p>Знайдіть найближчий Apple Store та спробуйте вживу.</p>
         </div>
       </div>
     </section>
+
+    <!-- Features -->
+    <section class="features container">
+      <h2 class="section-title"><span class="bold">Переваги Apple Store.</span> Ще більше причин купувати у нас.</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-kicker">Платежі</div>
+          <h4>No cost EMI. Миттєве повернення коштів</h4>
+        </div>
+        <div class="feature-card">
+          <div class="feature-kicker">Trade‑in</div>
+          <h4>Обміняйте свій смартфон — отримайте кредит на новий</h4>
+        </div>
+        <div class="feature-card">
+          <div class="feature-kicker">Налаштування</div>
+          <h4>Персоналізуйте ваш Mac</h4>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="copyright">© 2026 Company. Все права защищены.</div>
-      <nav class="footer-links">
-        <a href="#">Правовая информация</a>
-        <a href="#">Условия</a>
-        <a href="#">Контакты</a>
+      <div>© 2026 Store. Усі права захищено.</div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#">Правова інформація</a>
+        <a href="#">Умови</a>
+        <a href="#">Контакти</a>
       </nav>
     </div>
   </footer>
