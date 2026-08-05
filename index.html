@@ -1,188 +1,114 @@
 <!doctype html>
-<html lang="uk">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Store — приклад</title>
+  <title>Store — Клон</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#" aria-label="Головна"></a>
-      <nav class="nav" aria-label="Головна навігація">
-        <a href="#">Store</a>
+    <div class="container">
+      <h1 class="logo">Store.</h1>
+      <nav class="top-nav">
         <a href="#">Mac</a>
         <a href="#">iPhone</a>
+        <a href="#">iPad</a>
         <a href="#">Watch</a>
         <a href="#">AirPods</a>
-        <a href="#">Аксесуари</a>
       </nav>
-      <div class="header-actions">
-        <a class="icon-btn" href="#" aria-label="Пошук">🔍</a>
-        <a class="icon-btn" href="#" aria-label="Кошик">🛒</a>
-      </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1 class="hero-title">Store. The best way to buy the products you love.</h1>
-          <p class="hero-sub">Короткий і зрозумілий опис, що пояснює цінність. Тримайте рядки ~65–75 символів для зручного читання.</p>
-          <div class="hero-cta">
-            <a class="btn primary" href="#">Дізнатися більше</a>
-            <a class="btn ghost" href="#">Переглянути</a>
-          </div>
-
-          <ul class="icons-list small">
-            <li><img src="store-card-13-mac-nav-202503 1.png" alt="Іконка: Mac" /></li>
-            <li><img src="store-card-13-iphone-nav-202502 1.png" alt="Іконка: iPhone" /></li>
-            <li><img src="store-card-13-ipad-nav-202405 1.png" alt="Іконка: iPad" /></li>
-            <li><img src="store-card-13-watch-nav-202409 1.png" alt="Іконка: Apple Watch" /></li>
-            <li><img src="store-card-13-airpods-nav-202409 1.png" alt="Іконка: AirPods" /></li>
-            <li><img src="store-card-13-accessories-nav-202503 1.png" alt="Іконка: Аксесуари" /></li>
-          </ul>
-        </div>
-
-        <div class="hero-right">
-          <picture>
-            <source srcset="images/hero@2x.jpg 2x, images/hero@1x.jpg 1x">
-            <img src="images/hero@1x.jpg" alt="Фонове зображення: крупний кадр продукту для шапки сторінки" class="hero-media">
-          </picture>
-        </div>
+    <section class="hero container">
+      <div class="hero-left">
+        <h2 class="hero-title">The best way to buy the products you love.</h2>
+        <p class="hero-desc">Краткое описание акции или слоган. Помести сюда важный текст.</p>
+      </div>
+      <div class="hero-right">
+        <img src="images/hero-sample.jpg" alt="Hero" />
       </div>
     </section>
 
-    <!-- The latest (карточки) -->
-    <div class="card">
-  <div class="card__overlay">
-      <div class="grid-features">
-        <article class="card highlight">
-          <img src="store-card-40-iphone-16-pro-202409 1.png" alt="Зображення: головна картка — iPhone 16 Pro" />
-          <div class="card-content">
-            <h3>iPhone 16 Pro</h3>
-            <p>Pro — новий рівень продуктивності.</p>
-          </div>
-        </article>
+    <section class="latest container">
+      <h3 class="section-title">The latest. Take a look at what's new right now.</h3>
 
+      <div class="cards-grid">
+        <!-- Card 1 -->
         <article class="card">
-          <img src="store-card-40-macbook-air-202503 1.png" alt="Зображення: картка продукту — приклад MacBook Air" />
-          <div class="card-content">
-            <h3>MacBook Air</h3>
-            <p>Тонкий. Легкий. Потужний.</p>
+          <div class="card-media">
+            <img src="store-card-40-iphone-16-pro-202409 1.png" alt="iPhone 16 Pro" />
           </div>
-        </div>
+          <div class="card-overlay">
+            <h4 class="card-title">iPhone 16 Pro</h4>
+            <p class="card-sub">Новый дизайн. Pro характеристики.</p>
+          </div>
         </article>
 
-          <article class="card">
-          <img src="store-card-40-bts-offer-featured-202505_GEO_IN 1.png" alt="Зображення: картка продукту — аксесуари" />
-          <div class="card-content">
-            <h3>Аксесуари</h3>
-            <p>Ідеально доповнюють ваші пристрої.</p>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="store-card-40-macbook-air-202503 1.png" alt="MacBook Air" />
+          </div>
+          <div class="card-overlay">
+            <h4 class="card-title">MacBook Air</h4>
+            <p class="card-sub">Тонкий, лёгкий и мощный.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/airpods.jpg" alt="AirPods" />
+          </div>
+          <div class="card-overlay">
+            <h4 class="card-title">AirPods</h4>
+            <p class="card-sub">Отличный звук и шумоподавление.</p>
+          </div>
+        </article>
+        
+        <!-- Card 4 -->
+       <article class="card">
+          <div class="card-media">
+            <img src="store-card-40-ipad-air-202503 1.png" alt="iPad Air" />
+          </div>
+          <div class="card-overlay">
+            <h4 class="card-title">iPad Air</h4>
+            <p class="card-sub">Для творчества и работы.</p>
           </div>
         </article>
       </div>
-
-        <article class="card">
-          <img src="store-card-40-ipad-air-202503 1.png" alt="Зображення: картка продукту — iPad Air" />
-          <div class="card-content">
-            <h3>iPad Air</h3>
-            <p>Готовий до творчості.</p>
-          </div>
-        </div>
-        </article>
-
-
     </section>
 
-    <!-- Help section -->
-    <section class="section helpers container" aria-label="Допомога">
-      <h2 class="section-title small">Help is here. Whenever and however you need it.</h2>
-      <div class="helpers-grid">
-        <div class="helper-card">
-          <img src="images/helper-1@1x.jpg" alt="Фото: спеціаліст Apple — консультація онлайн" />
+    <section class="help container">
+      <h3 class="section-title">Help is here.</h3>
+      <div class="help-grid">
+        <div class="help-card">
           <h4>Shop one on one with a Specialist online.</h4>
-          <p>Особиста онлайн‑консультація.</p>
+          <p>Получите персональную консультацию.</p>
         </div>
-        <div class="helper-card">
-          <img src="images/helper-2@1x.jpg" alt="Фото: демонстрація продукту на мобільному" />
+        <div class="help-card">
           <h4>Shop with a Specialist over video.</h4>
-          <p>Підключіться по відео та отримайте допомогу.</p>
+          <p>Покупки через видеосвязь — удобно.</p>
         </div>
-        <div class="helper-card">
-          <img src="images/helper-3@1x.jpg" alt="Фото: група людей — explore" />
-          <h4>Explore more services.</h4>
-          <p>Дізнайтесь про додаткові сервіси.</p>
+        <div class="help-card">
+          <h4>Explore</h4>
+          <p>Дополнительные возможности.</p>
         </div>
-      </div>
-    </section>
-
-    
-
-    <!-- Accessories / more sections (пример) -->
-    <section class="section accessories container" aria-label="Аксесуари">
-      <h2 class="section-title">Accessories. Essentials that pair perfectly with your favourite devices.</h2>
-      <div class="access-grid">
-        <figure class="access-card">
-          <img src="images/access-1@1x.jpg" alt="Зображення: чохол iPhone — приклад" />
-          <figcaption>
-            <h4>iPhone Silicone Case</h4>
-            <p>Колір: Pink</p>
-          </figcaption>
-        </figure>
-
-        <figure class="access-card">
-          <img src="images/access-2@1x.jpg" alt="Зображення: зарядний пристрій" />
-          <figcaption>
-            <h4>MagSafe Charger</h4>
-            <p>Швидка зарядка.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="access-card">
-          <img src="images/access-3@1x.jpg" alt="Зображення: навушники AirPods" />
-          <figcaption>
-            <h4>AirPods</h4>
-            <p>Якісний звук.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="section education container" aria-label="Освіта">
-      <h2 class="section-title">Education specials. Products and offers that students will love.</h2>
-      <div class="edu-grid">
-        <div class="edu-card">
-          <img src="images/edu-1@1x.jpg" alt="Зображення: MacBook для студентів" />
-          <h4>Buy a new Mac or iPad with education savings</h4>
-        </div>
-        <div class="edu-card">
-          <img src="images/edu-2@1x.jpg" alt="Зображення: студент за ноутбуком" />
-          <h4>Tools for study and creativity</h4>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick links + footer text -->
-    <section class="section quick container">
-      <div class="quick-links">
-        <a class="pill" href="#">Find a Store</a>
-        <a class="pill" href="#">Order Status</a>
-        <a class="pill" href="#">Shopping Help</a>
-        <a class="pill" href="#">Your Store</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Ваша компанія</p>
+      <div class="copyright">© 2026 Company. Все права защищены.</div>
+      <nav class="footer-links">
+        <a href="#">Правовая информация</a>
+        <a href="#">Условия</a>
+        <a href="#">Контакты</a>
+      </nav>
     </div>
   </footer>
-
 </body>
 </html>
