@@ -50,6 +50,12 @@ body {
   justify-content: space-between
 }
 
+.logo-h {
+  display: flex;
+  align-items: center;
+  gap: 8px;         
+}
+
 .logo {
   font-size: 8px;
   font-weight: 400;
@@ -211,6 +217,152 @@ body {
   align-items: stretch;
 }
 
+/* ===== Accessories carousel ===== */
+.accessories-carousel {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 22px 6px 40px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.accessories-carousel::-webkit-scrollbar { height: 10px; }
+.accessories-carousel::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.06); border-radius: 10px; }
+
+/* Общие карточки */
+.accessories-card {
+  flex: 0 0 auto;
+  min-width: 520px;
+  max-width: 560px;
+  background: var(--card-bg);
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+  padding: 28px;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Секция 1 (герой) */
+.accessories-hero .accessories-inner {
+  display: flex;
+  width: 100%;
+  gap: 28px;
+  align-items: center;
+}
+
+.accessories-text {
+  flex: 1 1 40%;
+}
+.accessories-title {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.05;
+}
+.accessories-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Блок с изображениями: большая картинка + вертикальный стэк */
+.accessories-images {
+  flex: 1 1 60%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.acc-main {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+.acc-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.acc-stack img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Секция 2 (товарное превью) */
+.product-card .product-media {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.product-frame {
+  width: 220px;
+  height: 220px;
+  border: 2px solid rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 18px;
+}
+.product-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Цветовые переключатели */
+.color-swatches {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.color-swatches .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Инфо о продукте */
+.product-info {
+  text-align: left;
+  width: 100%;
+}
+.product-title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+.product-price {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .accessories-card { min-width: 86vw; padding: 22px; }
+  .accessories-inner { flex-direction: column; text-align: center; }
+  .accessories-text, .accessories-images { width: 100%; }
+  .acc-main { max-width: 60vw; }
+  .product-frame { width: 62vw; height: 62vw; }
+  .color-swatches { justify-content: center; }
+}
+
 /* media-обёртка — центрируем изображение по вертикали и горизонтали */
 .card-media {
   width: 150%;
@@ -218,7 +370,7 @@ body {
   display: flex;
   align-items: center;   /* вертикальное центрирование */
   justify-content: center; /* горизонтальное центрирование */
-  background: #fff; /* цвет подложки, если изображение не заполняет весь блок */
+ /* цвет подложки, если изображение не заполняет весь блок */
 }
 
 /* изображение — не обрезаем, а подгоняем внутрь контейнера */
@@ -250,6 +402,275 @@ body {
   font-weight: 800
 }
 
+.manytext {
+  color: #000000;
+  text-align: left;
+  font-family: "IstokWeb-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: relative;
+  margin-left: 100px;
+  height: 1254px;
+}
+
+/* ===== Education carousel (copy of accessories look) ===== */
+.education-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 22px 6px 40px;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* опционально: прилипание к слайдам */
+}
+.education-carousel::-webkit-scrollbar { height: 10px; }
+.education-carousel::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.06); border-radius: 10px; }
+
+.education-card {
+  flex: 0 0 auto;
+  min-width: 520px;
+  max-width: 560px;
+  background: var(--card-bg);
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start; /* опционально: прилипание */
+}
+
+/* Внутреннее содержимое для hero-card */
+.hero-card .education-inner {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+}
+.edu-text {
+  flex: 1 1 46%;
+}
+.edu-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.05;
+}
+.edu-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.edu-media {
+  flex: 1 1 54%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.edu-media img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display:block;
+  border-radius: 8px;
+}
+
+/* image-card — картинка заполняет большую часть, текст поверх в overlay */
+
+/* Image fills card (cover) so overlay sits on top of photo */
+.image-card .image-card-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden; /* обрезаем всё, что выходит за пределы карточки */
+}
+
+/* Фотография занимает весь контейнер карточки — текст будет поверх неё */
+.image-card .image-card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 18px; /* внутренняя скругл. — подправь при необходимости */
+  box-shadow: none;    /* чтобы не было "выпадающей" белой тени вокруг фото */
+}
+
+/* Overlay — без фона, текст поверх фото (с тенью для читаемости) */
+.image-card .image-card-overlay {
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  z-index: 5;
+  color: #ffffff;
+  background: transparent;    /* УБРАЛ фон */
+  padding: 0;                 /* убрал внутренний фон/паддинг, контролируй через отступы заголовков */
+  max-width: 50%;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45); /* помогает читаемости на светлых участках */
+  pointer-events: none; /* текст не блокирует клики по карточке, если это нужно */
+}
+
+/* Стили текста внутри overlay */
+.image-card .image-card-overlay .kicker {
+  display: block;
+  color: rgba(255,255,255,0.85);
+  font-size: 5px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.image-card .image-card-overlay .overlay-title,
+.image-card .image-card-overlay .edu-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #fff;
+}
+.image-card .image-card-overlay .overlay-desc,
+.image-card .image-card-overlay .edu-desc {
+  margin: 0;
+  color: rgba(255,255,255,0.95);
+  font-size: 14px;
+}
+
+.edu-titleoverlay-title {
+  font-size: 15px;
+}
+
+
+/* Мобильная адаптация: overlay шире и читаемее */
+@media (max-width: 980px) {
+  .image-card .image-card-overlay {
+    left: 16px;
+    top: 16px;
+    right: 16px;
+    max-width: 86%;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  }
+  .image-card .image-card-overlay .overlay-title { font-size: 20px; }
+}
+
+.overlay-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 8px 0 6px;
+}
+.overlay-desc {
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive: на узких экранах делаем карточки шире и стек */
+@media (max-width: 980px) {
+  .education-card { min-width: 86vw; border-radius: 22px; }
+  .hero-card .education-inner { flex-direction: column; text-align: center; padding: 22px; }
+  .edu-media img { max-width: 60vw; }
+  .image-card .image-card-overlay { left: 20px; right: 20px; top: 20px; }
+}
+
+/* overlay для карточек с фото (делаем первую карточку как вторую) */
+.image-card .image-card-overlay {
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  right: 28px;
+  z-index: 3;
+
+  padding: 20px;
+  max-width: 60%;
+  /* лёгкий градиент под текст для контраста */
+}
+
+/* Уменьшить фото в карточках Education, центрировать и ограничить высоту */
+.education-card {
+  /* чуть меньше по высоте, чтобы карточки не занимали полэкрана */
+  min-height: 420px;
+  max-height: 520px;
+}
+
+/* Контейнер медиа — центрируем изображение и добавим внутренний отступ */
+.image-card .image-card-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+/* Ограничить размер изображения: не растягивать на всю карточку */
+.image-card .image-card-media img {
+  width: auto;
+  height: auto;
+  max-width: 70%;     /* ширина относительно карточки — уменьшай/увеличивай по желанию */
+  max-height: 360px;  /* фиксированный максимум высоты */
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Для второй (overlay) картинки, которая покрывает фон, уменьшим масштаб содержимого
+   — если фон должен быть видимым, можно ограничить высоту самой карточки */
+.image-card.image-card--fullbg .image-card-media img {
+  object-fit: cover;
+  max-height: 520px;
+  width: 100%;
+  height: auto;
+}
+
+/* Также уменьшим размеры картинки в блоке edu-media (если где-то используется) */
+.edu-media img,
+.edu-media .acc-main {
+  max-width: 260px; /* уже было — можно уменьшить */
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* На мобильных экранах дополнительно ограничим размеры */
+@media (max-width: 980px) {
+  .education-card { min-height: 340px; }
+  .image-card .image-card-media img { max-width: 86%; max-height: 46vh; }
+  .edu-media img { max-width: 60vw; max-height: 40vh; }
+}
+
+/* Размеры текста по образцу второй карточки */
+.image-card .kicker {
+
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.image-card .overlay-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+.image-card .overlay-desc {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* На мобильных уменьшаем overlay ширину и делаем центрирование */
+@media (max-width: 980px) {
+  .image-card .image-card-overlay {
+    max-width: 92%;
+    left: 16px;
+    right: 16px;
+    top: 16px;
+    padding: 16px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.12));
+  }
+  .image-card .overlay-title { font-size: 20px; }
+}
+
 .card-sub {
   margin: 0;
   font-size: 13px;
@@ -264,12 +685,7 @@ body {
   text-transform: uppercase
 }
 
-._000-qualified-purchasers-can-receive-promotion-savings-when-they-purchase-an-eligible-mac-or-i-pad-with-their-choice-of-a-promotion-product-at-a-qualifying-location-customers-will-be-charged-for-all-items-in-their-cart-including-the-promotion-product-only-one-promotion-product-can-be-obtained-per-eligible-mac-or-i-pad-per-qualified-purchaser-the-offer-is-subject-to-availability-while-supplies-last-view-full-terms-and-conditions-of-offer-here-a-apple-intelligence-is-available-in-beta-on-all-i-phone-16-models-i-phone-15-pro-i-phone-15-pro-max-i-pad-mini-a-17-pro-and-i-pad-and-mac-models-with-mi-and-later-with-siri-and-device-language-set-to-chinese-simplified-english-australia-canada-india-ireland-new-zealand-singapore-south-africa-uk-or-us-french-german-italian-japanese-korean-portuguese-brazil-or-spanish-as-part-of-an-i-os-18-i-pad-os-18-and-mac-os-sequoia-software-update-with-more-languages-coming-over-the-course-of-the-year-including-vietnamese-some-features-may-not-be-available-in-all-regions-or-languages-monthly-pricing-is-after-purchase-using-emi-with-qualifying-cards-at-15-99-p-a-over-a-12-month-tenure-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-requires-monthly-payments-of-27249-00-total-amount-payable-286988-00-total-interest-paid-to-bank-27088-00-no-cost-emi-is-available-with-the-purchase-of-an-eligible-product-made-using-qualifying-cards-on-3-6-9-or-12-month-tenures-from-most-leading-card-issuers-eligible-air-pods-home-pod-and-beats-products-are-available-with-no-cost-emi-on-3-and-6-month-tenures-only-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-minimum-order-spend-applies-as-per-your-card-issuer-s-threshold-no-cost-emi-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-terms-apply-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-and-no-cost-emi-savings-of-26514-00-requires-monthly-payments-of-26658-00-total-amount-payable-279900-00-instant-cashback-is-available-with-the-purchase-of-an-eligible-product-with-qualifying-american-express-axis-bank-and-icici-bank-cards-only-minimum-transaction-value-of-210001-00-applies-click-here-to-see-instant-cashback-amounts-and-eligible-devices-instant-cashback-is-available-for-up-to-two-orders-per-rolling-90-day-period-with-an-eligible-card-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-total-transaction-value-is-calculated-after-any-trade-in-credit-or-eligible-discount-is-applied-any-subsequent-order-adjustment-s-or-cancellation-s-may-result-in-instant-cashback-being-recalculated-and-any-refund-may-be-adjusted-to-account-for-instant-cashback-clawback-this-may-result-in-no-refund-being-made-to-you-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-additional-terms-apply-instant-cashback-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-multiple-separate-orders-cannot-be-combined-for-instant-cashback-mac-i-pad-and-apple-watch-trade-in-is-available-only-in-store-in-india-apple-retail-online-in-india-does-not-offer-trade-in-for-mac-i-pad-and-apple-watch-trade-in-values-will-vary-based-on-the-condition-year-and-configuration-of-your-eligible-trade-in-device-not-all-devices-are-eligible-for-credit-you-must-be-at-least-the-age-of-majority-to-be-eligible-to-trade-in-for-credit-trade-in-value-may-be-applied-towards-a-qualifying-new-device-purchase-actual-value-awarded-is-based-on-receipt-of-a-qualifying-device-matching-the-description-provided-when-estimate-was-made-sales-tax-may-be-assessed-on-full-value-of-a-new-device-purchase-in-store-trade-in-requires-presentation-of-a-valid-photo-id-local-law-may-require-saving-this-information-some-stores-may-have-additional-requirements-apple-or-its-trade-in-partners-reserve-the-right-to-refuse-cancel-or-limit-the-quantity-of-any-trade-in-transaction-for-any-reason-more-details-are-available-from-apple-s-trade-in-partner-for-trade-in-and-recycling-of-eligible-devices-restrictions-and-limitations-may-apply-0-apple-tv-offer-available-to-new-and-qualified-returning-subscribers-only-299-month-after-free-trial-only-one-offer-per-apple-account-and-only-one-offer-per-family-if-you-re-part-of-a-family-sharing-group-regardless-of-the-number-of-devices-that-you-or-your-family-purchase-this-offer-is-not-available-if-you-or-your-family-have-previously-accepted-an-apple-tv-3-months-free-or-1-year-free-offer-offer-valid-for-three-months-after-eligible-device-is-activated-plan-automatically-renews-until-cancelled-restrictions-and-other-apply-i-special-pricing-available-to-qualified-customers-to-learn-more-about-how-to-start-qualifying-for-special-pricing-talk-to-an-apple-specialist-in-a-store-or-give-us-a-call-on-000800-040-1966-new-subscribers-only-2119-00-month-after-trial-offer-is-available-for-new-apple-music-subscribers-with-a-new-eligible-device-for-a-limited-time-only-offer-redemption-for-eligible-audio-devices-requires-connecting-or-pairing-to-an-apple-device-running-the-latest-i-os-or-i-pad-os-offer-redemption-for-apple-watch-requires-connecting-or-pairing-to-an-i-phone-running-the-latest-i-os-offer-good-for-three-months-after-eligible-device-activation-only-one-offer-per-apple-account-regardless-of-the-number-of-eligible-devices-you-purchase-plan-automatically-renews-until-cancelled-restrictions-and-other-terms-apply-listed-pricing-is-maximum-retail-price-inclusive-of-all-taxes-we-use-your-location-to-show-you-delivery-options-faster-we-found-your-location-using-your-ip-address-or-because-you-entered-it-during-a-previous-visit-to-apple,
-._000-qualified-purchasers-can-receive-promotion-savings-when-they-purchase-an-eligible-mac-or-i-pad-with-their-choice-of-a-promotion-product-at-a-qualifying-location-customers-will-be-charged-for-all-items-in-their-cart-including-the-promotion-product-only-one-promotion-product-can-be-obtained-per-eligible-mac-or-i-pad-per-qualified-purchaser-the-offer-is-subject-to-availability-while-supplies-last-view-full-terms-and-conditions-of-offer-here-a-apple-intelligence-is-available-in-beta-on-all-i-phone-16-models-i-phone-15-pro-i-phone-15-pro-max-i-pad-mini-a-17-pro-and-i-pad-and-mac-models-with-mi-and-later-with-siri-and-device-language-set-to-chinese-simplified-english-australia-canada-india-ireland-new-zealand-singapore-south-africa-uk-or-us-french-german-italian-japanese-korean-portuguese-brazil-or-spanish-as-part-of-an-i-os-18-i-pad-os-18-and-mac-os-sequoia-software-update-with-more-languages-coming-over-the-course-of-the-year-including-vietnamese-some-features-may-not-be-available-in-all-regions-or-languages-monthly-pricing-is-after-purchase-using-emi-with-qualifying-cards-at-15-99-p-a-over-a-12-month-tenure-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-requires-monthly-payments-of-27249-00-total-amount-payable-286988-00-total-interest-paid-to-bank-27088-00-no-cost-emi-is-available-with-the-purchase-of-an-eligible-product-made-using-qualifying-cards-on-3-6-9-or-12-month-tenures-from-most-leading-card-issuers-eligible-air-pods-home-pod-and-beats-products-are-available-with-no-cost-emi-on-3-and-6-month-tenures-only-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-minimum-order-spend-applies-as-per-your-card-issuer-s-threshold-no-cost-emi-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-terms-apply-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-and-no-cost-emi-savings-of-26514-00-requires-monthly-payments-of-26658-00-total-amount-payable-279900-00-instant-cashback-is-available-with-the-purchase-of-an-eligible-product-with-qualifying-american-express-axis-bank-and-icici-bank-cards-only-minimum-transaction-value-of-210001-00-applies-click-here-to-see-instant-cashback-amounts-and-eligible-devices-instant-cashback-is-available-for-up-to-two-orders-per-rolling-90-day-period-with-an-eligible-card-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-total-transaction-value-is-calculated-after-any-trade-in-credit-or-eligible-discount-is-applied-any-subsequent-order-adjustment-s-or-cancellation-s-may-result-in-instant-cashback-being-recalculated-and-any-refund-may-be-adjusted-to-account-for-instant-cashback-clawback-this-may-result-in-no-refund-being-made-to-you-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-additional-terms-apply-instant-cashback-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-multiple-separate-orders-cannot-be-combined-for-instant-cashback-mac-i-pad-and-apple-watch-trade-in-is-available-only-in-store-in-india-apple-retail-online-in-india-does-not-offer-trade-in-for-mac-i-pad-and-apple-watch-trade-in-values-will-vary-based-on-the-condition-year-and-configuration-of-your-eligible-trade-in-device-not-all-devices-are-eligible-for-credit-you-must-be-at-least-the-age-of-majority-to-be-eligible-to-trade-in-for-credit-trade-in-value-may-be-applied-towards-a-qualifying-new-device-purchase-actual-value-awarded-is-based-on-receipt-of-a-qualifying-device-matching-the-description-provided-when-estimate-was-made-sales-tax-may-be-assessed-on-full-value-of-a-new-device-purchase-in-store-trade-in-requires-presentation-of-a-valid-photo-id-local-law-may-require-saving-this-information-some-stores-may-have-additional-requirements-apple-or-its-trade-in-partners-reserve-the-right-to-refuse-cancel-or-limit-the-quantity-of-any-trade-in-transaction-for-any-reason-more-details-are-available-from-apple-s-trade-in-partner-for-trade-in-and-recycling-of-eligible-devices-restrictions-and-limitations-may-apply-0-apple-tv-offer-available-to-new-and-qualified-returning-subscribers-only-299-month-after-free-trial-only-one-offer-per-apple-account-and-only-one-offer-per-family-if-you-re-part-of-a-family-sharing-group-regardless-of-the-number-of-devices-that-you-or-your-family-purchase-this-offer-is-not-available-if-you-or-your-family-have-previously-accepted-an-apple-tv-3-months-free-or-1-year-free-offer-offer-valid-for-three-months-after-eligible-device-is-activated-plan-automatically-renews-until-cancelled-restrictions-and-other-apply-i-special-pricing-available-to-qualified-customers-to-learn-more-about-how-to-start-qualifying-for-special-pricing-talk-to-an-apple-specialist-in-a-store-or-give-us-a-call-on-000800-040-1966-new-subscribers-only-2119-00-month-after-trial-offer-is-available-for-new-apple-music-subscribers-with-a-new-eligible-device-for-a-limited-time-only-offer-redemption-for-eligible-audio-devices-requires-connecting-or-pairing-to-an-apple-device-running-the-latest-i-os-or-i-pad-os-offer-redemption-for-apple-watch-requires-connecting-or-pairing-to-an-i-phone-running-the-latest-i-os-offer-good-for-three-months-after-eligible-device-activation-only-one-offer-per-apple-account-regardless-of-the-number-of-eligible-devices-you-purchase-plan-automatically-renews-until-cancelled-restrictions-and-other-terms-apply-listed-pricing-is-maximum-retail-price-inclusive-of-all-taxes-we-use-your-location-to-show-you-delivery-options-faster-we-found-your-location-using-your-ip-address-or-because-you-entered-it-during-a-previous-visit-to-apple
-  * {
-  box-sizing: border-box;
-}
-._000-qualified-purchasers-can-receive-promotion-savings-when-they-purchase-an-eligible-mac-or-i-pad-with-their-choice-of-a-promotion-product-at-a-qualifying-location-customers-will-be-charged-for-all-items-in-their-cart-including-the-promotion-product-only-one-promotion-product-can-be-obtained-per-eligible-mac-or-i-pad-per-qualified-purchaser-the-offer-is-subject-to-availability-while-supplies-last-view-full-terms-and-conditions-of-offer-here-a-apple-intelligence-is-available-in-beta-on-all-i-phone-16-models-i-phone-15-pro-i-phone-15-pro-max-i-pad-mini-a-17-pro-and-i-pad-and-mac-models-with-mi-and-later-with-siri-and-device-language-set-to-chinese-simplified-english-australia-canada-india-ireland-new-zealand-singapore-south-africa-uk-or-us-french-german-italian-japanese-korean-portuguese-brazil-or-spanish-as-part-of-an-i-os-18-i-pad-os-18-and-mac-os-sequoia-software-update-with-more-languages-coming-over-the-course-of-the-year-including-vietnamese-some-features-may-not-be-available-in-all-regions-or-languages-monthly-pricing-is-after-purchase-using-emi-with-qualifying-cards-at-15-99-p-a-over-a-12-month-tenure-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-requires-monthly-payments-of-27249-00-total-amount-payable-286988-00-total-interest-paid-to-bank-27088-00-no-cost-emi-is-available-with-the-purchase-of-an-eligible-product-made-using-qualifying-cards-on-3-6-9-or-12-month-tenures-from-most-leading-card-issuers-eligible-air-pods-home-pod-and-beats-products-are-available-with-no-cost-emi-on-3-and-6-month-tenures-only-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-minimum-order-spend-applies-as-per-your-card-issuer-s-threshold-no-cost-emi-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-terms-apply-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-and-no-cost-emi-savings-of-26514-00-requires-monthly-payments-of-26658-00-total-amount-payable-279900-00-instant-cashback-is-available-with-the-purchase-of-an-eligible-product-with-qualifying-american-express-axis-bank-and-icici-bank-cards-only-minimum-transaction-value-of-210001-00-applies-click-here-to-see-instant-cashback-amounts-and-eligible-devices-instant-cashback-is-available-for-up-to-two-orders-per-rolling-90-day-period-with-an-eligible-card-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-total-transaction-value-is-calculated-after-any-trade-in-credit-or-eligible-discount-is-applied-any-subsequent-order-adjustment-s-or-cancellation-s-may-result-in-instant-cashback-being-recalculated-and-any-refund-may-be-adjusted-to-account-for-instant-cashback-clawback-this-may-result-in-no-refund-being-made-to-you-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notice-additional-terms-apply-instant-cashback-is-not-available-to-business-customers-and-cannot-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-multiple-separate-orders-cannot-be-combined-for-instant-cashback-mac-i-pad-and-apple-watch-trade-in-is-available-only-in-store-in-india-apple-retail-online-in-india-does-not-offer-trade-in-for-mac-i-pad-and-apple-watch-trade-in-values-will-vary-based-on-the-condition-year-and-configuration-of-your-eligible-trade-in-device-not-all-devices-are-eligible-for-credit-you-must-be-at-least-the-age-of-majority-to-be-eligible-to-trade-in-for-credit-trade-in-value-may-be-applied-towards-a-qualifying-new-device-purchase-actual-value-awarded-is-based-on-receipt-of-a-qualifying-device-matching-the-description-provided-when-estimate-was-made-sales-tax-may-be-assessed-on-full-value-of-a-new-device-purchase-in-store-trade-in-requires-presentation-of-a-valid-photo-id-local-law-may-require-saving-this-information-some-stores-may-have-additional-requirements-apple-or-its-trade-in-partners-reserve-the-right-to-refuse-cancel-or-limit-the-quantity-of-any-trade-in-transaction-for-any-reason-more-details-are-available-from-apple-s-trade-in-partner-for-trade-in-and-recycling-of-eligible-devices-restrictions-and-limitations-may-apply-0-apple-tv-offer-available-to-new-and-qualified-returning-subscribers-only-299-month-after-free-trial-only-one-offer-per-apple-account-and-only-one-offer-per-family-if-you-re-part-of-a-family-sharing-group-regardless-of-the-number-of-devices-that-you-or-your-family-purchase-this-offer-is-not-available-if-you-or-your-family-have-previously-accepted-an-apple-tv-3-months-free-or-1-year-free-offer-offer-valid-for-three-months-after-eligible-device-is-activated-plan-automatically-renews-until-cancelled-restrictions-and-other-apply-i-special-pricing-available-to-qualified-customers-to-learn-more-about-how-to-start-qualifying-for-special-pricing-talk-to-an-apple-specialist-in-a-store-or-give-us-a-call-on-000800-040-1966-new-subscribers-only-2119-00-month-after-trial-offer-is-available-for-new-apple-music-subscribers-with-a-new-eligible-device-for-a-limited-time-only-offer-redemption-for-eligible-audio-devices-requires-connecting-or-pairing-to-an-apple-device-running-the-latest-i-os-or-i-pad-os-offer-redemption-for-apple-watch-requires-connecting-or-pairing-to-an-i-phone-running-the-latest-i-os-offer-good-for-three-months-after-eligible-device-activation-only-one-offer-per-apple-account-regardless-of-the-number-of-eligible-devices-you-purchase-plan-automatically-renews-until-cancelled-restrictions-and-other-terms-apply-listed-pricing-is-maximum-retail-price-inclusive-of-all-taxes-we-use-your-location-to-show-you-delivery-options-faster-we-found-your-location-using-your-ip-address-or-because-you-entered-it-during-a-previous-visit-to-apple {
+._000-qualified-purchasers-can-receive-promotion-savings-when-they-purchase-an-eligible-mac-or-i-pad-with-their-choice-of-a-promotion-product-at-a-qualifying-location-customers-will-be-charged-for-all-items-in-their-cart-including-the-promotion-product-only-one-promotion-product-can-be-obtained-per-eligible-mac-or-i-pad-per-qualified-purchaser-the-offer-is-subject-to-availability-while-supplies-last-view-full-terms-and-conditions-of-offer-here-a-apple-intelligence-is-available-in-beta-on-all-i-phone-16-models-i-phone-15-pro-i-phone-15-pro-max-i-pad-mini-a-17-pro-and-i-pad-and-mac-models-with-mi-and-later-with-siri-and-device-language-set-to-chinese-simplified-english-australia-canada-india-ireland-new-zealand-singapore-south-africa-uk-or-us-french-german-italian-japanese-korean-portuguese-brazil-or-spanish-as-part-of-an-i-os-18-i-pad-os-18-and-mac-os-sequoia-software-update-with-more-languages-coming-over-the-course-of-the-year-including-vietnamese-some-features-may-not-be-available-in-all-regions-or-languages-monthly-pricing-is-after-purchase-using-emi-with-qualifying-cards-at-15-99-p-a-over-a-12-month-tenure-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-provided-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-requires-monthly-payments-of-27249-00-total-amount-payable-286988-00-total-interest-paid-to-bank-27088-00-no-cost-emi-is-available-with-the-purchase-of-an-eligible-product-made-using-qualifying-cards-on-3-6-9-or-12-month-tenures-from-most-leading-card-issuers-eligible-air-pods-home-pod-and-beats-products-are-available-with-no-cost-emi-on-3-and-6-month-tenures-only-monthly-pricing-is-rounded-to-the-nearest-rupee-exact-pricing-will-be-proVIDED-by-your-card-issuer-subject-to-your-card-issuer-s-terms-and-conditions-minimum-order-spend-applies-as-per-your-card-issuer-s-threshold-no-cost-emi-is-not-available-to-business-customERS-and-cANNOT-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notICE-terms-apply-representative-example-a-purchase-of-279900-00-repaid-over-12-months-with-an-interest-rate-of-15-99-p-a-and-no-cost-emi-savings-of-26514-00-reQUIRES-monthly-payments-of-26658-00-total-amount-payable-279900-00-instant-cashback-is-available-with-the-purchase-of-an-eligible-product-with-qualifying-american-express-axis-bank-and-icici-bank-cards-only-minimum-transaction-value-of-210001-00-applies-click-here-to-see-instant-cashback-amounts-and-eligible-devices-instant-cashback-is-available-for-up-to-two-orders-per-rolling-90-day-period-with-an-eligible-card-card-eligibility-is-subject-to-terms-and-conditions-between-you-and-your-card-issuer-total-transaction-value-is-calculated-after-any-trade-in-credit-or-eligible-discount-is-applied-any-subsequent-order-adjustMENT-s-or-cancellation-s-may-result-in-instant-cashback-being-recalculated-and-any-refund-may-be-adjustED-to-account-for-instant-cashback-claWBACK-this-may-result-in-no-refund-being-made-to-you-offer-may-be-revised-or-withdrawn-at-any-time-without-any-prior-notICE-additional-terms-apply-instant-cashback-is-not-available-to-BUSINESS-customERS-and-cANNOT-be-combined-with-apple-store-for-education-or-corporate-employee-purchase-plan-pricing-multiple-separate-orders-cANNOT-be-combined-for-INSTANT-cashback-mac-i-pad-and-apple-watch-trade-in-is-available-only-IN-STORE-IN-INDIA-apple-retail-online-in-india-does-not-offer-trade-in-for-mac-i-pad-and-apple-watch-trade-in-values-wILL-vary-based-on-the-condition-year-and-configuration-of-your-eligible-trade-in-device-not-all-devICES-are-ELIGIBLE-FOR-CREDIT-you-must-be-at-least-the-age-of-majority-to-be-eligible-to-trade-in-for-credit-trade-in-value-may-be-applied-towARDS-a-qualifying-new-device-purchase-actual-value-awARDED-is-based-on-receipt-of-a-qualifying-device-matching-the-description-provided-when-estIMATE-was-made-sales-tax-may-be-assessed-on-full-value-of-a-new-device-purchase-in-store-trade-in-reQUIRES-presentation-of-a-valid-photo-id-local-law-may-require-saving-this-information-some-stores-may-have-additional-REQUIREMENTS-apple-or-its-trade-in-partners-reserve-the-right-to-refuse-cancel-or-limit-the-quantity-of-any-trade-in-TRANSACTION-FOR-ANY-REASON-more-details-are-AVAILABLE-from-apple-s-trade-in-partner-for-trade-in-and-recycling-of-eligible-devICES-restrictions-and-limitations-may-apply-0-apple-tv-offer-available-to-new-and-qualified-returnING-subscribers-only-299-month-after-free-trial-only-one-offer-per-apple-account-and-only-one-offer-per-family-if-you-re-part-of-a-family-sharing-group-regardless-of-the-number-of-devices-that-you-or-your-family-purchase-this-offer-is-not-AVAILABLE-if-you-or-your-family-have-previousLY-accepted-an-apple-tv-3-months-free-or-1-year-free-offer-offer-valid-for-three-months-after-eligible-device-is-activated-plan-automatically-renews-until-cancelLED-reSTRICTIONS-and-other-apply-i-special-pricing-available-to-QUAliFIED-customERS-to-learn-more-about-how-to-start-qualifying-for-special-pricing-talk-to-an-apple-SPECIALIST-in-a-store-or-give-us-a-call-on-000800-040-1966-new-subscribers-only-2119-00-month-after-trial-offer-is-available-for-new-apple-music-subscribers-with-a-new-eligible-device-for-a-limited-time-only-offer-redemption-for-eligible-audio-devICES-reQUIRES-connecting-or-pairing-to-an-apple-device-running-the-latest-i-os-or-i-pad-os-offer-redemption-for-apple-watch-reQUIRES-connecting-or-pairing-to-an-i-phone-running-the-latest-i-os-offER-good-for-three-months-after-eligible-device-activation-only-one-offer-per-apple-account-regardless-of-the-number-of-eligible-devICES-you-purchase-plan-automatically-renews-until-cancelLED-reSTRICTIONS-and-other-terms-apply-listed-pricing-is-maximum-retail-price-inclusive-of-all-taxes-we-use-your-location-to-show-you-delivery-options-faster-we-found-your-location-using-your-ip-address-or-because-you-entered-it-during-a-previous-visit-to-apple {
   color: #000000;
   text-align: center;
   font-family: "IstokWeb-Regular", sans-serif;
@@ -342,12 +758,19 @@ body {
 }
 
 .help-card {
-  width: 150%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;   /* вертикальное центрирование */
   justify-content: center; /* горизонтальное центрирование */
 }
+
+.help-card img {
+  max-width: 400px;   /* ширина фото */
+  max-height: 400px;  /* высота фото */
+  object-fit: contain; /* чтобы не искажалось */
+}
+
 
 /* Features */
 .feature-grid {
@@ -408,6 +831,133 @@ body {
   align-items: center;
   padding: 20px 0
 }
+
+/* ===== Help carousel styles (insert after .cards-carousel) ===== */
+.help-carousel {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding: 18px 6px 28px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.help-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+.help-carousel::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.08);
+  border-radius: 10px;
+}
+
+/* Карточки помощи (внешний вид как в примере) */
+.help-card {
+  flex: 0 0 auto;
+  min-width: 520px;         /* ширина слайда на десктопе */
+  max-width: 560px;
+  background: var(--card-bg);
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+  padding: 28px;
+  display: flex;
+  align-items: center;
+}
+
+/* Внутреннее содержимое карточки */
+.help-content {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Текстовая колонка */
+.help-text {
+  flex: 1 1 48%;
+  min-width: 220px;
+}
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.help-title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.05;
+}
+.help-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Медиаколонка (изображение) */
+.help-media {
+  flex: 1 1 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.help-media img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Responsive: на мобильных — одна карточка в ширину и стек */
+@media (max-width: 900px) {
+  .help-card {
+    min-width: 86vw;
+    padding: 22px;
+  }
+  .help-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .help-text { order: 1; }
+  .help-media { order: 2; }
+  .help-media img { max-width: 60vw; }
+}
+
+.accessories-essentials-that-pair-perfectly-with-your-favourite-devices,
+.accessories-essentials-that-pair-perfectly-with-your-favourite-devices * {
+  box-sizing: border-box;
+}
+.accessories-essentials-that-pair-perfectly-with-your-favourite-devices {
+  text-align: left;
+  font-family: "AlbertSans-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  margin-left: 75px;
+  height: 43px;
+}
+.accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span {
+  color: #000000;
+  margin-left: 10px;
+}
+.accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span2 {
+  color: #6e6e73;
+}
+
+.title-card-text {
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    font-family: "AlbertSans-Bold", sans-serif;
+    font-size: 40px;
+    position: relative;
+    height: 59px;
+}
+
+
 
 .footer-links a {
   margin-left: 16px;
@@ -479,3 +1029,377 @@ body {
     gap: 12px
   }
 }
+
+/* === Размещение текста поверх первых двух карточек в .education-carousel === */
+
+/* гарантируем, что непосредственный внутренний div — позиционированный контейнер */
+.education-carousel .education-card:nth-child(1) > div,
+.education-carousel .education-card:nth-child(2) > div {
+  position: relative; /* overlay будет позиционироваться относительно этого div */
+}
+
+/* общий стиль overlay — позиция, ширина и базовая видимость */
+.education-carousel .education-card .image-card-overlay {
+  position: absolute;
+  left: 110px;
+  top: 40px;
+  z-index: 6;
+  max-width: 55%;
+  padding: 0;
+  pointer-events: none;            /* текст не блокирует клики по карточке */
+  display: block;
+}
+
+/* Заголовки/параграфы внутри overlay — единый визуальный стиль */
+.education-carousel .education-card .image-card-overlay h3,
+.education-carousel .education-card .image-card-overlay p {
+  margin: 0 0 8px;
+  line-height: 1.05;
+}
+
+/* размеры шрифтов */
+.education-carousel .education-card .image-card-overlay h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.education-carousel .education-card .image-card-overlay p {
+  font-size: 14px;
+  color: inherit; /* цвет задается ниже для каждой карточки */
+}
+
+/* kicker */
+.education-carousel .education-card .image-card-overlay .kicker {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Первая карточка — тёмный текст (она светлая), без тени */
+.education-carousel .education-card:nth-child(1) .image-card-overlay {
+  color: #111;
+  text-shadow: none;
+}
+
+/* Вторая карточка — белый текст с тенью для контраста поверх фото */
+.education-carousel .education-card:nth-child(2) .image-card-overlay {
+  color: #ffffff;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Адаптация на мобильных: overlay шире и чуть меньше шрифты */
+@media (max-width: 980px) {
+  .education-carousel .education-card .image-card-overlay {
+    left: 16px;
+    top: 16px;
+    right: 16px;
+    max-width: 86%;
+  }
+  .education-carousel .education-card .image-card-overlay h3 { font-size: 20px; }
+}
+
+/* --- Стили для image-card чтобы все карточки были одного размера
+   и без белого фона позади них --- */
+
+/* для карточек типа image-card делаем фон прозрачным и убираем внешний белый блок */
+.education-card.image-card {
+  background: transparent;          /* фон карточки теперь прозрачный */
+  box-shadow: none;                 /* если не хотите тени — убрать, иначе настройте */
+  min-height: 420px;                /* сохранить высоту как у первой карточки */
+  max-height: 520px;
+}
+
+/* внутренний контейнер: центрируем картинку как в первой карточке */
+.education-card.image-card .image-card-media {
+  position: relative;
+  padding: 28px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+/* переопределяем правило, которое ставило image абсолютно на фон;
+   делаем изображение «вставленным» в центр карточки и ограничиваем размер */
+.education-card.image-card .image-card-media img {
+  position: relative !important;   /* переопределяем абсолютное позиционирование */
+  inset: auto;
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 360px;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06); /* если хотите такую же «плавающую» картинку */
+}
+
+/* если у вас есть карточки, которые действительно должны быть фон-изображением (fullbg),
+   добавьте отдельный класс image-card--fullbg и оставьте для него cover-режим */
+.education-card.image-card.image-card--fullbg {
+  background: transparent; /* если фон-заливка нужна — оставить прозрачным, картинка сама покроет */
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+}
+.education-card.image-card.image-card--fullbg .image-card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+/* === Переопределения только для первых двух карточек в .education-carousel === */
+.education-carousel .education-card:nth-child(1),
+.education-carousel .education-card:nth-child(2) {
+  background: transparent !important;    /* убираем белый фон */
+  box-shadow: none !important;           /* убираем тень у белой “рамки” */
+  border-radius: 28px;                   /* сохраняем внешнюю скругл. контейнера */
+  overflow: visible;                     /* чтобы тень картинки не обрезалась */
+}
+
+/* Контейнер (внутренний div) у первых двух карточек — делаем как у первой карточки */
+.education-carousel .education-card:nth-child(1) > div,
+.education-carousel .education-card:nth-child(2) > div {
+  background: transparent !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 22px; /* внутреннее скругление, под картинку */
+}
+
+/* Стили для <img> внутри этих двух карточек — position:relative, contain, одинаковый max-size */
+.education-carousel .education-card:nth-child(1) img,
+.education-carousel .education-card:nth-child(2) img {
+  position: relative !important;   /* отменяем absolute, если он был */
+  inset: auto !important;
+  width: auto !important;
+  height: auto !important;
+  margin-right: 20px;
+  max-width: 70%;
+  max-height: 360px;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06); /* «плавающая» тень у картинки */
+}
+
+/* ========== Cleaned Education styles (replace previous education-related CSS) ========== */
+
+/* Carousel layout */
+.education-carousel {
+  display: flex;
+  gap: 1px !important; /* уменьшенное расстояние между карточками */
+  overflow-x: auto;
+  padding: 22px 6px 40px;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* Scrollbar */
+.education-carousel::-webkit-scrollbar { height: 10px; }
+.education-carousel::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.06); border-radius: 10px; }
+
+/* Card base */
+.education-card {
+  flex: 0 0 auto;
+  min-width: 520px;
+  max-width: 560px;
+  border-radius: 28px;
+  overflow: visible;         /* чтобы тень картинки не обрезалась */
+  position: relative;
+  scroll-snap-align: start;
+  background: transparent;   /* карточка сама прозрачна — внутри размещаем контент */
+}
+
+/* If you want a white framed card (like the left example), add .has-frame to the article:
+   <article class="education-card has-frame"> ... </article> */
+.education-card.has-frame {
+  background: var(--card-bg);
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+  overflow: hidden;
+}
+
+/* Media container inside the card (works even if inner wrapper has a typo because we target > div) */
+.education-card > div,
+.education-card .image-card-media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 20px;            /* немного меньше внутреннего отступа для плотности */
+  box-sizing: border-box;
+}
+
+/* Image as content (default: contain, centered, with floating shadow) */
+.education-card img {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 70%;
+  max-height: 360px;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(20,20,28,0.06);
+  margin: 0;
+}
+
+/* Full-bleed background variant (use class image-card--fullbg on article) */
+.education-card.image-card--fullbg {
+  background: transparent;
+}
+.education-card.image-card--fullbg img {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  border-radius: 28px;
+  box-shadow: none;
+}
+
+/* Overlay (text) common positioning */
+.education-card .image-card-overlay {
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  z-index: 6;
+  max-width: 55%;
+  padding: 0;
+  pointer-events: none;
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* Make overlay text readable & consistent */
+.education-card .image-card-overlay h3 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+.education-card .image-card-overlay p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.25;
+}
+.education-card .image-card-overlay .kicker {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* Per-card text color overrides:
+   - if card has class .text-dark -> dark text (for framed/white card)
+   - else default is white with shadow (for image card)
+*/
+.education-card.text-dark .image-card-overlay { color: #111; text-shadow: none; }
+.education-card.text-light .image-card-overlay { color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+
+/* Target only first two items (optional tightening of spacing inside) */
+.education-carousel .education-card:nth-child(1),
+.education-carousel .education-card:nth-child(2) {
+  min-width: 480px; /* можно уменьшить ширину карточек на небольших экранах */
+}
+
+/* Mobile adjustments */
+@media (max-width: 980px) {
+  .education-carousel { gap: 16px; padding: 18px 6px 28px; }
+  .education-card { min-width: 86vw; border-radius: 22px; }
+  .education-card img { max-width: 86%; max-height: 46vh; }
+  .education-card .image-card-overlay {
+    left: 16px;
+    top: 16px;
+    right: 16px;
+    max-width: 92%;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  }
+  .education-card .image-card-overlay h3 { font-size: 20px; }
+}
+
+
+
+.product-card img {
+  border-radius: 15px;
+    width: 344px;
+    height: 233px;
+    aspect-ratio: auto 344 / 233;
+}
+
+.btn-add {
+  margin-left: 50px;
+  color: blue;
+  line-height: 24px;
+  font-size: 17px;
+  border: none;      
+  outline: none;    
+  background: none;
+
+}
+
+.product-price {
+  margin-left: 45px;
+}
+.product-card {
+  gap: 25px;
+  display: grid;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.product-title {
+        margin-left: 50px;
+        font-size: 24px;
+        line-height: 1.1666666667;
+        font-weight: 600;
+        letter-spacing: .009em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.product-desc {
+    margin-left: 45px;
+    font-size: 17px;
+    line-height: 1.2353641176;
+    font-weight: 600;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* МОДАЛЬ: дозволяємо прокрутку внутрішнього контенту */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;             /* ми показуємо через inline style в JS */
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(15,23,42,0.55);
+  z-index: 1000;
+  padding-top: 60px;
+  overflow: auto;            /* важливо — дозволяє прокрутку, якщо модаль висока */
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 760px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  max-height: 80vh;          /* обмеження по висоті */
+  overflow-y: auto;          /* внутрішня прокрутка */
+}
+
