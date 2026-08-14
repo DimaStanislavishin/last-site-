@@ -17,10 +17,11 @@
       <!-- Навігація + пошук + кошик -->
       <div style="display:flex;align-items:center;gap:12px;">
         <nav class="top-nav" aria-label="Головна навігація">
-          <a href="#">iPad</a>
-          <a href="#">iPhone</a>
-          <a href="#">Watch</a>
-          <a href="#">AirPods</a>
+          <a href="ipad.html">iPad</a>
+          <a href="mac.html" style="color: #232324; font-weight: bold;">Mac</a>
+          <a href="iphone.html">iPhone</a>
+          <a href="Watch.html">Watch</a>
+          <a href="airpods.html">AirPods</a>
           <a href="#">TV &amp; Home</a>
           <a href="#">Розваги</a>
           <a href="#">Аксесуари</a>
@@ -37,7 +38,7 @@
 
         <!-- Кнопка кошика з лічильником -->
         <button id="cart-btn" aria-haspopup="dialog" aria-expanded="false" style="background:none;border:none;cursor:pointer;position:relative;margin-left:12px;">
-          <img src="cart.png" alt="cart" style="height:22px;">
+          <img src="4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.svg" alt="cart" style="height:22px;">
           <span id="cart-count" style="position:absolute;top:-6px;right:-8px;background:#ef4444;color:#fff;border-radius:50%;padding:2px 6px;font-size:12px;">0</span>
         </button>
       </div>
@@ -337,7 +338,8 @@
     <div class="modal-content" style="width:90%;max-width:760px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.12);">
       <div class="modal-header" style="display:flex;justify-content:space-between;align-items:center;">
         <h2 id="cart-title">Ваш кошик</h2>
-        <button id="close-modal-btn" class="close-btn" aria-label="Закрити">✕</button>
+        <button id="close-modal-btn" class="close-btn" aria-label="Закрити">
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg> <span>Назад</span></button> 
       </div>
 
       <div class="modal-body" style="padding-top:12px;">
@@ -349,8 +351,8 @@
         </div>
 
         <div style="margin-top:14px;display:flex;gap:10px;justify-content:flex-end;">
-          <button id="clear-cart-btn" class="btn btn-danger-outline">Очистити</button>
-          <button id="checkout-btn" class="btn btn-success">Оформити</button>
+          <button id="clear-cart-btn" class="btn btn-danger-outline" style=" font-weight: bold;" >Очистити</button>
+          <button id="checkout-btn" class="btn btn-success" style=" font-weight: bold;" >Оформити</button>
         </div>
 
         <form id="checkout-form" class="checkout-form hidden" style="margin-top:12px;display:none;">

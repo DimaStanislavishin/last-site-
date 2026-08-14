@@ -1335,9 +1335,8 @@ body {
 
 .product-card img {
   border-radius: 15px;
-    width: 344px;
-    height: 233px;
-    aspect-ratio: auto 344 / 233;
+    width: 280px;
+    height: 200px;
 }
 
 .btn-add {
@@ -1392,6 +1391,8 @@ body {
   overflow: auto;            /* важливо — дозволяє прокрутку, якщо модаль висока */
 }
 
+
+
 .modal-content {
   width: 90%;
   max-width: 760px;
@@ -1403,3 +1404,84 @@ body {
   overflow-y: auto;          /* внутрішня прокрутка */
 }
 
+.btn-remove, .btn-qty, .btn-remove {
+  width: 36px;
+  height: 36px;
+  border-radius: 15px;
+  background: #f5f5f7;
+  border: 1px solid #d2d2d7;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.btn-remove, .btn-qty, .btn-remove:active {
+  transform: translateY(0);
+  background: #e2e2e5;
+}
+
+.btn-remove, .btn-qty, .btn-remove:hover {
+  background: #e8e8eb;
+  border-color: #c7c7cc;
+}
+
+#checkout-btn {
+  padding: 12px 28px;
+  background: #f5f5f7;
+  border: 1px solid #d2d2d7;
+  border-radius: 30px;
+  font-size: 15px; /* увеличенный текст */
+  font-weight: 700; /* жирный текст */
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+
+#clear-cart-btn {
+  padding: 12px 28px;
+  background: #f5f5f7;
+  border: 1px solid #d2d2d7;
+  border-radius: 30px;
+  font-size: 15px; /* увеличенный текст */
+  font-weight: 700; /* жирный текст */
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+
+/* From Uiverse.io by Jedi-hongbin */ 
+#close-modal-btn {
+ display: flex;
+ height: 3em;
+ width: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: #eeeeee4b;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+}
+
+#close-modal-btn > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+}
+
+#close-modal-btn :hover > svg {
+ font-size: 1.2em;
+ transform: translateX(-5px);
+}
+
+#close-modal-btn:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
+}

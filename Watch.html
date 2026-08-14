@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="uk">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="site-header">
     <div class="container header-row" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;">
@@ -19,10 +17,10 @@
       <!-- Навігація + пошук + кошик -->
       <div style="display:flex;align-items:center;gap:12px;">
         <nav class="top-nav" aria-label="Головна навігація">
-          <a href="mac.html">Mac</a>
           <a href="ipad.html">iPad</a>
+          <a href="mac.html">Mac</a>
           <a href="iphone.html">iPhone</a>
-          <a href="Watch.html">Watch</a>
+          <a href="Watch.html" style="color: #232324; font-weight: bold;" >Watch</a>
           <a href="airpods.html">AirPods</a>
           <a href="#">TV &amp; Home</a>
           <a href="#">Розваги</a>
@@ -30,6 +28,13 @@
         </nav>
 
         <!-- Пошук і фільтр (скрипт чекає ці id) -->
+        <input id="search-input" type="search" placeholder="Пошук..." style="margin-left:12px;padding:6px 10px;border-radius:8px;border:1px solid #e2e8f0;">
+        <select id="category-filter" style="padding:6px 8px;border-radius:8px;border:1px solid #e2e8f0;margin-left:8px;">
+          <option value="all">Усі категорії</option>
+          <option value="Mac">Mac</option>
+          <option value="iPad">iPad</option>
+          <option value="iPhone">iPhone</option>
+        </select>
 
         <!-- Кнопка кошика з лічильником -->
         <button id="cart-btn" aria-haspopup="dialog" aria-expanded="false" style="background:none;border:none;cursor:pointer;position:relative;margin-left:12px;">
@@ -41,117 +46,14 @@
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-left">
-        <h1 id="hero-title" class="hero-title"><span class="rgb">Store.</span> Найкращий спосіб купувати улюблені
-          продукти.</h1>
-        <p class="hero-desc">Огляд новинок та актуальні пропозиції — швидко та зручно.</p>
-      </div>
-      <div class="hero-right">
-        <img src="oboi-macbook-pro-2021.jpg" alt="Hero image" />
+    <!-- 1) Товари — ПЕРШІ: контейнер, в який рендерить JS -->
+    <section class="container" style="max-width:1100px;margin:28px auto;padding:0 20px;">
+      <div id="products-grid" class="products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;">
+        <!-- JS вставляє картки сюди з products.json -->
       </div>
     </section>
 
-    <!-- Product strip (горизонтальна лента з іконками) -->
-    <section class="product-strip container" aria-label="Категорії продуктів">
-      <div class="strip-scroll">
-        <div class="product-item">
-          <img src="store-card-13-mac-nav-202503 1.png" alt="Mac" />
-          <span>Mac</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-iphone-nav-202502 1.png" alt="iPhone" />
-          <span>iPhone</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-ipad-nav-202405 1.png" alt="iPad" />
-          <span>iPad</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-watch-nav-202409 1.png" alt="Watch" />
-          <span>Apple Watch</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-airpods-nav-202409 1.png" alt="AirPods" />
-          <span>AirPods</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-airtags-nav-202108 1.png" alt="AirTag" />
-          <span>AirTag</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-appletv-nav-202210 1.png" alt="TV" />
-          <span>Apple TV</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-homepod-nav-202301 1.png" alt="HomePod" />
-          <span>HomePod</span>
-        </div>
-        <div class="product-item">
-          <img src="store-card-13-accessories-nav-202503 1.png" alt="Accessories" />
-          <span>Аксесуари</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest / Cards carousel -->
-    <section class="latest container">
-      <h2 class="section-title"><span class="bold">Новинки.</span> Подивіться, що нового зараз.</h2>
-
-      <div class="cards-carousel" aria-label="Карусель новинок">
-
-
-        <!-- Карточка 1 -->
-        <article class="card large">
-          <div class="card-media">
-            <img src="store-card-40-iphone-16-pro-202409 1.png" alt="iPhone 16 Pro" />
-          </div>
-          <div class="card-overlay">
-            <h3 class="card-title" style="color: rgb(255, 255, 255);">iPhone 16 Pro</h3>
-            <p class="card-sub">Apple Intelligence — від $999.00</p>
-          </div>
-        </article>
-
-        <!-- Карточка 2 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="store-card-40-bts-offer-featured-202505_GEO_IN 1.png" alt="Акція Mac і iPad" />
-          </div>
-          <div class="card-overlay">
-            <div class="kicker">LIMITED‑TIME OFFER</div>
-            <h3 class="card-title" style="color: rgb(0, 0, 0);">Знижки на Mac та iPad Виберіть AirPods або аксесуар у
-              подарунок.</h3>
-          </div>
-        </article>
-
-        <!-- Карточка 3 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="store-card-40-macbook-air-202503 1.png" alt="MacBook Air" />
-          </div>
-          <div class="card-overlay">
-            <h3 class="card-title" style="color: rgb(0, 0, 0)">MacBook Air</h3>
-            <p class="card-sub" style="color: rgb(0, 0, 0)">Від $999.00</p>
-          </div>
-        </article>
-
-        <!-- Карточка 4 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="store-card-40-ipad-air-202503 1 (2).png" alt="iPad Air" style="" />
-          </div>
-          <div class="card-overlay">
-            <h3 class="card-title" style="color: rgb(0, 0, 0)">iPad Air</h3>
-            <p class="card-sub" style="color: rgb(0, 0, 0)">Ідеальний для творчості.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Help / info cards -->
-
-
+    <!-- 2) Далі — ваші секції (Features, Help, Accessories, Education тощо) -->
     <!-- Features -->
     <section class="features container">
       <h2 class="section-title"><span class="bold">Переваги Apple Store.</span> Ще більше причин купувати у нас.</h2>
@@ -173,12 +75,10 @@
       </div>
     </section>
 
-    <!-- Help / info carousel (заменить существующую секцию .help) -->
+    <!-- Help / info carousel -->
     <section class="help container">
       <h2 class="section-title"><span class="bold">Допомога поруч.</span> Коли і як вам потрібно.</h2>
-
       <div class="help-carousel" aria-label="Карусель допомоги">
-        <!-- Слайд 1 -->
         <article class="help-card">
           <div class="help-content">
             <div class="help-text">
@@ -192,7 +92,6 @@
           </div>
         </article>
 
-        <!-- Слайд 2 -->
         <article class="help-card">
           <div class="help-content">
             <div class="help-text">
@@ -200,19 +99,17 @@
               <p class="help-desc">Choose your next device in a guided, one‑way video session.</p>
             </div>
             <div class="help-media">
-              <!-- замените на вашу картинку телефона/видео -->
               <img src="store-card-50-specialist-video-202409 1.png" alt="Відеосесія з фахівцем" />
             </div>
           </div>
         </article>
-
-        <!-- При необходимости добавьте ещё <article class="help-card">... -->
       </div>
     </section>
 
+    <!-- Accessories -->
     <div class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices">
       <span>
-        <span class="rgb" class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span">
+        <span class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span rgb">
           Accessories.
         </span>
         <span class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span2">
@@ -221,109 +118,83 @@
       </span>
     </div>
 
-    <!-- Accessories carousel -->
-<section class="accessories container" aria-label="Карусель аксессуаров">
-  <div class="accessories-carousel">
-    <!-- Card 1: крупный визуал + текст -->
-    <article class="accessories-card accessories-hero">
-      <div class="accessories-inner">
-        <div class="accessories-text">
-          <h3 class="accessories-title">In with the new.</h3>
-          <p class="accessories-sub">The accessories you love.<br>In a fresh mix of colours.</p>
-        </div>
+    <section class="accessories container" aria-label="Карусель аксессуаров">
+      <div class="accessories-carousel">
+        <article class="accessories-card accessories-hero">
+          <div class="accessories-inner">
+            <div class="accessories-text">
+              <h3 class="accessories-title">In with the new.</h3>
+              <p class="accessories-sub">The accessories you love.<br>In a fresh mix of colours.</p>
+            </div>
+            <div class="accessories-images">
+              <img class="acc-main" src="store-card-40-accessories-story-202503 1.png" alt="Accessories main" />
+            </div>
+          </div>
+        </article>
 
-        <div class="accessories-images">
-          <!-- большие изображения можно позиционировать и/или заменить -->
-          <img class="acc-main" src="store-card-40-accessories-story-202503 1.png" alt="Accessories main" />
-          <!-- Доп. маленькие изображения (по вертикали) -->
-        </div>
+        <article class="accessories-card product-card">
+          <div class="product-media">
+            <div class="product-frame">
+              <img src="MDGW4 1.png" alt="iPhone case — Peony" />
+            </div>
+
+            <ul class="color-swatches" aria-hidden="true">
+              <li class="swatch" style="background:#6476b8"></li>
+              <li class="swatch" style="background:#f0c8e0"></li>
+              <li class="swatch" style="background:#f7f7a8"></li>
+              <li class="swatch" style="background:#d6f1e8"></li>
+              <li class="swatch" style="background:#ff7a6d"></li>
+            </ul>
+
+            <div class="product-info">
+              <h4 class="product-title">iPhone 16 Pro Max Silicone Case with MagSafe — Peony</h4>
+              <p class="product-price">MRP *4900.00 (Incl. of all taxes)</p>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
+    </section>
 
-    <!-- Card 2: товарное превью с рамкой и переключателями цвета -->
-    <article class="accessories-card product-card">
-      <div class="product-media">
-        <div class="product-frame">
-          <img src="MDGW4 1.png" alt="iPhone case — Peony" />
-        </div>
+    <!-- Education -->
+    <section class="education container" aria-label="Education specials">
+      <h2 class="section-title"><span class="bold">Education specials.</span> Products and offers that students will love.</h2>
+      <div class="education-carousel" aria-label="Карусель education">
+        <article class="education-card image-card">
+          <div class="image-card-media">
+            <img src="store-card-40-bts-edu-macbook-air-ipad-air-202503 1.png" alt="Mac and iPad for education" />
+            <div class="image-card-overlay">
+              <div class="kicker" style="color:rgb(142, 142, 142)">TODAY AT APPLE</div>
+              <h3 class="edu-titleoverlay-title" style="color:rgb(0, 0, 0)">Buy a new Mac or iPad<br>with education savings.</h3>
+              <p class="edu-descoverlay-desc" style="color:rgb(0, 0, 0)" >Special pricing for students and educators. Learn more about eligibility and offers.</p>
+            </div>
+          </div>
+        </article>
 
-        <ul class="color-swatches" aria-hidden="true">
-          <li class="swatch" style="background:#6476b8"></li>
-          <li class="swatch" style="background:#f0c8e0"></li>
-          <li class="swatch" style="background:#f7f7a8"></li>
-          <li class="swatch" style="background:#d6f1e8"></li>
-          <li class="swatch" style="background:#ff7a6d"></li>
-        </ul>
-
-        <div class="product-info">
-          <h4 class="product-title">iPhone 16 Pro Max Silicone Case with MagSafe — Peony</h4>
-          <p class="product-price">MRP *4900.00 (Incl. of all taxes)</p>
-        </div>
+        <article class="education-card image-card">
+          <div class="imedu-descoverlay-descge-card-media">
+            <img src="store-card-40-education-202505_GEO_IN 1.png" alt="Student using Mac" />
+            <div class="image-card-overlay">
+              <div class="kicker">MAC FOR STUDENTS</div>
+              <h3 class="edu-titleoverlay-title" style="color:#ffffff;">Best in class.<br>In college and beyond.</h3>
+              <p class="edu-descoverlay-desc">We invite kids 6–10 to make a friendship film on iPad in a free session.</p>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-
-    <!-- Добавляй новые карточки, копируя <article class="accessories-card">... -->
-  </div>
-</section>
-
-<!-- Education specials carousel -->
-<section class="education container" aria-label="Education specials">
-  <h2 class="section-title"><span class="bold">Education specials.</span> Products and offers that students will love.</h2>
-
-  <div class="education-carousel" aria-label="Карусель education">
-    <!-- Слайд 1: текст слева, изображение справа -->
-
-    <!-- новая карточка: текст поверх изображения -->
-<article class="education-card image-card">
-  <div class="image-card-media">
-    <img src="store-card-40-bts-edu-macbook-air-ipad-air-202503 1.png" alt="Mac and iPad for education" />
-    <div class="image-card-overlay">
-      <div class="kicker" style="color:rgb(142, 142, 142)">TODAY AT APPLE</div>
-      <h3 class="edu-titleoverlay-title" style="color:rgb(0, 0, 0)">Buy a new Mac or iPad<br>with education savings.</h3>
-      <p class="edu-descoverlay-desc" style="color:rgb(0, 0, 0)" >Special pricing for students and educators. Learn more about eligibility and offers.</p>
-    </div>
-  </div>
-</article>
-
-    <!-- Слайд 2: полно-экранное изображение с текстом поверх -->
-    <article class="education-card image-card">
-      <div class="imedu-descoverlay-descge-card-media">
-        <img src="store-card-40-education-202505_GEO_IN 1.png" alt="Student using Mac" style="" />
-        <div class="image-card-overlay">
-          <div class="kicker">MAC FOR STUDENTS</div>
-          <h3 class="edu-titleoverlay-title" style="color:#ffffff;">Best in class.<br>In college and beyond.</h3>
-          <p class="edu-descoverlay-desc">We invite kids 6–10 to make a friendship film on iPad in a free session.</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Добавь новые <article class="education-card">... для других слайдов -->
-  </div>
-</section>
+    </section>
 
     <div class="quick-links">Quick Links</div>
 
     <div class="buttons-row">
-
-      <button class="button-1">
-        <div class="find-a-store">Find a Store</div>
-      </button>
-
-      <button class="button-2">
-        <div class="order-status">Order Status</div>
-      </button>
-
-      <button class="button-5">
-        <div class="shopping-help">Shopping Help</div>
-      </button>
-
-      <button class="button-4">
-        <div class="your-saves">Your Saves</div>
-      </button>
+      <button class="button-1"><div class="find-a-store">Find a Store</div></button>
+      <button class="button-2"><div class="order-status">Order Status</div></button>
+      <button class="button-5"><div class="shopping-help">Shopping Help</div></button>
+      <button class="button-4"><div class="your-saves">Your Saves</div></button>
     </div>
 
     <div class="manytext">
-      <br />
+      <!-- Ваш довгий текст залишив без змін -->
+        <br />
       Customers will be charged for all items in their cart, including the Promotion
       Product. Only one Promotion Product can be obtained per eligible Mac or iPad
       per Qualified
@@ -446,8 +317,6 @@
       <br />
       limitations may apply.
     </div>
-
-
   </main>
 
   <footer class="site-footer">
@@ -460,8 +329,56 @@
       </nav>
     </div>
   </footer>
+
+  <!-- TOAST контейнер (потрібен для showToast) -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- МОДАЛ: кошик (скрипт використовує ці id) -->
+  <div id="cart-modal" class="overlay hidden" role="dialog" aria-modal="true" style="display:none;position:fixed;inset:0;justify-content:center;align-items:flex-start;padding-top:60px;">
+    <div class="modal-content" style="width:90%;max-width:760px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.12);">
+      <div class="modal-header" style="display:flex;justify-content:space-between;align-items:center;">
+        <h2 id="cart-title">Ваш кошик</h2>
+        <button id="close-modal-btn" class="close-btn" aria-label="Закрити">
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg> <span>Назад</span></button> 
+      </div>
+
+      <div class="modal-body" style="padding-top:12px;">
+        <div id="cart-items"></div>
+
+        <div class="cart-summary" style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px dashed #e2e8f0;">
+          <div>Всього:</div>
+          <div id="total-price">0 грн</div>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:10px;justify-content:flex-end;">
+          <button id="clear-cart-btn" class="btn btn-danger-outline" style=" font-weight: bold;" >Очистити</button>
+          <button id="checkout-btn" class="btn btn-success" style=" font-weight: bold;" >Оформити</button>
+        </div>
+
+        <form id="checkout-form" class="checkout-form hidden" style="margin-top:12px;display:none;">
+          <div class="form-group">
+            <label for="user-name">Ім'я</label>
+            <input id="user-name" name="user-name" required>
+          </div>
+          <div class="form-group">
+            <label for="user-phone">Телефон</label>
+            <input id="user-phone" name="user-phone" required>
+          </div>
+          <div class="form-group">
+            <label for="user-city">Місто</label>
+            <input id="user-city" name="user-city" required>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px;">
+            <button type="submit" class="btn btn-primary full-width">Підтвердити замовлення</button>
+            <button type="button" id="cancel-checkout" class="btn btn-danger-outline">Скасувати</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Підключіть ваш JS в кінці body. Я рекомендую винести ваш скрипт у script.js і підключити його так: -->
+
 </body>
-
 </html>
-
-<script src="script.js"></script>
+<script src="watch.js"></script>

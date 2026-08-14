@@ -50,7 +50,7 @@ let toastContainer;
 async function fetchProducts() {
   if (!productsGrid) return;
   try {
-    const response = await fetch('products.json');
+    const response = await fetch('airpods.json');
     if (!response.ok) throw new Error(`Fetch products.json failed: ${response.status}`);
     const data = await response.json();
     // Гарантуємо наявність category (для фільтрації)
