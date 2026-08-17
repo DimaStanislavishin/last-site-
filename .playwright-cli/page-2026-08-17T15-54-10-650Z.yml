@@ -1,0 +1,235 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Store home" [ref=f1e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Store logo" [ref=f1e5]
+      - generic [ref=f1e6]:
+        - navigation "Головна навігація" [ref=f1e7]:
+          - link "iPad" [ref=f1e8] [cursor=pointer]:
+            - /url: ipad.html
+          - link "Mac" [ref=f1e9] [cursor=pointer]:
+            - /url: mac.html
+          - link "iPhone" [ref=f1e10] [cursor=pointer]:
+            - /url: iphone.html
+          - link "Watch" [ref=f1e11] [cursor=pointer]:
+            - /url: Watch.html
+          - link "AirPods" [ref=f1e12] [cursor=pointer]:
+            - /url: airpods.html
+          - link "TV & Home" [ref=f1e13] [cursor=pointer]:
+            - /url: tv.html
+        - searchbox "Пошук..." [ref=f1e14]
+        - button [ref=f1e15] [cursor=pointer]:
+          - img "cart" [ref=f1e16]
+  - main [ref=f1e17]:
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - paragraph [ref=f1e20]: Apple Store
+        - heading "iPad" [level=1] [ref=f1e21]
+        - paragraph [ref=f1e22]: Оберіть пристрій, який створений для ваших щоденних справ.
+      - generic [ref=f1e23]:
+        - article [ref=f1e24]:
+          - img "iPad (10.2-inch, 2021)" [ref=f1e26]
+          - generic [ref=f1e27]:
+            - paragraph [ref=f1e28]: iPad
+            - heading "iPad (10.2-inch, 2021)" [level=3] [ref=f1e29]
+            - paragraph [ref=f1e30]: Потужний iPad з великим дисплеєм і A13 Bionic.
+            - generic [ref=f1e31]:
+              - generic [ref=f1e32]: 329 грн
+              - button "Купити" [ref=f1e33] [cursor=pointer]
+        - article [ref=f1e34]:
+          - img "iPad (10.2-inch, 2022)" [ref=f1e36]
+          - generic [ref=f1e37]:
+            - paragraph [ref=f1e38]: iPad
+            - heading "iPad (10.2-inch, 2022)" [level=3] [ref=f1e39]
+            - paragraph [ref=f1e40]: Новий iPad з A14 Bionic й фронтальною камерою 12MP.
+            - generic [ref=f1e41]:
+              - generic [ref=f1e42]: 349 грн
+              - button "Купити" [ref=f1e43] [cursor=pointer]
+        - article [ref=f1e44]:
+          - img "iPad (10.9-inch, 2024)" [ref=f1e46]
+          - generic [ref=f1e47]:
+            - paragraph [ref=f1e48]: iPad
+            - heading "iPad (10.9-inch, 2024)" [level=3] [ref=f1e49]
+            - paragraph [ref=f1e50]: Найновіший базовий iPad з більшим дисплеєм.
+            - generic [ref=f1e51]:
+              - generic [ref=f1e52]: 349 грн
+              - button "Купити" [ref=f1e53] [cursor=pointer]
+        - article [ref=f1e54]:
+          - img "iPad Pro 12.9-inch (2021)" [ref=f1e56]
+          - generic [ref=f1e57]:
+            - paragraph [ref=f1e58]: iPad
+            - heading "iPad Pro 12.9-inch (2021)" [level=3] [ref=f1e59]
+            - paragraph [ref=f1e60]: Потужний iPad Pro з M1 і Liquid Retina дисплеєм.
+            - generic [ref=f1e61]:
+              - generic [ref=f1e62]: 1 099 грн
+              - button "Купити" [ref=f1e63] [cursor=pointer]
+        - article [ref=f1e64]:
+          - img "iPad Pro 12.9-inch (2022)" [ref=f1e66]
+          - generic [ref=f1e67]:
+            - paragraph [ref=f1e68]: iPad
+            - heading "iPad Pro 12.9-inch (2022)" [level=3] [ref=f1e69]
+            - paragraph [ref=f1e70]: iPad Pro з M2 і підтримкою Apple Pencil 2.
+            - generic [ref=f1e71]:
+              - generic [ref=f1e72]: 1 099 грн
+              - button "Купити" [ref=f1e73] [cursor=pointer]
+        - article [ref=f1e74]:
+          - img "iPad Pro 12.9-inch (2024)" [ref=f1e76]
+          - generic [ref=f1e77]:
+            - paragraph [ref=f1e78]: iPad
+            - heading "iPad Pro 12.9-inch (2024)" [level=3] [ref=f1e79]
+            - paragraph [ref=f1e80]: Останній iPad Pro з M4 і OLED дисплеєм.
+            - generic [ref=f1e81]:
+              - generic [ref=f1e82]: 1 199 грн
+              - button "Купити" [ref=f1e83] [cursor=pointer]
+        - article [ref=f1e84]:
+          - img "iPad Pro 11-inch (2021)" [ref=f1e86]
+          - generic [ref=f1e87]:
+            - paragraph [ref=f1e88]: iPad
+            - heading "iPad Pro 11-inch (2021)" [level=3] [ref=f1e89]
+            - paragraph [ref=f1e90]: Компактний iPad Pro з M1 і Liquid Retina дисплеєм.
+            - generic [ref=f1e91]:
+              - generic [ref=f1e92]: 799 грн
+              - button "Купити" [ref=f1e93] [cursor=pointer]
+        - article [ref=f1e94]:
+          - img "iPad Pro 11-inch (2022)" [ref=f1e96]
+          - generic [ref=f1e97]:
+            - paragraph [ref=f1e98]: iPad
+            - heading "iPad Pro 11-inch (2022)" [level=3] [ref=f1e99]
+            - paragraph [ref=f1e100]: iPad Pro з M2 і покращеною камерою.
+            - generic [ref=f1e101]:
+              - generic [ref=f1e102]: 799 грн
+              - button "Купити" [ref=f1e103] [cursor=pointer]
+        - article [ref=f1e104]:
+          - img "iPad Pro 11-inch (2024)" [ref=f1e106]
+          - generic [ref=f1e107]:
+            - paragraph [ref=f1e108]: iPad
+            - heading "iPad Pro 11-inch (2024)" [level=3] [ref=f1e109]
+            - paragraph [ref=f1e110]: Компактний iPad Pro 11 дюймів з M4.
+            - generic [ref=f1e111]:
+              - generic [ref=f1e112]: 899 грн
+              - button "Купити" [ref=f1e113] [cursor=pointer]
+        - article [ref=f1e114]:
+          - img "iPad Air 10.9-inch (2022)" [ref=f1e116]
+          - generic [ref=f1e117]:
+            - paragraph [ref=f1e118]: iPad
+            - heading "iPad Air 10.9-inch (2022)" [level=3] [ref=f1e119]
+            - paragraph [ref=f1e120]: Потужний iPad Air з M1 і великим дисплеєм.
+            - generic [ref=f1e121]:
+              - generic [ref=f1e122]: 599 грн
+              - button "Купити" [ref=f1e123] [cursor=pointer]
+        - article [ref=f1e124]:
+          - img "iPad Air 11-inch (2024)" [ref=f1e126]
+          - generic [ref=f1e127]:
+            - paragraph [ref=f1e128]: iPad
+            - heading "iPad Air 11-inch (2024)" [level=3] [ref=f1e129]
+            - paragraph [ref=f1e130]: Нова модель iPad Air з 11-дюймовим дисплеєм і M2.
+            - generic [ref=f1e131]:
+              - generic [ref=f1e132]: 599 грн
+              - button "Купити" [ref=f1e133] [cursor=pointer]
+        - article [ref=f1e134]:
+          - img "iPad Air 13-inch (2024)" [ref=f1e136]
+          - generic [ref=f1e137]:
+            - paragraph [ref=f1e138]: iPad
+            - heading "iPad Air 13-inch (2024)" [level=3] [ref=f1e139]
+            - paragraph [ref=f1e140]: Більший iPad Air з 13-дюймовим дисплеєм.
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]: 799 грн
+              - button "Купити" [ref=f1e143] [cursor=pointer]
+        - article [ref=f1e144]:
+          - img "iPad mini (2021)" [ref=f1e146]
+          - generic [ref=f1e147]:
+            - paragraph [ref=f1e148]: iPad
+            - heading "iPad mini (2021)" [level=3] [ref=f1e149]
+            - paragraph [ref=f1e150]: Компактний iPad mini з A15 Bionic.
+            - generic [ref=f1e151]:
+              - generic [ref=f1e152]: 499 грн
+              - button "Купити" [ref=f1e153] [cursor=pointer]
+        - article [ref=f1e154]:
+          - img "iPad mini (2024)" [ref=f1e156]
+          - generic [ref=f1e157]:
+            - paragraph [ref=f1e158]: iPad
+            - heading "iPad mini (2024)" [level=3] [ref=f1e159]
+            - paragraph [ref=f1e160]: Новий iPad mini з M4 і улучшеною камерою.
+            - generic [ref=f1e161]:
+              - generic [ref=f1e162]: 499 грн
+              - button "Купити" [ref=f1e163] [cursor=pointer]
+    - generic [ref=f1e164]:
+      - heading "Переваги Apple Store. Ще більше причин купувати у нас." [level=2] [ref=f1e165]
+      - generic [ref=f1e166]:
+        - heading "No cost EMI. Миттєве повернення коштів" [level=4] [ref=f1e170]
+        - generic [ref=f1e171]:
+          - heading "Обміняйте свій смартфон" [level=4] [ref=f1e174]
+          - heading "— отримайте кредит на новий" [level=4] [ref=f1e175]
+        - heading "Персоналізуйте ваш Mac" [level=4] [ref=f1e179]
+    - generic [ref=f1e180]:
+      - heading "Допомога поруч. Коли і як вам потрібно." [level=2] [ref=f1e181]
+      - generic "Карусель допомоги" [ref=f1e182]:
+        - article [ref=f1e183]:
+          - generic [ref=f1e184]:
+            - generic [ref=f1e185]:
+              - generic [ref=f1e186]: APPLE SPECIALIST
+              - heading "Shop one on one with a Specialist online." [level=3] [ref=f1e187]
+              - paragraph [ref=f1e188]: Замовте сеанс з фахівцем для підбору пристрою.
+            - img "Персональна консультація онлайн" [ref=f1e190]
+        - article [ref=f1e191]:
+          - generic [ref=f1e192]:
+            - generic [ref=f1e193]:
+              - heading "Shop with a Specialist over video." [level=3] [ref=f1e194]
+              - paragraph [ref=f1e195]: Choose your next device in a guided, one‑way video session.
+            - img "Відеосесія з фахівцем" [ref=f1e197]
+    - generic [ref=f1e198]: Accessories. Essentials that pair perfectly with your favourite devices.
+    - region "Карусель аксессуаров" [ref=f1e200]:
+      - generic [ref=f1e201]:
+        - article [ref=f1e202]:
+          - generic [ref=f1e203]:
+            - generic [ref=f1e204]:
+              - heading "In with the new." [level=3] [ref=f1e205]
+              - paragraph [ref=f1e206]: The accessories you love.In a fresh mix of colours.
+            - img "Accessories main" [ref=f1e208]
+        - article [ref=f1e209]:
+          - generic [ref=f1e210]:
+            - img "iPhone case — Peony" [ref=f1e212]
+            - list [ref=f1e213]:
+              - listitem [ref=f1e214]
+              - listitem [ref=f1e215]
+              - listitem [ref=f1e216]
+              - listitem [ref=f1e217]
+              - listitem [ref=f1e218]
+            - generic [ref=f1e219]:
+              - heading "iPhone 16 Pro Max Silicone Case with MagSafe — Peony" [level=4] [ref=f1e220]
+              - paragraph [ref=f1e221]: MRP *4900.00 (Incl. of all taxes)
+    - region "Education specials" [ref=f1e222]:
+      - heading "Education specials. Products and offers that students will love." [level=2] [ref=f1e223]
+      - generic "Карусель education" [ref=f1e224]:
+        - article [ref=f1e225]:
+          - generic [ref=f1e226]:
+            - img "Mac and iPad for education" [ref=f1e227]
+            - generic:
+              - generic: TODAY AT APPLE
+              - heading "Buy a new Mac or iPad with education savings." [level=3]: Buy a new Mac or iPadwith education savings.
+              - paragraph: Special pricing for students and educators. Learn more about eligibility and offers.
+        - article [ref=f1e228]:
+          - generic [ref=f1e229]:
+            - img "Student using Mac" [ref=f1e230]
+            - generic:
+              - generic: MAC FOR STUDENTS
+              - heading "Best in class. In college and beyond." [level=3]: Best in class.In college and beyond.
+              - paragraph: We invite kids 6–10 to make a friendship film on iPad in a free session.
+    - generic [ref=f1e231]: Quick Links
+    - generic [ref=f1e232]:
+      - button "Find a Store" [ref=f1e233] [cursor=pointer]
+      - button "Order Status" [ref=f1e235] [cursor=pointer]
+      - button "Shopping Help" [ref=f1e237] [cursor=pointer]
+      - button "Your Saves" [ref=f1e239] [cursor=pointer]
+    - generic [ref=f1e241]: "Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product can be obtained per eligible Mac or iPad per Qualified Purchaser. The offer is subject to availability, while supplies last. View full terms and conditions of offer here. A Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with MI and later, with Siri and device language set to Chinese (Simplified), English (Australia, Canada, India, Ireland, New Zealand, Singapore, South Africa, UK or US), French, German, Italian, Japanese, Korean, Portuguese (Brazil) or Spanish, as part of an iOS 18, iPadOS 18 and macOS Sequoia software update, with more languages coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages. Monthly pricing is after purchase using EMI with qualifying cards at 15.99% p.a. over a 12-month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. requires monthly payments of 27249.00. Total amount payable: 286988.00. Total interest paid to bank: 27088.00. No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3-, 6-, 9-, or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are available with No Cost EMI on 3- and 6-month tenures only. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Minimum order spend applies as per your card issuer's threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms apply. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. and No Cost EMI savings of 26514.00 requires monthly payments of 26658.00. Total amount payable: 279900.00. Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of 210001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. * Mac, iPad, and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad, and Apple Watch. Trade-in values will vary based on the condition, year and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel or limit the quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply."
+  - contentinfo [ref=f1e242]:
+    - generic [ref=f1e243]:
+      - generic [ref=f1e244]: © 2026 Store. Усі права захищено.
+      - navigation "Footer links" [ref=f1e245]:
+        - link "Правова інформація" [ref=f1e246] [cursor=pointer]:
+          - /url: "#"
+        - link "Умови" [ref=f1e247] [cursor=pointer]:
+          - /url: "#"
+        - link "Контакти" [ref=f1e248] [cursor=pointer]:
+          - /url: "#"

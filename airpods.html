@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Store</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="apple-logo-svgrepo-com.svg" type="image/svg+xml" />
 </head>
 <body>
   <header class="site-header">
@@ -21,20 +22,12 @@
           <a href="mac.html">Mac</a>
           <a href="iphone.html">iPhone</a>
           <a href="Watch.html"  >Watch</a>
-          <a href="#" style="color: #232324; font-weight: bold;" >AirPods</a>
-          <a href="#">TV &amp; Home</a>
-          <a href="#">Розваги</a>
-          <a href="#">Аксесуари</a>
+          <a href="airpods.html" style="color: #232324; font-weight: bold;" >AirPods</a>
+          <a href="tv.html">TV &amp; Home</a>
         </nav>
 
         <!-- Пошук і фільтр (скрипт чекає ці id) -->
         <input id="search-input" type="search" placeholder="Пошук..." style="margin-left:12px;padding:6px 10px;border-radius:8px;border:1px solid #e2e8f0;">
-        <select id="category-filter" style="padding:6px 8px;border-radius:8px;border:1px solid #e2e8f0;margin-left:8px;">
-          <option value="all">Усі категорії</option>
-          <option value="Mac">Mac</option>
-          <option value="iPad">iPad</option>
-          <option value="iPhone">iPhone</option>
-        </select>
 
         <!-- Кнопка кошика з лічильником -->
         <button id="cart-btn" aria-haspopup="dialog" aria-expanded="false" style="background:none;border:none;cursor:pointer;position:relative;margin-left:12px;">
@@ -379,6 +372,6 @@
 
   <!-- Підключіть ваш JS в кінці body. Я рекомендую винести ваш скрипт у script.js і підключити його так: -->
 
+<script src="store.js"></script>
 </body>
 </html>
-<script src="airpods.js"></script>

@@ -1,38 +1,191 @@
 [
-    {
-        "id": 1,
-        "name": "Iphone 17 Pro",
-        "price": 91399,
-        "image": "Снимок экрана — 2026-08-14 в 00.17.34.png",
-        "description": "Інноваційний дизайн для чудової продуктивності й тривалого часу роботи від акумулятора."
-    },
-    {
-        "id": 2,
-        "name": "Iphone air",
-        "price": 45699,
-        "image": "Снимок экрана — 2026-08-14 в 00.18.21.png",
-        "description": "Найтонший серед iPhone. З професійною потужністю."
-    },
-    {
-        "id": 3,
-        "name": "Iphone 17",
-        "price": 37199,
-        "image": "Снимок экрана — 2026-08-14 в 00.19.56.png",
-        "description": "Ще неймовірніший. Ще надійніший."
-    },
-    {
-        "id": 4,
-        "name": "iPhone 17e",
-        "price": 23999,
-        "image": "Снимок экрана — 2026-08-14 в 00.20.33.png",
-        "description": "Огоздібний. Оцетаквигідний."
-
-    },
-    {
-        "id": 5,
-        "name": "Iphone 16",
-        "price": 23999,
-        "image": "Снимок экрана — 2026-08-14 в 00.21.20.png",
-        "description": "Неймовірна продуктивність. Надійний дизайн."
-    }
+  {
+    "id": 1,
+    "name": "iPhone X",
+    "price": 999,
+    "image": "iphone-x.png",
+    "description": "Революційний iPhone з дисплеєм Super Retina і Face ID."
+  },
+  {
+    "id": 2,
+    "name": "iPhone XS",
+    "price": 999,
+    "image": "iphone-xs.png",
+    "description": "Продвинутий iPhone з подвійною камерою та OLED дисплеєм."
+  },
+  {
+    "id": 3,
+    "name": "iPhone XS Max",
+    "price": 1099,
+    "image": "iphone-xs-max.png",
+    "description": "Найбільший iPhone з революційним дисплеєм Super Retina."
+  },
+  {
+    "id": 4,
+    "name": "iPhone XR",
+    "price": 749,
+    "image": "iphone-xr.png",
+    "description": "Яскравий LCD дисплей, дуальна камера та довга автономність."
+  },
+  {
+    "id": 5,
+    "name": "iPhone 11",
+    "price": 699,
+    "image": "iphone-11.png",
+    "description": "Потужний iPhone з нічним режимом і двома камерами."
+  },
+  {
+    "id": 6,
+    "name": "iPhone 11 Pro",
+    "price": 999,
+    "image": "iphone-11-pro.png",
+    "description": "Професійний iPhone з потрійною камерою та OLED дисплеєм."
+  },
+  {
+    "id": 7,
+    "name": "iPhone 11 Pro Max",
+    "price": 1099,
+    "image": "iphone-11-pro-max.png",
+    "description": "Найбільший Pro iPhone з найпотужнішою камерою."
+  },
+  {
+    "id": 8,
+    "name": "iPhone 12",
+    "price": 799,
+    "image": "iphone-12.png",
+    "description": "iPhone з 5G, A14 Bionic та Ceramic Shield."
+  },
+  {
+    "id": 9,
+    "name": "iPhone 12 mini",
+    "price": 699,
+    "image": "iphone-12-mini.png",
+    "description": "Компактний iPhone 12 з 5G у меншому форм-факторі."
+  },
+  {
+    "id": 10,
+    "name": "iPhone 12 Pro",
+    "price": 999,
+    "image": "iphone-12-pro.png",
+    "description": "Pro iPhone з потрійною камерою та LiDAR сканером."
+  },
+  {
+    "id": 11,
+    "name": "iPhone 12 Pro Max",
+    "price": 1099,
+    "image": "iphone-12-pro-max.png",
+    "description": "Найбільший Pro iPhone з найпотужнішою батареєю."
+  },
+  {
+    "id": 12,
+    "name": "iPhone 13",
+    "price": 799,
+    "image": "iphone-13.png",
+    "description": "iPhone 13 з A15 Bionic і вдосконаленою камерою."
+  },
+  {
+    "id": 13,
+    "name": "iPhone 13 mini",
+    "price": 699,
+    "image": "iphone-13-mini.png",
+    "description": "Компактний iPhone 13 з усіма можливостями у меншому розмірі."
+  },
+  {
+    "id": 14,
+    "name": "iPhone 13 Pro",
+    "price": 999,
+    "image": "iphone-13-pro.png",
+    "description": "Pro модель з Pro камерою та 120Hz дисплеєм ProMotion."
+  },
+  {
+    "id": 15,
+    "name": "iPhone 13 Pro Max",
+    "price": 1099,
+    "image": "iphone-13-pro-max.png",
+    "description": "Найбільший Pro iPhone з найкращою камерою."
+  },
+  {
+    "id": 16,
+    "name": "iPhone 14",
+    "price": 799,
+    "image": "iphone-14.png",
+    "description": "iPhone 14 з A15 Bionic і режимом екстреної допомоги."
+  },
+  {
+    "id": 17,
+    "name": "iPhone 14 Plus",
+    "price": 899,
+    "image": "iphone-14-plus.png",
+    "description": "Більший iPhone 14 з довгою автономністю."
+  },
+  {
+    "id": 18,
+    "name": "iPhone 14 Pro",
+    "price": 999,
+    "image": "iphone-14-pro.png",
+    "description": "Pro модель з Dynamic Island та A16 Bionic."
+  },
+  {
+    "id": 19,
+    "name": "iPhone 14 Pro Max",
+    "price": 1099,
+    "image": "iphone-14-pro-max.png",
+    "description": "Найбільший iPhone 14 Pro з найпотужнішою камерою."
+  },
+  {
+    "id": 20,
+    "name": "iPhone 15",
+    "price": 799,
+    "image": "iphone-15.png",
+    "description": "iPhone 15 з USB-C, камерою 48MP і A17 Pro."
+  },
+  {
+    "id": 21,
+    "name": "iPhone 15 Plus",
+    "price": 899,
+    "image": "iphone-15-plus.png",
+    "description": "Більший iPhone 15 з тією ж потужністю."
+  },
+  {
+    "id": 22,
+    "name": "iPhone 15 Pro",
+    "price": 999,
+    "image": "iphone-15-pro.png",
+    "description": "Pro модель з титановим корпусом та A17 Pro Chip."
+  },
+  {
+    "id": 23,
+    "name": "iPhone 15 Pro Max",
+    "price": 1099,
+    "image": "iphone-15-pro-max.png",
+    "description": "Найбільший Pro iPhone з найбільшою камерою 12MP."
+  },
+  {
+    "id": 24,
+    "name": "iPhone 16",
+    "price": 799,
+    "image": "iphone-16.png",
+    "description": "Останній iPhone 16 з A18 і новою кнопкою Camera Control."
+  },
+  {
+    "id": 25,
+    "name": "iPhone 16 Plus",
+    "price": 899,
+    "image": "iphone-16-plus.png",
+    "description": "Більший iPhone 16 з усіма можливостями."
+  },
+  {
+    "id": 26,
+    "name": "iPhone 16 Pro",
+    "price": 999,
+    "image": "iphone-16-pro.png",
+    "description": "Pro модель з A18 Pro і камерою 12MP."
+  },
+  {
+    "id": 27,
+    "name": "iPhone 16 Pro Max",
+    "price": 1099,
+    "image": "iphone-16-pro-max.png",
+    "description": "Найбільший iPhone 16 Pro з найбільшою камерою та A18 Pro."
+  }
 ]

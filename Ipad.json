@@ -1,30 +1,100 @@
-    [
-    {
-        "id": 1,
-        "name": "Ipad Pro",
-        "price": 91399,
-        "image": "Снимок экрана — 2026-08-13 в 23.41.56.png",
-        "description": "Передовий iPad із нашими найсучаснішими технологіями."
-    },
-    {
-        "id": 2,
-        "name": "Ipad Air",
-        "price": 45699,
-        "image": "Снимок экрана — 2026-08-13 в 23.44.04.png",
-        "description": "Серйозна продуктивність у витонченому корпусі."
-    },
-    {
-        "id": 3,
-        "name": "Ipad Mini",
-        "price": 37199,
-        "image": "Снимок экрана — 2026-08-13 в 23.44.52.png",
-        "description": "Усі можливості iPad в ультракомпактному корпусі."
-    },
-    {
-        "id": 4,
-        "name": "Ipad",
-        "price": 23999,
-        "image": "Снимок экрана — 2026-08-13 в 23.45.45.png",
-        "description": "Барвистий, повноекранний iPad для щоденних справ."
-    }
+[
+  {
+    "id": 1,
+    "name": "iPad (10.2-inch, 2021)",
+    "price": 329,
+    "image": "ipad-10-2-2021.png",
+    "description": "Потужний iPad з великим дисплеєм і A13 Bionic."
+  },
+  {
+    "id": 2,
+    "name": "iPad (10.2-inch, 2022)",
+    "price": 349,
+    "image": "ipad-10-2-2022.png",
+    "description": "Новий iPad з A14 Bionic й фронтальною камерою 12MP."
+  },
+  {
+    "id": 3,
+    "name": "iPad (10.9-inch, 2024)",
+    "price": 349,
+    "image": "ipad-10-9-2024.png",
+    "description": "Найновіший базовий iPad з більшим дисплеєм."
+  },
+  {
+    "id": 4,
+    "name": "iPad Pro 12.9-inch (2021)",
+    "price": 1099,
+    "image": "ipad-pro-12-9-2021.png",
+    "description": "Потужний iPad Pro з M1 і Liquid Retina дисплеєм."
+  },
+  {
+    "id": 5,
+    "name": "iPad Pro 12.9-inch (2022)",
+    "price": 1099,
+    "image": "ipad-pro-12-9-2022.png",
+    "description": "iPad Pro з M2 і підтримкою Apple Pencil 2."
+  },
+  {
+    "id": 6,
+    "name": "iPad Pro 12.9-inch (2024)",
+    "price": 1199,
+    "image": "ipad-pro-12-9-2024.png",
+    "description": "Останній iPad Pro з M4 і OLED дисплеєм."
+  },
+  {
+    "id": 7,
+    "name": "iPad Pro 11-inch (2021)",
+    "price": 799,
+    "image": "ipad-pro-11-2021.png",
+    "description": "Компактний iPad Pro з M1 і Liquid Retina дисплеєм."
+  },
+  {
+    "id": 8,
+    "name": "iPad Pro 11-inch (2022)",
+    "price": 799,
+    "image": "ipad-pro-11-2022.png",
+    "description": "iPad Pro з M2 і покращеною камерою."
+  },
+  {
+    "id": 9,
+    "name": "iPad Pro 11-inch (2024)",
+    "price": 899,
+    "image": "ipad-pro-11-2024.png",
+    "description": "Компактний iPad Pro 11 дюймів з M4."
+  },
+  {
+    "id": 10,
+    "name": "iPad Air 10.9-inch (2022)",
+    "price": 599,
+    "image": "ipad-air-10-9-2022.png",
+    "description": "Потужний iPad Air з M1 і великим дисплеєм."
+  },
+  {
+    "id": 11,
+    "name": "iPad Air 11-inch (2024)",
+    "price": 599,
+    "image": "ipad-air-11-2024.png",
+    "description": "Нова модель iPad Air з 11-дюймовим дисплеєм і M2."
+  },
+  {
+    "id": 12,
+    "name": "iPad Air 13-inch (2024)",
+    "price": 799,
+    "image": "ipad-air-13-2024.png",
+    "description": "Більший iPad Air з 13-дюймовим дисплеєм."
+  },
+  {
+    "id": 13,
+    "name": "iPad mini (2021)",
+    "price": 499,
+    "image": "ipad-mini-2021.png",
+    "description": "Компактний iPad mini з A15 Bionic."
+  },
+  {
+    "id": 14,
+    "name": "iPad mini (2024)",
+    "price": 499,
+    "image": "ipad-mini-2024.png",
+    "description": "Новий iPad mini з M4 і улучшеною камерою."
+  }
 ]

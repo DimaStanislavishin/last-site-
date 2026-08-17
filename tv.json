@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Apple TV 4K (2022)",
+    "price": 199,
+    "image": "apple-tv-4k-2022.png",
+    "description": "Потужна потокова система з 4K Dolby Vision та Dolby Atmos."
+  },
+  {
+    "id": 2,
+    "name": "Apple TV 4K (2023)",
+    "price": 219,
+    "image": "apple-tv-4k-2023.png",
+    "description": "Найновіша модель Apple TV з підтримкою Wi-Fi 6E."
+  },
+  {
+    "id": 3,
+    "name": "Apple TV 4K (2024)",
+    "price": 249,
+    "image": "apple-tv-4k-2024.png",
+    "description": "Останнє покоління Apple TV 4K з покращеною продуктивністю."
+  }
+]

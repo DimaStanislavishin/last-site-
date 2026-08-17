@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Store</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="apple-logo-svgrepo-com.svg" type="image/svg+xml" />
 </head>
 
 <body>
@@ -24,9 +25,7 @@
           <a href="iphone.html">iPhone</a>
           <a href="Watch.html">Watch</a>
           <a href="airpods.html">AirPods</a>
-          <a href="#">TV &amp; Home</a>
-          <a href="#">Розваги</a>
-          <a href="#">Аксесуари</a>
+          <a href="tv.html">TV &amp; Home</a>
         </nav>
 
         <!-- Пошук і фільтр (скрипт чекає ці id) -->
@@ -56,34 +55,34 @@
     <!-- Product strip (горизонтальна лента з іконками) -->
     <section class="product-strip container" aria-label="Категорії продуктів">
       <div class="strip-scroll">
-        <div class="product-item">
+        <a class="product-item" href="mac.html">
           <img src="store-card-13-mac-nav-202503 1.png" alt="Mac" />
           <span>Mac</span>
-        </div>
-        <div class="product-item">
+        </a>
+        <a class="product-item" href="iphone.html">
           <img src="store-card-13-iphone-nav-202502 1.png" alt="iPhone" />
           <span>iPhone</span>
-        </div>
-        <div class="product-item">
+        </a>
+        <a class="product-item" href="ipad.html">
           <img src="store-card-13-ipad-nav-202405 1.png" alt="iPad" />
           <span>iPad</span>
-        </div>
-        <div class="product-item">
+        </a>
+        <a class="product-item" href="Watch.html">
           <img src="store-card-13-watch-nav-202409 1.png" alt="Watch" />
           <span>Apple Watch</span>
-        </div>
-        <div class="product-item">
+        </a>
+        <a class="product-item" href="airpods.html">
           <img src="store-card-13-airpods-nav-202409 1.png" alt="AirPods" />
           <span>AirPods</span>
-        </div>
+        </a>
         <div class="product-item">
           <img src="store-card-13-airtags-nav-202108 1.png" alt="AirTag" />
           <span>AirTag</span>
         </div>
-        <div class="product-item">
+        <a class="product-item" href="tv.html">
           <img src="store-card-13-appletv-nav-202210 1.png" alt="TV" />
           <span>Apple TV</span>
-        </div>
+        </a>
         <div class="product-item">
           <img src="store-card-13-homepod-nav-202301 1.png" alt="HomePod" />
           <span>HomePod</span>
@@ -147,6 +146,15 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section class="store-products container" aria-labelledby="products-title">
+      <div class="catalog-intro home-catalog-intro">
+        <p class="eyebrow">Оберіть своє</p>
+        <h2 id="products-title">Популярні пристрої</h2>
+        <p>Добірка товарів із каталогу Apple Store.</p>
+      </div>
+      <div id="products-grid" class="products-grid"></div>
     </section>
 
     <!-- Help / info cards -->
@@ -460,8 +468,6 @@
       </nav>
     </div>
   </footer>
+  <script src="store.js"></script>
 </body>
-
 </html>
-
-<script src="script.js"></script>

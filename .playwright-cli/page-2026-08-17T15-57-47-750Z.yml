@@ -1,0 +1,228 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Store home" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Store logo" [ref=e5]
+      - generic [ref=e6]:
+        - navigation "Головна навігація" [ref=e7]:
+          - link "Mac" [ref=e8] [cursor=pointer]:
+            - /url: mac.html
+          - link "iPad" [ref=e9] [cursor=pointer]:
+            - /url: ipad.html
+          - link "iPhone" [ref=e10] [cursor=pointer]:
+            - /url: iphone.html
+          - link "Watch" [ref=e11] [cursor=pointer]:
+            - /url: Watch.html
+          - link "AirPods" [ref=e12] [cursor=pointer]:
+            - /url: airpods.html
+          - link "TV & Home" [ref=e13] [cursor=pointer]:
+            - /url: tv.html
+        - button [ref=e14] [cursor=pointer]:
+          - img "cart" [ref=e15]
+  - main [ref=e16]:
+    - region [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Store. Найкращий спосіб купувати улюблені продукти." [level=1] [ref=e19]
+        - paragraph [ref=e20]: Огляд новинок та актуальні пропозиції — швидко та зручно.
+      - img "Hero image" [ref=e22]
+    - region "Категорії продуктів" [ref=e23]:
+      - generic [ref=e24]:
+        - link "Mac Mac" [ref=e25] [cursor=pointer]:
+          - /url: mac.html
+          - img "Mac" [ref=e26]
+          - generic [ref=e27]: Mac
+        - link "iPhone iPhone" [ref=e28] [cursor=pointer]:
+          - /url: iphone.html
+          - img "iPhone" [ref=e29]
+          - generic [ref=e30]: iPhone
+        - link "iPad iPad" [ref=e31] [cursor=pointer]:
+          - /url: ipad.html
+          - img "iPad" [ref=e32]
+          - generic [ref=e33]: iPad
+        - link "Watch Apple Watch" [ref=e34] [cursor=pointer]:
+          - /url: Watch.html
+          - img "Watch" [ref=e35]
+          - generic [ref=e36]: Apple Watch
+        - link "AirPods AirPods" [ref=e37] [cursor=pointer]:
+          - /url: airpods.html
+          - img "AirPods" [ref=e38]
+          - generic [ref=e39]: AirPods
+        - generic [ref=e40]:
+          - img "AirTag" [ref=e41]
+          - generic [ref=e42]: AirTag
+        - link "TV Apple TV" [ref=e43] [cursor=pointer]:
+          - /url: tv.html
+          - img "TV" [ref=e44]
+          - generic [ref=e45]: Apple TV
+        - generic [ref=e46]:
+          - img "HomePod" [ref=e47]
+          - generic [ref=e48]: HomePod
+        - generic [ref=e49]:
+          - img "Accessories" [ref=e50]
+          - generic [ref=e51]: Аксесуари
+    - generic [ref=e52]:
+      - heading "Новинки. Подивіться, що нового зараз." [level=2] [ref=e53]
+      - generic "Карусель новинок" [ref=e54]:
+        - article [ref=e55]:
+          - img "iPhone 16 Pro" [ref=e57]
+          - generic [ref=e58]:
+            - heading "iPhone 16 Pro" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Apple Intelligence — від $999.00
+        - article [ref=e61]:
+          - img "Акція Mac і iPad" [ref=e63]
+          - generic [ref=e64]:
+            - generic [ref=e65]: LIMITED‑TIME OFFER
+            - heading "Знижки на Mac та iPad Виберіть AirPods або аксесуар у подарунок." [level=3] [ref=e66]
+        - article [ref=e67]:
+          - img "MacBook Air" [ref=e69]
+          - generic [ref=e70]:
+            - heading "MacBook Air" [level=3] [ref=e71]
+            - paragraph [ref=e72]: Від $999.00
+        - article [ref=e73]:
+          - img "iPad Air" [ref=e75]
+          - generic [ref=e76]:
+            - heading "iPad Air" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Ідеальний для творчості.
+    - region [ref=e79]:
+      - generic [ref=e80]:
+        - paragraph [ref=e81]: Оберіть своє
+        - heading "Популярні пристрої" [level=2] [ref=e82]
+        - paragraph [ref=e83]: Добірка товарів із каталогу Apple Store.
+      - generic [ref=e84]:
+        - article [ref=e85]:
+          - generic [ref=e86]:
+            - img "MacBook Air 13″ Intel (2018)"
+          - generic [ref=e87]:
+            - paragraph [ref=e88]: Mac
+            - heading "MacBook Air 13″ Intel (2018)" [level=3] [ref=e89]
+            - paragraph [ref=e90]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=e91]:
+              - generic [ref=e92]: 999 грн
+              - button "Купити" [ref=e93] [cursor=pointer]
+        - article [ref=e94]:
+          - img "iPad (10.2-inch, 2021)" [ref=e96]
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: iPad
+            - heading "iPad (10.2-inch, 2021)" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Потужний iPad з великим дисплеєм і A13 Bionic.
+            - generic [ref=e101]:
+              - generic [ref=e102]: 329 грн
+              - button "Купити" [ref=e103] [cursor=pointer]
+        - article [ref=e104]:
+          - generic [ref=e105]:
+            - img "iPhone X"
+          - generic [ref=e106]:
+            - paragraph [ref=e107]: iPhone
+            - heading "iPhone X" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Революційний iPhone з дисплеєм Super Retina і Face ID.
+            - generic [ref=e110]:
+              - generic [ref=e111]: 999 грн
+              - button "Купити" [ref=e112] [cursor=pointer]
+        - article [ref=e113]:
+          - img "Apple Watch Series 5" [ref=e115]
+          - generic [ref=e116]:
+            - paragraph [ref=e117]: Apple Watch
+            - heading "Apple Watch Series 5" [level=3] [ref=e118]
+            - paragraph [ref=e119]: Apple Watch з завжди ввімкненим дисплеєм Retina.
+            - generic [ref=e120]:
+              - generic [ref=e121]: 399 грн
+              - button "Купити" [ref=e122] [cursor=pointer]
+        - article [ref=e123]:
+          - generic [ref=e124]:
+            - img "AirPods (2nd generation)"
+          - generic [ref=e125]:
+            - paragraph [ref=e126]: AirPods
+            - heading "AirPods (2nd generation)" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Безпровідні навушники з синхронізацією Siri.
+            - generic [ref=e129]:
+              - generic [ref=e130]: 129 грн
+              - button "Купити" [ref=e131] [cursor=pointer]
+        - article [ref=e132]:
+          - img "Apple TV 4K (2022)" [ref=e134]
+          - generic [ref=e135]:
+            - paragraph [ref=e136]: Apple TV
+            - heading "Apple TV 4K (2022)" [level=3] [ref=e137]
+            - paragraph [ref=e138]: Потужна потокова система з 4K Dolby Vision та Dolby Atmos.
+            - generic [ref=e139]:
+              - generic [ref=e140]: 199 грн
+              - button "Купити" [ref=e141] [cursor=pointer]
+    - generic [ref=e142]:
+      - heading "Переваги Apple Store. Ще більше причин купувати у нас." [level=2] [ref=e143]
+      - generic [ref=e144]:
+        - heading "No cost EMI. Миттєве повернення коштів" [level=4] [ref=e148]
+        - generic [ref=e149]:
+          - heading "Обміняйте свій смартфон" [level=4] [ref=e152]
+          - heading "— отримайте кредит на новий" [level=4] [ref=e153]
+        - heading "Персоналізуйте ваш Mac" [level=4] [ref=e157]
+    - generic [ref=e158]:
+      - heading "Допомога поруч. Коли і як вам потрібно." [level=2] [ref=e159]
+      - generic "Карусель допомоги" [ref=e160]:
+        - article [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: APPLE SPECIALIST
+              - heading "Shop one on one with a Specialist online." [level=3] [ref=e165]
+              - paragraph [ref=e166]: Замовте сеанс з фахівцем для підбору пристрою.
+            - img "Персональна консультація онлайн" [ref=e168]
+        - article [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - heading "Shop with a Specialist over video." [level=3] [ref=e172]
+              - paragraph [ref=e173]: Choose your next device in a guided, one‑way video session.
+            - img "Відеосесія з фахівцем" [ref=e175]
+    - generic [ref=e176]: Accessories. Essentials that pair perfectly with your favourite devices.
+    - region "Карусель аксессуаров" [ref=e178]:
+      - generic [ref=e179]:
+        - article [ref=e180]:
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading "In with the new." [level=3] [ref=e183]
+              - paragraph [ref=e184]: The accessories you love.In a fresh mix of colours.
+            - img "Accessories main" [ref=e186]
+        - article [ref=e187]:
+          - generic [ref=e188]:
+            - img "iPhone case — Peony" [ref=e190]
+            - list [ref=e191]:
+              - listitem [ref=e192]
+              - listitem [ref=e193]
+              - listitem [ref=e194]
+              - listitem [ref=e195]
+              - listitem [ref=e196]
+            - generic [ref=e197]:
+              - heading "iPhone 16 Pro Max Silicone Case with MagSafe — Peony" [level=4] [ref=e198]
+              - paragraph [ref=e199]: MRP *4900.00 (Incl. of all taxes)
+    - region "Education specials" [ref=e200]:
+      - heading "Education specials. Products and offers that students will love." [level=2] [ref=e201]
+      - generic "Карусель education" [ref=e202]:
+        - article [ref=e203]:
+          - generic [ref=e204]:
+            - img "Mac and iPad for education" [ref=e205]
+            - generic:
+              - generic: TODAY AT APPLE
+              - heading "Buy a new Mac or iPad with education savings." [level=3]: Buy a new Mac or iPadwith education savings.
+              - paragraph: Special pricing for students and educators. Learn more about eligibility and offers.
+        - article [ref=e206]:
+          - generic [ref=e207]:
+            - img "Student using Mac" [ref=e208]
+            - generic:
+              - generic: MAC FOR STUDENTS
+              - heading "Best in class. In college and beyond." [level=3]: Best in class.In college and beyond.
+              - paragraph: We invite kids 6–10 to make a friendship film on iPad in a free session.
+    - generic [ref=e209]: Quick Links
+    - generic [ref=e210]:
+      - button "Find a Store" [ref=e211] [cursor=pointer]
+      - button "Order Status" [ref=e213] [cursor=pointer]
+      - button "Shopping Help" [ref=e215] [cursor=pointer]
+      - button "Your Saves" [ref=e217] [cursor=pointer]
+    - generic [ref=e219]: "Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product can be obtained per eligible Mac or iPad per Qualified Purchaser. The offer is subject to availability, while supplies last. View full terms and conditions of offer here. A Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with MI and later, with Siri and device language set to Chinese (Simplified), English (Australia, Canada, India, Ireland, New Zealand, Singapore, South Africa, UK or US), French, German, Italian, Japanese, Korean, Portuguese (Brazil) or Spanish, as part of an iOS 18, iPadOS 18 and macOS Sequoia software update, with more languages coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages. Monthly pricing is after purchase using EMI with qualifying cards at 15.99% p.a. over a 12-month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. requires monthly payments of 27249.00. Total amount payable: 286988.00. Total interest paid to bank: 27088.00. No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3-, 6-, 9-, or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are available with No Cost EMI on 3- and 6-month tenures only. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Minimum order spend applies as per your card issuer's threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms apply. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. and No Cost EMI savings of 26514.00 requires monthly payments of 26658.00. Total amount payable: 279900.00. Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of 210001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. * Mac, iPad, and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad, and Apple Watch. Trade-in values will vary based on the condition, year and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel or limit the quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply."
+  - contentinfo [ref=e220]:
+    - generic [ref=e221]:
+      - generic [ref=e222]: © 2026 Store. Усі права захищено.
+      - navigation "Footer links" [ref=e223]:
+        - link "Правова інформація" [ref=e224] [cursor=pointer]:
+          - /url: "#"
+        - link "Умови" [ref=e225] [cursor=pointer]:
+          - /url: "#"
+        - link "Контакти" [ref=e226] [cursor=pointer]:
+          - /url: "#"

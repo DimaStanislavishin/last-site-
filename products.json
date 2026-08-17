@@ -1,59 +1,233 @@
 [
-    {
-        "id": 2,
-        "name": "MacBook Neo",
-        "price": 36999,
-        "image": "Снимок экрана — 2026-08-12 в 21.06.14.png",
-        "description": "Магія Mac за дивовижною ціною"
-    },
-    {
-        "id": 3,
-        "name": "MacBook Pro 14″ і 16″",
-        "price": 120999,
-        "image": "Снимок экрана — 2026-08-12 в 21.19.34.png",
-        "description": "Найсучасніші ноутбуки Mac для ресурсоємних завдань."
-    },
-    {
-        "id": 4,
-        "name": "iMac",
-        "price": 64199,
-        "image": "Снимок экрана — 2026-08-12 в 21.21.16.png",
-        "description": "Універсальний настільний компʼютер для креативності та продуктивності."
-    },
-    {
-        "id": 5,
-        "name": "Mac mini",
-        "price": 52243,
-        "image": "Снимок экрана — 2026-08-12 в 21.22.11.png",
-        "description": "Найкомпактніший і найдоступніший настільний компʼютер Mac."
-    },
-    {
-        "id": 6,
-        "name": "Mac Studio",
-        "price": 149999,
-        "image": "Снимок экрана — 2026-08-12 в 21.24.43.png",
-        "description": "Чудова продуктивність і можливості підключення для професіоналів."
-    },
-    {
-        "id": 7,
-        "name": "Studio Display",
-        "price": 88598,
-        "image": "Снимок экрана — 2026-08-12 в 21.24.04.png",
-        "description": "Дисплей Retina 5К, ідеальний для Mac."
-    },
-    {
-        "id": 8,
-        "name": "Studio Display XDR",
-        "price": 229999,
-        "image": "Снимок экрана — 2026-08-12 в 21.25.38.png",
-        "description": "Неперевершений дисплей Retina XDR 5К для творчих і професійних завдань."
-    }
-
-
-
-
+  {
+    "id": 1,
+    "name": "MacBook Air 13″ Intel (2018)",
+    "price": 999,
+    "image": "macbook-air-13-intel-2018.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 2,
+    "name": "MacBook Air 13″ Intel (2019)",
+    "price": 1099,
+    "image": "macbook-air-13-intel-2019.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 3,
+    "name": "MacBook Air 13″ Intel (2020)",
+    "price": 999,
+    "image": "macbook-air-13-intel-2020.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 4,
+    "name": "MacBook Air 13″ M1",
+    "price": 999,
+    "image": "macbook-air-13-m1.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 5,
+    "name": "MacBook Air 13″ M2",
+    "price": 1199,
+    "image": "macbook-air-13-m2.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 6,
+    "name": "MacBook Air 15″ M2",
+    "price": 1499,
+    "image": "macbook-air-15-m2.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 7,
+    "name": "MacBook Air 13″ M3",
+    "price": 1199,
+    "image": "macbook-air-13-m3.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 8,
+    "name": "MacBook Air 15″ M3",
+    "price": 1499,
+    "image": "macbook-air-15-m3.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 9,
+    "name": "MacBook Air 13″ M4",
+    "price": 1199,
+    "image": "macbook-air-13-m4.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 10,
+    "name": "MacBook Air 15″ M4",
+    "price": 1499,
+    "image": "macbook-air-15-m4.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 11,
+    "name": "MacBook Air 13″ M5",
+    "price": 1199,
+    "image": "macbook-air-13-m5.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 12,
+    "name": "MacBook Air 15″ M5",
+    "price": 1499,
+    "image": "macbook-air-15-m5.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 13,
+    "name": "MacBook Pro 13″ Intel (2018)",
+    "price": 1299,
+    "image": "macbook-pro-13-intel-2018.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 14,
+    "name": "MacBook Pro 15″ Intel (2018)",
+    "price": 1799,
+    "image": "macbook-pro-15-intel-2018.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 15,
+    "name": "MacBook Pro 13″ Intel (2019)",
+    "price": 1299,
+    "image": "macbook-pro-13-intel-2019.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 16,
+    "name": "MacBook Pro 15″ Intel (2019)",
+    "price": 1799,
+    "image": "macbook-pro-15-intel-2019.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 17,
+    "name": "MacBook Pro 16″ Intel (2019)",
+    "price": 2399,
+    "image": "macbook-pro-16-intel-2019.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 18,
+    "name": "MacBook Pro 13″ Intel (2020)",
+    "price": 1299,
+    "image": "macbook-pro-13-intel-2020.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 19,
+    "name": "MacBook Pro 13″ M1",
+    "price": 1299,
+    "image": "macbook-pro-13-m1.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 20,
+    "name": "MacBook Pro 14″ M1 Pro/Max",
+    "price": 1999,
+    "image": "macbook-pro-14-m1-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 21,
+    "name": "MacBook Pro 16″ M1 Pro/Max",
+    "price": 2499,
+    "image": "macbook-pro-16-m1-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 22,
+    "name": "MacBook Pro 13″ M2",
+    "price": 1299,
+    "image": "macbook-pro-13-m2.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 23,
+    "name": "MacBook Pro 14″ M2 Pro/Max",
+    "price": 1999,
+    "image": "macbook-pro-14-m2-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 24,
+    "name": "MacBook Pro 16″ M2 Pro/Max",
+    "price": 2499,
+    "image": "macbook-pro-16-m2-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 25,
+    "name": "MacBook Pro 14″ M3",
+    "price": 1799,
+    "image": "macbook-pro-14-m3.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 26,
+    "name": "MacBook Pro 14″ M3 Pro/Max",
+    "price": 1999,
+    "image": "macbook-pro-14-m3-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 27,
+    "name": "MacBook Pro 16″ M3 Pro/Max",
+    "price": 2499,
+    "image": "macbook-pro-16-m3-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 28,
+    "name": "MacBook Pro 14″ M4",
+    "price": 1799,
+    "image": "macbook-pro-14-m4.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 29,
+    "name": "MacBook Pro 14″ M4 Pro/Max",
+    "price": 1999,
+    "image": "macbook-pro-14-m4-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 30,
+    "name": "MacBook Pro 16″ M4 Pro/Max",
+    "price": 2499,
+    "image": "macbook-pro-16-m4-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 31,
+    "name": "MacBook Pro 14″ M5",
+    "price": 1799,
+    "image": "macbook-pro-14-m5.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 32,
+    "name": "MacBook Pro 14″ M5 Pro/Max",
+    "price": 1999,
+    "image": "macbook-pro-14-m5-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  },
+  {
+    "id": 33,
+    "name": "MacBook Pro 16″ M5 Pro/Max",
+    "price": 2499,
+    "image": "macbook-pro-16-m5-pro-max.png",
+    "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
+  }
 ]
-
-
-
-

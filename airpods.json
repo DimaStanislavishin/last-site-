@@ -1,30 +1,37 @@
 [
-    {
-        "id": 1,
-        "name": "AirPods 4",
-        "price": 91399,
-        "image": "Снимок экрана — 2026-08-14 в 00.33.06.png",
-        "description": "Стрімка еволюція звучання та комфорту."
-    },
-    {
-        "id": 2,
-        "name": "AirPods Pro 3",
-        "price": 45699,
-        "image": "Снимок экрана — 2026-08-14 в 00.35.50.png",
-        "description": "Неймовірне активне поглинання шуму◊ та відстеження серцевого ритму під час тренувань.◊◊"
-    },
-    {
-        "id": 3,
-        "name": "AirPods Max 2",
-        "price": 37199,
-        "image": "Снимок экрана — 2026-08-14 в 00.36.37.png",
-        "description": "Повнорозмірні навушники з персоналізованим звучанням."
-    },
-    {
-        "id": 4,
-        "name": "AirPods 4",
-        "price": 23999,
-        "image": "Снимок экрана — 2026-08-14 в 00.38.51.png",
-        "description": "Активне поглинання шуму Стрімка еволюція звучання, комфорту й контролю шуму."
-    }
+  {
+    "id": 1,
+    "name": "AirPods (2nd generation)",
+    "price": 129,
+    "image": "airpods-2.png",
+    "description": "Безпровідні навушники з синхронізацією Siri."
+  },
+  {
+    "id": 2,
+    "name": "AirPods (3rd generation)",
+    "price": 169,
+    "image": "airpods-3.png",
+    "description": "Зновудосконалені AirPods з режимом активного шумозниження."
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro (1st generation)",
+    "price": 249,
+    "image": "airpods-pro-1.png",
+    "description": "Навушники з активним шумозниженням і прозорим режимом."
+  },
+  {
+    "id": 4,
+    "name": "AirPods Pro (2nd generation)",
+    "price": 249,
+    "image": "airpods-pro-2.png",
+    "description": "Останні AirPods Pro з адаптивним звуком й USB-C."
+  },
+  {
+    "id": 5,
+    "name": "AirPods Max",
+    "price": 549,
+    "image": "airpods-max.png",
+    "description": "Просторові навушники з аудіо Dolby Atmos."
+  }
 ]

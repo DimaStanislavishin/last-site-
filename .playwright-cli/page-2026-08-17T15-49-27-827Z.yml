@@ -1,0 +1,407 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "Store home" [ref=f2e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Store logo" [ref=f2e5]
+      - generic [ref=f2e6]:
+        - navigation "Головна навігація" [ref=f2e7]:
+          - link "iPad" [ref=f2e8] [cursor=pointer]:
+            - /url: ipad.html
+          - link "Mac" [ref=f2e9] [cursor=pointer]:
+            - /url: mac.html
+          - link "iPhone" [ref=f2e10] [cursor=pointer]:
+            - /url: iphone.html
+          - link "Watch" [ref=f2e11] [cursor=pointer]:
+            - /url: Watch.html
+          - link "AirPods" [ref=f2e12] [cursor=pointer]:
+            - /url: airpods.html
+          - link "TV & Home" [ref=f2e13] [cursor=pointer]:
+            - /url: tv.html
+        - searchbox "Пошук..." [ref=f2e14]
+        - button "cart 2" [ref=f2e15] [cursor=pointer]:
+          - img "cart" [ref=f2e16]
+          - generic [ref=f2e17]: "2"
+  - main [ref=f2e18]:
+    - generic [ref=f2e19]:
+      - generic [ref=f2e20]:
+        - paragraph [ref=f2e21]: Apple Store
+        - heading "Mac" [level=1] [ref=f2e22]
+        - paragraph [ref=f2e23]: Оберіть пристрій, який створений для ваших щоденних справ.
+      - generic [ref=f2e24]:
+        - article [ref=f2e25]:
+          - img "MacBook Air 13″ Intel (2018)" [ref=f2e27]
+          - generic [ref=f2e28]:
+            - paragraph [ref=f2e29]: Mac
+            - heading "MacBook Air 13″ Intel (2018)" [level=3] [ref=f2e30]
+            - paragraph [ref=f2e31]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e32]:
+              - generic [ref=f2e33]: 999 грн
+              - button "Купити" [ref=f2e34] [cursor=pointer]
+        - article [ref=f2e35]:
+          - img "MacBook Air 13″ Intel (2019)" [ref=f2e37]
+          - generic [ref=f2e38]:
+            - paragraph [ref=f2e39]: Mac
+            - heading "MacBook Air 13″ Intel (2019)" [level=3] [ref=f2e40]
+            - paragraph [ref=f2e41]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e42]:
+              - generic [ref=f2e43]: 1 099 грн
+              - button "Купити" [ref=f2e44] [cursor=pointer]
+        - article [ref=f2e45]:
+          - img "MacBook Air 13″ Intel (2020)" [ref=f2e47]
+          - generic [ref=f2e48]:
+            - paragraph [ref=f2e49]: Mac
+            - heading "MacBook Air 13″ Intel (2020)" [level=3] [ref=f2e50]
+            - paragraph [ref=f2e51]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e52]:
+              - generic [ref=f2e53]: 999 грн
+              - button "Купити" [ref=f2e54] [cursor=pointer]
+        - article [ref=f2e55]:
+          - img "MacBook Air 13″ M1" [ref=f2e57]
+          - generic [ref=f2e58]:
+            - paragraph [ref=f2e59]: Mac
+            - heading "MacBook Air 13″ M1" [level=3] [ref=f2e60]
+            - paragraph [ref=f2e61]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e62]:
+              - generic [ref=f2e63]: 999 грн
+              - button "Купити" [ref=f2e64] [cursor=pointer]
+        - article [ref=f2e65]:
+          - img "MacBook Air 13″ M2" [ref=f2e67]
+          - generic [ref=f2e68]:
+            - paragraph [ref=f2e69]: Mac
+            - heading "MacBook Air 13″ M2" [level=3] [ref=f2e70]
+            - paragraph [ref=f2e71]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e72]:
+              - generic [ref=f2e73]: 1 199 грн
+              - button "Купити" [ref=f2e74] [cursor=pointer]
+        - article [ref=f2e75]:
+          - img "MacBook Air 15″ M2" [ref=f2e77]
+          - generic [ref=f2e78]:
+            - paragraph [ref=f2e79]: Mac
+            - heading "MacBook Air 15″ M2" [level=3] [ref=f2e80]
+            - paragraph [ref=f2e81]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e82]:
+              - generic [ref=f2e83]: 1 499 грн
+              - button "Купити" [ref=f2e84] [cursor=pointer]
+        - article [ref=f2e85]:
+          - img "MacBook Air 13″ M3" [ref=f2e87]
+          - generic [ref=f2e88]:
+            - paragraph [ref=f2e89]: Mac
+            - heading "MacBook Air 13″ M3" [level=3] [ref=f2e90]
+            - paragraph [ref=f2e91]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e92]:
+              - generic [ref=f2e93]: 1 199 грн
+              - button "Купити" [ref=f2e94] [cursor=pointer]
+        - article [ref=f2e95]:
+          - img "MacBook Air 15″ M3" [ref=f2e97]
+          - generic [ref=f2e98]:
+            - paragraph [ref=f2e99]: Mac
+            - heading "MacBook Air 15″ M3" [level=3] [ref=f2e100]
+            - paragraph [ref=f2e101]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e102]:
+              - generic [ref=f2e103]: 1 499 грн
+              - button "Купити" [ref=f2e104] [cursor=pointer]
+        - article [ref=f2e105]:
+          - img "MacBook Air 13″ M4" [ref=f2e107]
+          - generic [ref=f2e108]:
+            - paragraph [ref=f2e109]: Mac
+            - heading "MacBook Air 13″ M4" [level=3] [ref=f2e110]
+            - paragraph [ref=f2e111]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e112]:
+              - generic [ref=f2e113]: 1 199 грн
+              - button "Купити" [ref=f2e114] [cursor=pointer]
+        - article [ref=f2e115]:
+          - img "MacBook Air 15″ M4" [ref=f2e117]
+          - generic [ref=f2e118]:
+            - paragraph [ref=f2e119]: Mac
+            - heading "MacBook Air 15″ M4" [level=3] [ref=f2e120]
+            - paragraph [ref=f2e121]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e122]:
+              - generic [ref=f2e123]: 1 499 грн
+              - button "Купити" [ref=f2e124] [cursor=pointer]
+        - article [ref=f2e125]:
+          - img "MacBook Air 13″ M5" [ref=f2e127]
+          - generic [ref=f2e128]:
+            - paragraph [ref=f2e129]: Mac
+            - heading "MacBook Air 13″ M5" [level=3] [ref=f2e130]
+            - paragraph [ref=f2e131]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e132]:
+              - generic [ref=f2e133]: 1 199 грн
+              - button "Купити" [ref=f2e134] [cursor=pointer]
+        - article [ref=f2e135]:
+          - img "MacBook Air 15″ M5" [ref=f2e137]
+          - generic [ref=f2e138]:
+            - paragraph [ref=f2e139]: Mac
+            - heading "MacBook Air 15″ M5" [level=3] [ref=f2e140]
+            - paragraph [ref=f2e141]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e142]:
+              - generic [ref=f2e143]: 1 499 грн
+              - button "Купити" [ref=f2e144] [cursor=pointer]
+        - article [ref=f2e145]:
+          - img "MacBook Pro 13″ Intel (2018)" [ref=f2e147]
+          - generic [ref=f2e148]:
+            - paragraph [ref=f2e149]: Mac
+            - heading "MacBook Pro 13″ Intel (2018)" [level=3] [ref=f2e150]
+            - paragraph [ref=f2e151]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e152]:
+              - generic [ref=f2e153]: 1 299 грн
+              - button "Купити" [ref=f2e154] [cursor=pointer]
+        - article [ref=f2e155]:
+          - img "MacBook Pro 15″ Intel (2018)" [ref=f2e157]
+          - generic [ref=f2e158]:
+            - paragraph [ref=f2e159]: Mac
+            - heading "MacBook Pro 15″ Intel (2018)" [level=3] [ref=f2e160]
+            - paragraph [ref=f2e161]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e162]:
+              - generic [ref=f2e163]: 1 799 грн
+              - button "Купити" [ref=f2e164] [cursor=pointer]
+        - article [ref=f2e165]:
+          - img "MacBook Pro 13″ Intel (2019)" [ref=f2e167]
+          - generic [ref=f2e168]:
+            - paragraph [ref=f2e169]: Mac
+            - heading "MacBook Pro 13″ Intel (2019)" [level=3] [ref=f2e170]
+            - paragraph [ref=f2e171]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e172]:
+              - generic [ref=f2e173]: 1 299 грн
+              - button "Купити" [ref=f2e174] [cursor=pointer]
+        - article [ref=f2e175]:
+          - img "MacBook Pro 15″ Intel (2019)" [ref=f2e177]
+          - generic [ref=f2e178]:
+            - paragraph [ref=f2e179]: Mac
+            - heading "MacBook Pro 15″ Intel (2019)" [level=3] [ref=f2e180]
+            - paragraph [ref=f2e181]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e182]:
+              - generic [ref=f2e183]: 1 799 грн
+              - button "Купити" [ref=f2e184] [cursor=pointer]
+        - article [ref=f2e185]:
+          - img "MacBook Pro 16″ Intel (2019)" [ref=f2e187]
+          - generic [ref=f2e188]:
+            - paragraph [ref=f2e189]: Mac
+            - heading "MacBook Pro 16″ Intel (2019)" [level=3] [ref=f2e190]
+            - paragraph [ref=f2e191]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e192]:
+              - generic [ref=f2e193]: 2 399 грн
+              - button "Купити" [ref=f2e194] [cursor=pointer]
+        - article [ref=f2e195]:
+          - img "MacBook Pro 13″ Intel (2020)" [ref=f2e197]
+          - generic [ref=f2e198]:
+            - paragraph [ref=f2e199]: Mac
+            - heading "MacBook Pro 13″ Intel (2020)" [level=3] [ref=f2e200]
+            - paragraph [ref=f2e201]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e202]:
+              - generic [ref=f2e203]: 1 299 грн
+              - button "Купити" [ref=f2e204] [cursor=pointer]
+        - article [ref=f2e205]:
+          - img "MacBook Pro 13″ M1" [ref=f2e207]
+          - generic [ref=f2e208]:
+            - paragraph [ref=f2e209]: Mac
+            - heading "MacBook Pro 13″ M1" [level=3] [ref=f2e210]
+            - paragraph [ref=f2e211]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e212]:
+              - generic [ref=f2e213]: 1 299 грн
+              - button "Купити" [ref=f2e214] [cursor=pointer]
+        - article [ref=f2e215]:
+          - img "MacBook Pro 14″ M1 Pro/Max" [ref=f2e217]
+          - generic [ref=f2e218]:
+            - paragraph [ref=f2e219]: Mac
+            - heading "MacBook Pro 14″ M1 Pro/Max" [level=3] [ref=f2e220]
+            - paragraph [ref=f2e221]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e222]:
+              - generic [ref=f2e223]: 1 999 грн
+              - button "Купити" [ref=f2e224] [cursor=pointer]
+        - article [ref=f2e225]:
+          - img "MacBook Pro 16″ M1 Pro/Max" [ref=f2e227]
+          - generic [ref=f2e228]:
+            - paragraph [ref=f2e229]: Mac
+            - heading "MacBook Pro 16″ M1 Pro/Max" [level=3] [ref=f2e230]
+            - paragraph [ref=f2e231]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e232]:
+              - generic [ref=f2e233]: 2 499 грн
+              - button "Купити" [ref=f2e234] [cursor=pointer]
+        - article [ref=f2e235]:
+          - img "MacBook Pro 13″ M2" [ref=f2e237]
+          - generic [ref=f2e238]:
+            - paragraph [ref=f2e239]: Mac
+            - heading "MacBook Pro 13″ M2" [level=3] [ref=f2e240]
+            - paragraph [ref=f2e241]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e242]:
+              - generic [ref=f2e243]: 1 299 грн
+              - button "Купити" [ref=f2e244] [cursor=pointer]
+        - article [ref=f2e245]:
+          - img "MacBook Pro 14″ M2 Pro/Max" [ref=f2e247]
+          - generic [ref=f2e248]:
+            - paragraph [ref=f2e249]: Mac
+            - heading "MacBook Pro 14″ M2 Pro/Max" [level=3] [ref=f2e250]
+            - paragraph [ref=f2e251]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e252]:
+              - generic [ref=f2e253]: 1 999 грн
+              - button "Купити" [ref=f2e254] [cursor=pointer]
+        - article [ref=f2e255]:
+          - img "MacBook Pro 16″ M2 Pro/Max" [ref=f2e257]
+          - generic [ref=f2e258]:
+            - paragraph [ref=f2e259]: Mac
+            - heading "MacBook Pro 16″ M2 Pro/Max" [level=3] [ref=f2e260]
+            - paragraph [ref=f2e261]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e262]:
+              - generic [ref=f2e263]: 2 499 грн
+              - button "Купити" [ref=f2e264] [cursor=pointer]
+        - article [ref=f2e265]:
+          - img "MacBook Pro 14″ M3" [ref=f2e267]
+          - generic [ref=f2e268]:
+            - paragraph [ref=f2e269]: Mac
+            - heading "MacBook Pro 14″ M3" [level=3] [ref=f2e270]
+            - paragraph [ref=f2e271]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e272]:
+              - generic [ref=f2e273]: 1 799 грн
+              - button "Купити" [ref=f2e274] [cursor=pointer]
+        - article [ref=f2e275]:
+          - img "MacBook Pro 14″ M3 Pro/Max" [ref=f2e277]
+          - generic [ref=f2e278]:
+            - paragraph [ref=f2e279]: Mac
+            - heading "MacBook Pro 14″ M3 Pro/Max" [level=3] [ref=f2e280]
+            - paragraph [ref=f2e281]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e282]:
+              - generic [ref=f2e283]: 1 999 грн
+              - button "Купити" [ref=f2e284] [cursor=pointer]
+        - article [ref=f2e285]:
+          - img "MacBook Pro 16″ M3 Pro/Max" [ref=f2e287]
+          - generic [ref=f2e288]:
+            - paragraph [ref=f2e289]: Mac
+            - heading "MacBook Pro 16″ M3 Pro/Max" [level=3] [ref=f2e290]
+            - paragraph [ref=f2e291]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e292]:
+              - generic [ref=f2e293]: 2 499 грн
+              - button "Купити" [ref=f2e294] [cursor=pointer]
+        - article [ref=f2e295]:
+          - img "MacBook Pro 14″ M4" [ref=f2e297]
+          - generic [ref=f2e298]:
+            - paragraph [ref=f2e299]: Mac
+            - heading "MacBook Pro 14″ M4" [level=3] [ref=f2e300]
+            - paragraph [ref=f2e301]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e302]:
+              - generic [ref=f2e303]: 1 799 грн
+              - button "Купити" [ref=f2e304] [cursor=pointer]
+        - article [ref=f2e305]:
+          - img "MacBook Pro 14″ M4 Pro/Max" [ref=f2e307]
+          - generic [ref=f2e308]:
+            - paragraph [ref=f2e309]: Mac
+            - heading "MacBook Pro 14″ M4 Pro/Max" [level=3] [ref=f2e310]
+            - paragraph [ref=f2e311]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e312]:
+              - generic [ref=f2e313]: 1 999 грн
+              - button "Купити" [ref=f2e314] [cursor=pointer]
+        - article [ref=f2e315]:
+          - img "MacBook Pro 16″ M4 Pro/Max" [ref=f2e317]
+          - generic [ref=f2e318]:
+            - paragraph [ref=f2e319]: Mac
+            - heading "MacBook Pro 16″ M4 Pro/Max" [level=3] [ref=f2e320]
+            - paragraph [ref=f2e321]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e322]:
+              - generic [ref=f2e323]: 2 499 грн
+              - button "Купити" [ref=f2e324] [cursor=pointer]
+        - article [ref=f2e325]:
+          - img "MacBook Pro 14″ M5" [ref=f2e327]
+          - generic [ref=f2e328]:
+            - paragraph [ref=f2e329]: Mac
+            - heading "MacBook Pro 14″ M5" [level=3] [ref=f2e330]
+            - paragraph [ref=f2e331]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e332]:
+              - generic [ref=f2e333]: 1 799 грн
+              - button "Купити" [ref=f2e334] [cursor=pointer]
+        - article [ref=f2e335]:
+          - img "MacBook Pro 14″ M5 Pro/Max" [ref=f2e337]
+          - generic [ref=f2e338]:
+            - paragraph [ref=f2e339]: Mac
+            - heading "MacBook Pro 14″ M5 Pro/Max" [level=3] [ref=f2e340]
+            - paragraph [ref=f2e341]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e342]:
+              - generic [ref=f2e343]: 1 999 грн
+              - button "Купити" [ref=f2e344] [cursor=pointer]
+        - article [ref=f2e345]:
+          - img "MacBook Pro 16″ M5 Pro/Max" [ref=f2e347]
+          - generic [ref=f2e348]:
+            - paragraph [ref=f2e349]: Mac
+            - heading "MacBook Pro 16″ M5 Pro/Max" [level=3] [ref=f2e350]
+            - paragraph [ref=f2e351]: Потужний MacBook для роботи, навчання, творчості та щоденних завдань.
+            - generic [ref=f2e352]:
+              - generic [ref=f2e353]: 2 499 грн
+              - button "Купити" [ref=f2e354] [cursor=pointer]
+    - generic [ref=f2e355]:
+      - heading "Переваги Apple Store. Ще більше причин купувати у нас." [level=2] [ref=f2e356]
+      - generic [ref=f2e357]:
+        - heading "No cost EMI. Миттєве повернення коштів" [level=4] [ref=f2e361]
+        - generic [ref=f2e362]:
+          - heading "Обміняйте свій смартфон" [level=4] [ref=f2e365]
+          - heading "— отримайте кредит на новий" [level=4] [ref=f2e366]
+        - heading "Персоналізуйте ваш Mac" [level=4] [ref=f2e370]
+    - generic [ref=f2e371]:
+      - heading "Допомога поруч. Коли і як вам потрібно." [level=2] [ref=f2e372]
+      - generic "Карусель допомоги" [ref=f2e373]:
+        - article [ref=f2e374]:
+          - generic [ref=f2e375]:
+            - generic [ref=f2e376]:
+              - generic [ref=f2e377]: APPLE SPECIALIST
+              - heading "Shop one on one with a Specialist online." [level=3] [ref=f2e378]
+              - paragraph [ref=f2e379]: Замовте сеанс з фахівцем для підбору пристрою.
+            - img "Персональна консультація онлайн" [ref=f2e381]
+        - article [ref=f2e382]:
+          - generic [ref=f2e383]:
+            - generic [ref=f2e384]:
+              - heading "Shop with a Specialist over video." [level=3] [ref=f2e385]
+              - paragraph [ref=f2e386]: Choose your next device in a guided, one‑way video session.
+            - img "Відеосесія з фахівцем" [ref=f2e388]
+    - generic [ref=f2e389]: Accessories. Essentials that pair perfectly with your favourite devices.
+    - region "Карусель аксессуаров" [ref=f2e391]:
+      - generic [ref=f2e392]:
+        - article [ref=f2e393]:
+          - generic [ref=f2e394]:
+            - generic [ref=f2e395]:
+              - heading "In with the new." [level=3] [ref=f2e396]
+              - paragraph [ref=f2e397]: The accessories you love.In a fresh mix of colours.
+            - img "Accessories main" [ref=f2e399]
+        - article [ref=f2e400]:
+          - generic [ref=f2e401]:
+            - img "iPhone case — Peony" [ref=f2e403]
+            - list [ref=f2e404]:
+              - listitem [ref=f2e405]
+              - listitem [ref=f2e406]
+              - listitem [ref=f2e407]
+              - listitem [ref=f2e408]
+              - listitem [ref=f2e409]
+            - generic [ref=f2e410]:
+              - heading "iPhone 16 Pro Max Silicone Case with MagSafe — Peony" [level=4] [ref=f2e411]
+              - paragraph [ref=f2e412]: MRP *4900.00 (Incl. of all taxes)
+    - region "Education specials" [ref=f2e413]:
+      - heading "Education specials. Products and offers that students will love." [level=2] [ref=f2e414]
+      - generic "Карусель education" [ref=f2e415]:
+        - article [ref=f2e416]:
+          - generic [ref=f2e417]:
+            - img "Mac and iPad for education" [ref=f2e418]
+            - generic:
+              - generic: TODAY AT APPLE
+              - heading "Buy a new Mac or iPad with education savings." [level=3]: Buy a new Mac or iPadwith education savings.
+              - paragraph: Special pricing for students and educators. Learn more about eligibility and offers.
+        - article [ref=f2e419]:
+          - generic [ref=f2e420]:
+            - img "Student using Mac" [ref=f2e421]
+            - generic:
+              - generic: MAC FOR STUDENTS
+              - heading "Best in class. In college and beyond." [level=3]: Best in class.In college and beyond.
+              - paragraph: We invite kids 6–10 to make a friendship film on iPad in a free session.
+    - generic [ref=f2e422]: Quick Links
+    - generic [ref=f2e423]:
+      - button "Find a Store" [ref=f2e424] [cursor=pointer]
+      - button "Order Status" [ref=f2e426] [cursor=pointer]
+      - button "Shopping Help" [ref=f2e428] [cursor=pointer]
+      - button "Your Saves" [ref=f2e430] [cursor=pointer]
+    - generic [ref=f2e432]: "Customers will be charged for all items in their cart, including the Promotion Product. Only one Promotion Product can be obtained per eligible Mac or iPad per Qualified Purchaser. The offer is subject to availability, while supplies last. View full terms and conditions of offer here. A Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with MI and later, with Siri and device language set to Chinese (Simplified), English (Australia, Canada, India, Ireland, New Zealand, Singapore, South Africa, UK or US), French, German, Italian, Japanese, Korean, Portuguese (Brazil) or Spanish, as part of an iOS 18, iPadOS 18 and macOS Sequoia software update, with more languages coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages. Monthly pricing is after purchase using EMI with qualifying cards at 15.99% p.a. over a 12-month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. requires monthly payments of 27249.00. Total amount payable: 286988.00. Total interest paid to bank: 27088.00. No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3-, 6-, 9-, or 12-month tenures from most leading card issuers. Eligible AirPods, HomePod and Beats products are available with No Cost EMI on 3- and 6-month tenures only. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer's terms and conditions. Minimum order spend applies as per your card issuer's threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice. Terms apply. Representative example: A purchase of 279900.00 repaid over 12 months with an interest rate of 15.99% p.a. and No Cost EMI savings of 26514.00 requires monthly payments of 26658.00. Total amount payable: 279900.00. Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of 210001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. * Mac, iPad, and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad, and Apple Watch. Trade-in values will vary based on the condition, year and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse, cancel or limit the quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply."
+  - contentinfo [ref=f2e433]:
+    - generic [ref=f2e434]:
+      - generic [ref=f2e435]: © 2026 Store. Усі права захищено.
+      - navigation "Footer links" [ref=f2e436]:
+        - link "Правова інформація" [ref=f2e437] [cursor=pointer]:
+          - /url: "#"
+        - link "Умови" [ref=f2e438] [cursor=pointer]:
+          - /url: "#"
+        - link "Контакти" [ref=f2e439] [cursor=pointer]:
+          - /url: "#"
