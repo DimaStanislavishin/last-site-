@@ -214,6 +214,7 @@ a.product-item:focus-visible { transform: translateY(-3px); }
   /* убрал жёсткую высоту — пусть карточки подстраиваются */
   min-width: 260px;
   min-height: 220px;
+  min-height: 220px;
   border-radius: 22px;
   background: var(--card-bg);
   box-shadow: 0 8px 28px rgba(20, 20, 28, 0.06);
