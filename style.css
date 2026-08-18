@@ -1277,38 +1277,7 @@ a.product-item:focus-visible { transform: translateY(-3px); }
   box-shadow: none;
 }
 
-/* Overlay (text) common positioning */
-.education-card .image-card-overlay {
-  position: absolute;
-  left: 28px;
-  top: 28px;
-  z-index: 6;
-  max-width: 55%;
-  padding: 0;
-  pointer-events: none;
-  color: #fff;
-  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
-}
 
-/* Make overlay text readable & consistent */
-.education-card .image-card-overlay h3 {
-  margin: 0 0 8px;
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1.05;
-}
-.education-card .image-card-overlay p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.25;
-}
-.education-card .image-card-overlay .kicker {
-  font-size: 11px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  color: rgba(255,255,255,0.85);
-}
 
 /* Per-card text color overrides:
    - if card has class .text-dark -> dark text (for framed/white card)
@@ -1955,14 +1924,7 @@ body { overflow-x: hidden; }
 .product-card .product-desc { text-align: center; }
 .product-bottom { justify-content: center; }
 
-.education-card .image-card-overlay {
-  left: 50%;
-  right: auto;
-  width: calc(100% - 56px);
-  max-width: none;
-  transform: translateX(-50%);
-  text-align: center;
-}
+
 
 .modal-header {
   position: relative;
@@ -1984,10 +1946,7 @@ body { overflow-x: hidden; }
 
   .top-nav { justify-content: flex-start !important; }
 
-  .education-card .image-card-overlay {
-    width: calc(100% - 32px);
-  }
-}
+
 
 /* Centre standalone section labels and the row of category icons. */
 .accessories-essentials-that-pair-perfectly-with-your-favourite-devices {
@@ -2018,26 +1977,6 @@ body { overflow-x: hidden; }
   overflow: hidden;
 }
 
-.education-carousel .education-card .image-card-overlay {
-  top: 20px;
-  right: 18%;
-  bottom: auto;
-  left: 18%;
-  display: grid;
-  width: auto !important;
-  max-width: none;
-  justify-items: center;
-  padding: 0;
-  transform: none;
-  overflow-wrap: anywhere;
-  text-align: center;
-}
-
-.education-carousel .education-card .image-card-overlay h3,
-.education-carousel .education-card .image-card-overlay p {
-  max-width: 100%;
-  overflow-wrap: anywhere;
-}
 
 /* The second education card has this class name in the markup. */
 .education-card .imedu-descoverlay-descge-card-media {
@@ -2063,57 +2002,8 @@ body { overflow-x: hidden; }
   object-fit: cover !important;
 }
 
-.education-card .imedu-descoverlay-descge-card-media .image-card-overlay {
-  top: 16px;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
-  width: auto !important;
-  max-height: calc(100% - 32px);
-  overflow: hidden;
-}
 
-/* A single readable panel is calmer than text scattered over the photo. */
-.education-carousel .education-card:nth-child(2) .image-card-overlay {
-  top: 16px;
-  right: 16px;
-  bottom: auto;
-  left: 16px;
-  display: block;
-  max-height: none;
-  padding: 14px 16px 16px;
-  border: 1px solid rgba(255, 255, 255, .16);
-  border-radius: 18px;
-  background: rgba(20, 20, 20, .54);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
-  backdrop-filter: blur(12px);
-}
 
-.education-carousel .education-card:nth-child(2) .image-card-overlay .kicker {
-  margin-bottom: 7px;
-  color: rgba(255, 255, 255, .82);
-}
-
-.education-carousel .education-card:nth-child(2) .image-card-overlay h3 {
-  margin: 0;
-  font-size: 22px;
-  line-height: 1.08;
-}
-
-.education-carousel .education-card:nth-child(2) .image-card-overlay p {
-  margin: 10px 0 0;
-  color: rgba(255, 255, 255, .92);
-  font-size: 13px;
-  line-height: 1.35;
-}
-
-@media (max-width: 760px) {
-  .education-carousel .education-card .image-card-overlay {
-    top: 16px;
-    right: 12%;
-    left: 12%;
-  }
-}
 
 /* Centre the standalone quick-links area on every page. */
 .quick-links {
@@ -2125,118 +2015,16 @@ body { overflow-x: hidden; }
 }
 
 .buttons-row {
-  width: min(calc(100% - 36px), 1080px);
+  width: min(100% - 36px, 1080px);
   justify-content: center;
   margin: 10px auto 50px !important;
 }
 
 .manytext {
-  width: min(calc(100% - 36px), 1000px);
+  width: min(100% - 36px, 1000px);
   height: auto;
   margin: 0 auto !important;
   text-align: center;
-}
-
-/* Use the same card frame for both education slides. */
-.education-card .image-card-media {
-  position: relative;
-  width: 280px;
-  height: 350px;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  border-radius: 28px;
-  isolation: isolate;
-}
-
-.education-card .image-card-media > img {
-  position: absolute !important;
-  inset: 0;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0;
-  border-radius: inherit;
-  object-fit: cover !important;
-}
-
-.education-card .image-card-media .image-card-overlay {
-  top: 16px;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
-  width: auto !important;
-  max-height: calc(100% - 32px);
-  overflow: hidden;
-}
-
-/* Hard bounds for the student-card caption: nothing may paint outside this container. */
-.education-card .imedu-descoverlay-descge-card-media {
-  contain: layout paint;
-  clip-path: inset(0 round 28px);
-}
-
-.education-card .imedu-descoverlay-descge-card-media .image-card-overlay {
-  position: absolute !important;
-  inset: 16px !important;
-  box-sizing: border-box;
-  width: auto !important;
-  max-width: none !important;
-  max-height: none;
-  margin: 0 !important;
-  overflow: hidden;
-}
-
-.education-card .imedu-descoverlay-descge-card-media .image-card-overlay h3,
-.education-card .imedu-descoverlay-descge-card-media .image-card-overlay p {
-  max-width: 100%;
-  overflow-wrap: anywhere;
-}
-
-/* The first slide uses the same composed caption treatment without cropping its product image. */
-.education-carousel .education-card:nth-child(1) .image-card-media {
-  background: #fff;
-  box-shadow: 0 12px 30px rgba(20, 20, 28, .12);
-}
-
-.education-carousel .education-card:nth-child(1) .image-card-media > img {
-  object-fit: contain !important;
-}
-
-.education-carousel .education-card:nth-child(1) .image-card-overlay {
-  top: 16px;
-  right: 16px;
-  bottom: auto;
-  left: 16px;
-  display: block;
-  max-height: none;
-  padding: 14px 16px 16px;
-  border: 1px solid rgba(255, 255, 255, .16);
-  border-radius: 18px;
-  background: rgba(20, 20, 20, .78);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
-  backdrop-filter: blur(12px);
-  text-shadow: none;
-}
-
-.education-carousel .education-card:nth-child(1) .image-card-overlay .kicker {
-  margin-bottom: 7px;
-  color: rgba(255, 255, 255, .82) !important;
-}
-
-.education-carousel .education-card:nth-child(1) .image-card-overlay h3 {
-  margin: 0;
-  color: #fff !important;
-  font-size: 22px;
-  line-height: 1.08;
-}
-
-.education-carousel .education-card:nth-child(1) .image-card-overlay p {
-  margin: 10px 0 0;
-  color: rgba(255, 255, 255, .92) !important;
-  font-size: 13px;
-  line-height: 1.35;
 }
 
 /* Checkout details and confirmation. */

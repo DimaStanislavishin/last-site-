@@ -10,12 +10,11 @@
 <body>
   <header class="site-header">
     <div class="container header-row" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;">
-      <!-- Логотип — коректне вкладення -->
+      
       <a class="logo" href="index.html" aria-label="Store home">
         <img src="apple-logo-svgrepo-com.svg" alt="Store logo" style="height:28px;display:block;">
       </a>
 
-      <!-- Навігація + пошук + кошик -->
       <div style="display:flex;align-items:center;gap:12px;">
         <nav class="top-nav" aria-label="Головна навігація">
           <a href="ipad.html">iPad</a>
@@ -26,10 +25,8 @@
           <a href="tv.html">TV &amp; Home</a>
         </nav>
 
-        <!-- Пошук і фільтр (скрипт чекає ці id) -->
         <input id="search-input" type="search" placeholder="Пошук..." style="margin-left:12px;padding:6px 10px;border-radius:8px;border:1px solid #e2e8f0;">
 
-        <!-- Кнопка кошика з лічильником -->
         <button id="cart-btn" aria-haspopup="dialog" aria-expanded="false" style="background:none;border:none;cursor:pointer;position:relative;margin-left:12px;">
           <img src="4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.svg" alt="cart" style="height:22px;">
           <span id="cart-count" style="position:absolute;top:-6px;right:-8px;background:#ef4444;color:#fff;border-radius:50%;padding:2px 6px;font-size:12px;">0</span>
@@ -39,15 +36,13 @@
   </header>
 
   <main>
-    <!-- 1) Товари — ПЕРШІ: контейнер, в який рендерить JS -->
+    
     <section class="container" style="max-width:1100px;margin:28px auto;padding:0 20px;">
       <div id="products-grid" class="products-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px;">
-        <!-- JS вставляє картки сюди з products.json -->
+        
       </div>
     </section>
 
-    <!-- 2) Далі — ваші секції (Features, Help, Accessories, Education тощо) -->
-    <!-- Features -->
     <section class="features container">
       <h2 class="section-title"><span class="bold">Переваги Apple Store.</span> Ще більше причин купувати у нас.</h2>
       <div class="feature-grid">
@@ -68,7 +63,6 @@
       </div>
     </section>
 
-    <!-- Help / info carousel -->
     <section class="help container">
       <h2 class="section-title"><span class="bold">Допомога поруч.</span> Коли і як вам потрібно.</h2>
       <div class="help-carousel" aria-label="Карусель допомоги">
@@ -99,7 +93,6 @@
       </div>
     </section>
 
-    <!-- Accessories -->
     <div class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices">
       <span>
         <span class="accessories-essentials-that-pair-perfectly-with-your-favourite-devices-span rgb">
@@ -148,33 +141,32 @@
       </div>
     </section>
 
-    <!-- Education -->
     <section class="education container" aria-label="Education specials">
       <h2 class="section-title"><span class="bold">Education specials.</span> Products and offers that students will love.</h2>
-      <div class="education-carousel" aria-label="Карусель education">
-        <article class="education-card image-card">
-          <div class="image-card-media">
-            <img src="store-card-40-bts-edu-macbook-air-ipad-air-202503 1.png" alt="Mac and iPad for education" />
-            <div class="image-card-overlay">
-              <div class="kicker" style="color:rgb(142, 142, 142)">TODAY AT APPLE</div>
-              <h3 class="edu-titleoverlay-title" style="color:rgb(0, 0, 0)">Buy a new Mac or iPad<br>with education savings.</h3>
-              <p class="edu-descoverlay-desc" style="color:rgb(0, 0, 0)" >Special pricing for students and educators. Learn more about eligibility and offers.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="education-card image-card">
-          <div class="imedu-descoverlay-descge-card-media">
-            <img src="store-card-40-education-202505_GEO_IN 1.png" alt="Student using Mac" />
-            <div class="image-card-overlay">
-              <div class="kicker">MAC FOR STUDENTS</div>
-              <h3 class="edu-titleoverlay-title" style="color:#ffffff;">Best in class.<br>In college and beyond.</h3>
-              <p class="edu-descoverlay-desc">We invite kids 6–10 to make a friendship film on iPad in a free session.</p>
-            </div>
-          </div>
-        </article>
+        <div class="education-carousel" aria-label="Карусель education">
+    <article class="education-card image-card">
+      <div class="imedu-descoverlay-descge-card-media">
+        <img src="store-card-40-bts-edu-macbook-air-ipad-air-202503 1.png" alt="Mac and iPad for education" />
+        <div class="image-card-overlay">
+          <div class="kicker">TODAY AT APPLE</div>
+          <h3 class="edu-titleoverlay-title">Buy a new Mac or iPad<br>with education savings.</h3>
+          <p class="edu-descoverlay-desc">Special pricing for students and educators. Learn more about eligibility and offers.</p>
+        </div>
       </div>
-    </section>
+    </article>
+
+    <article class="education-card image-card">
+      <div class="imedu-descoverlay-descge-card-media">
+        <img src="store-card-40-education-202505_GEO_IN 1.png" alt="Student using Mac" />
+        <div class="image-card-overlay">
+          <div class="kicker">MAC FOR STUDENTS</div>
+          <h3 class="edu-titleoverlay-title">Best in class.<br>In college and beyond.</h3>
+          <p class="edu-descoverlay-desc">We invite kids 6–10 to make a friendship film on iPad in a free session.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
     <div class="quick-links">Quick Links</div>
 
@@ -186,7 +178,7 @@
     </div>
 
     <div class="manytext">
-      <!-- Ваш довгий текст залишив без змін -->
+      
         <br />
       Customers will be charged for all items in their cart, including the Promotion
       Product. Only one Promotion Product can be obtained per eligible Mac or iPad
@@ -323,10 +315,8 @@
     </div>
   </footer>
 
-  <!-- TOAST контейнер (потрібен для showToast) -->
   <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
-  <!-- МОДАЛ: кошик (скрипт використовує ці id) -->
   <div id="cart-modal" class="overlay hidden" role="dialog" aria-modal="true" style="display:none;position:fixed;inset:0;justify-content:center;align-items:flex-start;padding-top:60px;">
     <div class="modal-content" style="width:90%;max-width:760px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,0.12);">
       <div class="modal-header" style="display:flex;justify-content:space-between;align-items:center;">
@@ -369,8 +359,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Підключіть ваш JS в кінці body. Я рекомендую винести ваш скрипт у script.js і підключити його так: -->
 
 <script src="store.js"></script>
 </body>
