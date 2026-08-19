@@ -1945,8 +1945,7 @@ body { overflow-x: hidden; }
   .header-row > div { width: 100% !important; }
 
   .top-nav { justify-content: flex-start !important; }
-
-
+}
 
 /* Centre standalone section labels and the row of category icons. */
 .accessories-essentials-that-pair-perfectly-with-your-favourite-devices {
@@ -2232,5 +2231,4 @@ body { overflow-x: hidden; }
     opacity: 1;
     transition: none;
   }
-}
 }
