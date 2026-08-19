@@ -2,190 +2,190 @@
   {
     "id": 1,
     "name": "iPhone X",
-    "price": 999,
+    "price": 4990,
     "image": "https://bigmag.ua/image/cache/catalog/archive/data/iphone-x/x-sg-2-2000x2000.jpg",
     "description": "Революційний iPhone з дисплеєм Super Retina і Face ID."
   },
   {
     "id": 2,
     "name": "iPhone XS",
-    "price": 999,
+    "price": 5990,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs8SsPRXrhk32td-74SzN4RM0A8AbhQxWn64w8-W-V6w&s=10",
     "description": "Продвинутий iPhone з подвійною камерою та OLED дисплеєм."
   },
   {
     "id": 3,
     "name": "iPhone XS Max",
-    "price": 1099,
-    "image": "iphone-xs-max.png",
+    "price": 6990,
+    "image": "https://bigmag.ua/image/cache/catalog/archive/data/Katya/0/07/apple-iphone-xs-max-dual-sim-256gb-silver-mt752-31.1000x-500x500.webp",
     "description": "Найбільший iPhone з революційним дисплеєм Super Retina."
   },
   {
     "id": 4,
     "name": "iPhone XR",
-    "price": 749,
-    "image": "iphone-xr.png",
+    "price": 5990,
+    "image": "https://bigmag.ua/image/cache/catalog/archive/data/Katya/xr/q1%20(18)-500x500.webp",
     "description": "Яскравий LCD дисплей, дуальна камера та довга автономність."
   },
   {
     "id": 5,
     "name": "iPhone 11",
-    "price": 699,
-    "image": "iphone-11.png",
+    "price": 7990,
+    "image": "https://bigmag.ua/image/cache/catalog/new/kumunren/Liza/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8/1/apple-iphone-11-pro-max-64gb-midnight-green-21.1000x-500x500.webp",
     "description": "Потужний iPhone з нічним режимом і двома камерами."
   },
   {
     "id": 6,
     "name": "iPhone 11 Pro",
-    "price": 999,
-    "image": "iphone-11-pro.png",
+    "price": 8990,
+    "image": "https://bigmag.ua/image/cache/catalog/archive/data/iphone_used/iphone_11_pro_max_gold-500x500.webp",
     "description": "Професійний iPhone з потрійною камерою та OLED дисплеєм."
   },
   {
     "id": 7,
     "name": "iPhone 11 Pro Max",
-    "price": 1099,
-    "image": "iphone-11-pro-max.png",
+    "price": 9990,
+    "image": "https://bigmag.ua/image/cache/catalog/new/kumunren/pic/11/11promaxsilver/iphone_11_pro_max_Silver%20(1)-500x500.jpg",
     "description": "Найбільший Pro iPhone з найпотужнішою камерою."
   },
   {
     "id": 8,
     "name": "iPhone 12",
-    "price": 799,
-    "image": "iphone-12.png",
+    "price": 9990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/635533203.jpg",
     "description": "iPhone з 5G, A14 Bionic та Ceramic Shield."
   },
   {
     "id": 9,
     "name": "iPhone 12 mini",
-    "price": 699,
-    "image": "iphone-12-mini.png",
+    "price": 7990,
+    "image": "https://bigmag.ua/image/cache/catalog/image/Product/iPhone_by/iPhone_12_Mini/green/1-500x500.jpg",
     "description": "Компактний iPhone 12 з 5G у меншому форм-факторі."
   },
   {
     "id": 10,
     "name": "iPhone 12 Pro",
-    "price": 999,
-    "image": "iphone-12-pro.png",
+    "price": 11990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/635533258.jpg",
     "description": "Pro iPhone з потрійною камерою та LiDAR сканером."
   },
   {
     "id": 11,
     "name": "iPhone 12 Pro Max",
-    "price": 1099,
-    "image": "iphone-12-pro-max.png",
+    "price": 13990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/635448247.jpg",
     "description": "Найбільший Pro iPhone з найпотужнішою батареєю."
   },
   {
     "id": 12,
     "name": "iPhone 13",
-    "price": 799,
-    "image": "iphone-13.png",
+    "price": 13990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/221212793.jpg",
     "description": "iPhone 13 з A15 Bionic і вдосконаленою камерою."
   },
   {
     "id": 13,
     "name": "iPhone 13 mini",
-    "price": 699,
-    "image": "iphone-13-mini.png",
+    "price": 11990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/648216489.jpg",
     "description": "Компактний iPhone 13 з усіма можливостями у меншому розмірі."
   },
   {
     "id": 14,
     "name": "iPhone 13 Pro",
-    "price": 999,
-    "image": "iphone-13-pro.png",
+    "price": 17990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/259416494.jpg",
     "description": "Pro модель з Pro камерою та 120Hz дисплеєм ProMotion."
   },
   {
     "id": 15,
     "name": "iPhone 13 Pro Max",
-    "price": 1099,
-    "image": "iphone-13-pro-max.png",
+    "price": 20990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/221261927.jpg",
     "description": "Найбільший Pro iPhone з найкращою камерою."
   },
   {
     "id": 16,
     "name": "iPhone 14",
-    "price": 799,
+    "price": 17990,
     "image": "iphone-14.png",
     "description": "iPhone 14 з A15 Bionic і режимом екстреної допомоги."
   },
   {
     "id": 17,
     "name": "iPhone 14 Plus",
-    "price": 899,
-    "image": "iphone-14-plus.png",
+    "price": 20590,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/284913534.jpg",
     "description": "Більший iPhone 14 з довгою автономністю."
   },
   {
     "id": 18,
     "name": "iPhone 14 Pro",
-    "price": 999,
-    "image": "iphone-14-pro.png",
+    "price": 28990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/284920756.jpg",
     "description": "Pro модель з Dynamic Island та A16 Bionic."
   },
   {
     "id": 19,
     "name": "iPhone 14 Pro Max",
-    "price": 1099,
-    "image": "iphone-14-pro-max.png",
+    "price": 32990,
+    "image": "https://content2.rozetka.com.ua/goods/images/big/284920878.jpg",
     "description": "Найбільший iPhone 14 Pro з найпотужнішою камерою."
   },
   {
     "id": 20,
     "name": "iPhone 15",
-    "price": 799,
-    "image": "iphone-15.png",
-    "description": "iPhone 15 з USB-C, камерою 48MP і A17 Pro."
+    "price": 23990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/364623419.jpg",
+    "description": "iPhone 15 з USB-C, камерою 48MP і A16 Bionic."
   },
   {
     "id": 21,
     "name": "iPhone 15 Plus",
-    "price": 899,
-    "image": "iphone-15-plus.png",
+    "price": 28990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/364621590.jpg",
     "description": "Більший iPhone 15 з тією ж потужністю."
   },
   {
     "id": 22,
     "name": "iPhone 15 Pro",
-    "price": 999,
-    "image": "iphone-15-pro.png",
+    "price": 31990,
+    "image": "https://content1.rozetka.com.ua/goods/images/big/364824496.jpg",
     "description": "Pro модель з титановим корпусом та A17 Pro Chip."
   },
   {
     "id": 23,
     "name": "iPhone 15 Pro Max",
-    "price": 1099,
-    "image": "iphone-15-pro-max.png",
-    "description": "Найбільший Pro iPhone з найбільшою камерою 12MP."
+    "price": 37990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/364834211.jpg",
+    "description": "Найбільший Pro iPhone з камерою 48MP та A17 Pro."
   },
   {
     "id": 24,
     "name": "iPhone 16",
-    "price": 799,
-    "image": "iphone-16.png",
-    "description": "Останній iPhone 16 з A18 і новою кнопкою Camera Control."
+    "price": 29990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/468888916.jpg",
+    "description": "iPhone 16 з A18 і новою кнопкою Camera Control."
   },
   {
     "id": 25,
     "name": "iPhone 16 Plus",
-    "price": 899,
-    "image": "iphone-16-plus.png",
+    "price": 33990,
+    "image": "https://content2.rozetka.com.ua/goods/images/big/468888476.jpg",
     "description": "Більший iPhone 16 з усіма можливостями."
   },
   {
     "id": 26,
     "name": "iPhone 16 Pro",
-    "price": 999,
-    "image": "iphone-16-pro.png",
-    "description": "Pro модель з A18 Pro і камерою 12MP."
+    "price": 41990,
+    "image": "https://content2.rozetka.com.ua/goods/images/big/468886490.jpg",
+    "description": "Pro модель з A18 Pro та професійною системою камер."
   },
   {
     "id": 27,
     "name": "iPhone 16 Pro Max",
-    "price": 1099,
-    "image": "iphone-16-pro-max.png",
-    "description": "Найбільший iPhone 16 Pro з найбільшою камерою та A18 Pro."
+    "price": 46990,
+    "image": "https://content.rozetka.com.ua/goods/images/big/468888072.jpg",
+    "description": "Найбільший iPhone 16 Pro з A18 Pro та професійною камерою."
   }
 ]

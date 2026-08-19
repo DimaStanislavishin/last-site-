@@ -3,98 +3,98 @@
     "id": 1,
     "name": "iPad (10.2-inch, 2021)",
     "price": 329,
-    "image": "ipad-10-2-2021.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_z5q_Y-tfr-BsYClw0OWth9w8lVhaiVsVWjdQHSFTQA&s=10",
     "description": "Потужний iPad з великим дисплеєм і A13 Bionic."
   },
   {
     "id": 2,
     "name": "iPad (10.2-inch, 2022)",
     "price": 349,
-    "image": "ipad-10-2-2022.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXNAsWAfMFcunRVOlQAFnY78AsYNaP516DL960DWu1rg&s=10",
     "description": "Новий iPad з A14 Bionic й фронтальною камерою 12MP."
   },
   {
     "id": 3,
     "name": "iPad (10.9-inch, 2024)",
     "price": 349,
-    "image": "ipad-10-9-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--qbBonc01S5Y78Z8OODsrHCrwiGmIU9vuOcpZ04xgQ&s=10",
     "description": "Найновіший базовий iPad з більшим дисплеєм."
   },
   {
     "id": 4,
     "name": "iPad Pro 12.9-inch (2021)",
     "price": 1099,
-    "image": "ipad-pro-12-9-2021.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBjYFI-XVtHf7cLiy9xY7Dd4RnEkHZRPMmBgAZ9gwhA&s=10",
     "description": "Потужний iPad Pro з M1 і Liquid Retina дисплеєм."
   },
   {
     "id": 5,
     "name": "iPad Pro 12.9-inch (2022)",
     "price": 1099,
-    "image": "ipad-pro-12-9-2022.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiltmscH-C5rBdgF0tK81zBDPv0mcT_yG1KDdlHchWxA&s=10",
     "description": "iPad Pro з M2 і підтримкою Apple Pencil 2."
   },
   {
     "id": 6,
     "name": "iPad Pro 12.9-inch (2024)",
     "price": 1199,
-    "image": "ipad-pro-12-9-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgkdxZJd3KeUqMWUugc6rLU5A4skbZzPsxnO5LlkjTBQ&s",
     "description": "Останній iPad Pro з M4 і OLED дисплеєм."
   },
   {
     "id": 7,
     "name": "iPad Pro 11-inch (2021)",
     "price": 799,
-    "image": "ipad-pro-11-2021.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjeVABkwRyvljgaEvI_FRGeP8lNjOd2gI80-xZTjEZwg&s=10",
     "description": "Компактний iPad Pro з M1 і Liquid Retina дисплеєм."
   },
   {
     "id": 8,
     "name": "iPad Pro 11-inch (2022)",
     "price": 799,
-    "image": "ipad-pro-11-2022.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4b1SmnRJ9EsdqJeqyUk2B-9O8QXq2jSQnxVi12S05g&s=10",
     "description": "iPad Pro з M2 і покращеною камерою."
   },
   {
     "id": 9,
     "name": "iPad Pro 11-inch (2024)",
     "price": 899,
-    "image": "ipad-pro-11-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92CN1ujd7mr0WK8Xa4Jq_MKJMrhpKVYRn6y5v4WwGpw&s",
     "description": "Компактний iPad Pro 11 дюймів з M4."
   },
   {
     "id": 10,
     "name": "iPad Air 10.9-inch (2022)",
     "price": 599,
-    "image": "ipad-air-10-9-2022.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRteqOY9zA8ON44xMj1tkRHifYwDBMuDuDXoiUMp2N3nQ&s=10",
     "description": "Потужний iPad Air з M1 і великим дисплеєм."
   },
   {
     "id": 11,
     "name": "iPad Air 11-inch (2024)",
     "price": 599,
-    "image": "ipad-air-11-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWR0dKn20py7dK1mMlNoIzh6w_PRRiUwO08X_kxqBZXQ&s=10",
     "description": "Нова модель iPad Air з 11-дюймовим дисплеєм і M2."
   },
   {
     "id": 12,
     "name": "iPad Air 13-inch (2024)",
     "price": 799,
-    "image": "ipad-air-13-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1AiMmttbdft1bI-tdYMk4aI0vm5gQHrShT5rHBhUkNg&s=10",
     "description": "Більший iPad Air з 13-дюймовим дисплеєм."
   },
   {
     "id": 13,
     "name": "iPad mini (2021)",
     "price": 499,
-    "image": "ipad-mini-2021.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI3MewgqFoOibosYRGbVjyEXV2AXhayySYUWFSJOj9YQ&s=10",
     "description": "Компактний iPad mini з A15 Bionic."
   },
   {
     "id": 14,
     "name": "iPad mini (2024)",
     "price": 499,
-    "image": "ipad-mini-2024.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRNDYt3ujgs-fLbZOFyasQyleGeNKz4l1sy82430Q0w&s",
     "description": "Новий iPad mini з M4 і улучшеною камерою."
   }
 ]

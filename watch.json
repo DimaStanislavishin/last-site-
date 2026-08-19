@@ -2,78 +2,78 @@
   {
     "id": 1,
     "name": "Apple Watch Series 5",
-    "price": 399,
-    "image": "apple-watch-series-5.png",
+    "price": 3500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9c5ZCnBsjKf-B4hyQ0-sSOeNaX9gGgnJ-4Udff_5gKg&s=10",
     "description": "Apple Watch з завжди ввімкненим дисплеєм Retina."
   },
   {
     "id": 2,
     "name": "Apple Watch Series 6",
-    "price": 399,
-    "image": "apple-watch-series-6.png",
+    "price": 4200,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrJ_Bgc15PT_jDOLmLDSSY5PG9IQXXjNz6o5_q3SPA6w&s=10",
     "description": "Apple Watch з датчиком O2 у крові й новими циферблатами."
   },
   {
     "id": 3,
     "name": "Apple Watch Series 7",
-    "price": 399,
-    "image": "apple-watch-series-7.png",
+    "price": 5500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHpxyXQCoL2OX9YBgJ_SX9GmtuHwE4Gp1KMETigYI1Qg&s=10",
     "description": "Apple Watch з більшим дисплеєм і виднішим текстом."
   },
   {
     "id": 4,
     "name": "Apple Watch Series 8",
-    "price": 399,
-    "image": "apple-watch-series-8.png",
+    "price": 6500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkbru_5XCZeG1M25parnGCT-WImZq4DGrx2yTr27AX0Q&s=10",
     "description": "Apple Watch з датчиком температури й детекцією падінь."
   },
   {
     "id": 5,
     "name": "Apple Watch Series 9",
-    "price": 399,
-    "image": "apple-watch-series-9.png",
+    "price": 11000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ79tJWBneYNr9u8pppYIN55FSiyO5R_CHzMtQZjBY_w&s",
     "description": "Apple Watch з яскравим дисплеєм і Double Tap жестом."
   },
   {
     "id": 6,
     "name": "Apple Watch Series 10",
-    "price": 399,
-    "image": "apple-watch-series-10.png",
+    "price": 16000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZEbVa9Gp70TbEa5zTtgePCR4FvkVC9O7vsZvNLP28g&s",
     "description": "Останній Apple Watch з більшим дисплеєм і тонкіше."
   },
   {
     "id": 7,
     "name": "Apple Watch Ultra",
-    "price": 799,
-    "image": "apple-watch-ultra.png",
+    "price": 15000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlvumDpBiHVm6lvp0fidZ0j3WPwv5xE1C2kbg85ucdA&s=10",
     "description": "Екстремальний Apple Watch з титановим корпусом."
   },
   {
     "id": 8,
     "name": "Apple Watch Ultra 2",
-    "price": 799,
-    "image": "apple-watch-ultra-2.png",
+    "price": 25000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lnuB_3APFr0xYAOCpGjtsaEHqFZWNn8kq0ekd5870g&s",
     "description": "Вдосконалений Apple Watch Ultra з кращою батареєю."
   },
   {
     "id": 9,
     "name": "Apple Watch SE (1st generation)",
-    "price": 249,
-    "image": "apple-watch-se-1.png",
+    "price": 4000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSduu5DH5mKYv940CWnga4bkkGIvt6FqsqDqVWqNX75FQ&s=10",
     "description": "Доступний Apple Watch з основними функціями."
   },
   {
     "id": 10,
     "name": "Apple Watch SE (2nd generation)",
-    "price": 249,
-    "image": "apple-watch-se-2.png",
+    "price": 7000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkCi4tyRf9aHAf3DC_T5DLHaLMZEDD0CLP0gXlQ4q2Lw&s=10",
     "description": "Оновлена модель SE з детекцією падінь."
   },
   {
     "id": 11,
     "name": "Apple Watch SE (3rd generation)",
-    "price": 249,
-    "image": "apple-watch-se-3.png",
+    "price": 13900,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8HUOghtD08pd_PRwLE1QSFKYLftkRpaQ4CA9LU4UCIw&s=10",
     "description": "Останній Apple Watch SE з A17 Bionic."
   }
 ]

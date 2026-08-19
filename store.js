@@ -21,6 +21,44 @@ const ORDERS_KEY = 'apple_store_orders';
 let products = [];
 let cart = [];
 let ui = {};
+let activeModelFilter = 'all';
+
+const MODEL_FILTERS = {
+  mac: [
+    { id: 'air', label: 'MacBook Air', test: name => /macbook air/i.test(name) },
+    { id: 'pro', label: 'MacBook Pro', test: name => /macbook pro/i.test(name) }
+  ],
+  iphone: [
+    { id: 'x', label: 'iPhone X', test: name => /^iphone x(s|r)?(\s|$)/i.test(name) },
+    { id: '11', label: 'iPhone 11', test: name => /iphone 11/i.test(name) },
+    { id: '12', label: 'iPhone 12', test: name => /iphone 12/i.test(name) },
+    { id: '13', label: 'iPhone 13', test: name => /iphone 13/i.test(name) },
+    { id: '14', label: 'iPhone 14', test: name => /iphone 14/i.test(name) },
+    { id: '15', label: 'iPhone 15', test: name => /iphone 15/i.test(name) },
+    { id: '16', label: 'iPhone 16', test: name => /iphone 16/i.test(name) }
+  ],
+  ipad: [
+    { id: 'ipad', label: 'iPad', test: name => /^ipad \(/i.test(name) },
+    { id: 'air', label: 'iPad Air', test: name => /ipad air/i.test(name) },
+    { id: 'pro', label: 'iPad Pro', test: name => /ipad pro/i.test(name) },
+    { id: 'mini', label: 'iPad mini', test: name => /ipad mini/i.test(name) }
+  ],
+  watch: [
+    { id: 'series', label: 'Watch Series', test: name => /watch series/i.test(name) },
+    { id: 'se', label: 'Watch SE', test: name => /watch se/i.test(name) },
+    { id: 'ultra', label: 'Watch Ultra', test: name => /watch ultra/i.test(name) }
+  ],
+  airpods: [
+    { id: 'airpods', label: 'AirPods', test: name => /^airpods(?! pro| max)/i.test(name) },
+    { id: 'pro', label: 'AirPods Pro', test: name => /airpods pro/i.test(name) },
+    { id: 'max', label: 'AirPods Max', test: name => /airpods max/i.test(name) }
+  ],
+  tv: [
+    { id: '2022', label: '2022', test: name => /2022/i.test(name) },
+    { id: '2023', label: '2023', test: name => /2023/i.test(name) },
+    { id: '2024', label: '2024', test: name => /2024/i.test(name) }
+  ]
+};
 
 function escapeHtml(value = '') {
   return String(value)
@@ -167,7 +205,8 @@ function refreshUi() {
     checkoutSummary: document.querySelector('#checkout-order-summary'),
     success: document.querySelector('#checkout-success'),
     toast: document.querySelector('#toast-container'),
-    search: document.querySelector('#search-input')
+    search: document.querySelector('#search-input'),
+    filterBar: document.querySelector('#model-filters')
   };
   ui.items?.classList.add('cart-items');
   if (ui.close) ui.close.textContent = '×';
@@ -279,6 +318,83 @@ function saveOrder(customer) {
   return order;
 }
 
+function renderSkeletons(count = 8) {
+  if (!ui.grid) return;
+  ui.grid.innerHTML = Array.from({ length: count }, (_, index) => `
+    <article class="product-card skeleton-card" style="--reveal-delay:${index * 70}ms" aria-hidden="true">
+      <div class="product-image-wrap skeleton-shimmer"></div>
+      <div class="product-info">
+        <span class="skeleton-line skeleton-shimmer" style="width:38%"></span>
+        <span class="skeleton-line skeleton-shimmer" style="width:76%"></span>
+        <span class="skeleton-line skeleton-shimmer" style="width:94%"></span>
+        <span class="skeleton-line skeleton-shimmer" style="width:52%"></span>
+      </div>
+    </article>
+  `).join('');
+}
+
+function revealProductImages(root = ui.grid) {
+  root?.querySelectorAll('.product-image').forEach(img => {
+    const wrap = img.closest('.product-image-wrap');
+    const markReady = () => {
+      img.classList.add('is-loaded');
+      wrap?.classList.add('is-ready');
+    };
+    if (img.complete && img.naturalWidth > 0) {
+      markReady();
+      return;
+    }
+    img.addEventListener('load', markReady, { once: true });
+    img.addEventListener('error', markReady, { once: true });
+  });
+}
+
+function getVisibleProducts() {
+  const query = ui.search?.value.toLowerCase().trim() || '';
+  const category = getPageCategory();
+  const selected = (MODEL_FILTERS[category] || []).find(filter => filter.id === activeModelFilter);
+
+  return products.filter(product => {
+    const matchesSearch = !query || (product.name || '').toLowerCase().includes(query);
+    const matchesModel = !selected || selected.test(product.name || '');
+    return matchesSearch && matchesModel;
+  });
+}
+
+function applyCatalogFilters() {
+  renderProducts(getVisibleProducts());
+}
+
+function mountModelFilters(category) {
+  document.querySelector('#model-filters')?.remove();
+  const filters = (MODEL_FILTERS[category] || []).filter(filter =>
+    products.some(product => filter.test(product.name || ''))
+  );
+  if (!ui.grid || !filters.length) return;
+
+  ui.grid.insertAdjacentHTML('beforebegin', `
+    <div id="model-filters" class="model-filters" role="tablist" aria-label="Фільтр за моделлю">
+      <button type="button" class="model-filter is-active" data-model="all" role="tab" aria-selected="true">Усі</button>
+      ${filters.map(filter => `
+        <button type="button" class="model-filter" data-model="${escapeHtml(filter.id)}" role="tab" aria-selected="false">${escapeHtml(filter.label)}</button>
+      `).join('')}
+    </div>
+  `);
+
+  ui.filterBar = document.querySelector('#model-filters');
+  ui.filterBar.addEventListener('click', event => {
+    const button = event.target.closest('[data-model]');
+    if (!button) return;
+    activeModelFilter = button.dataset.model;
+    ui.filterBar.querySelectorAll('.model-filter').forEach(chip => {
+      const selected = chip === button;
+      chip.classList.toggle('is-active', selected);
+      chip.setAttribute('aria-selected', String(selected));
+    });
+    applyCatalogFilters();
+  });
+}
+
 function renderProducts(items) {
   if (!ui.grid) return;
   if (!items.length) {
@@ -289,7 +405,7 @@ function renderProducts(items) {
   ui.grid.innerHTML = items.map((product, index) => {
     const fallback = getFallbackImage(product.category, index);
     return `
-    <article class="product-card">
+    <article class="product-card is-appearing" style="--reveal-delay:${index * 55}ms">
       <div class="product-image-wrap">
         <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}" class="product-image" loading="lazy" onerror="this.onerror=null;this.src='${escapeHtml(fallback)}';">
       </div>
@@ -305,6 +421,8 @@ function renderProducts(items) {
     </article>
   `;
   }).join('');
+
+  revealProductImages();
 }
 
 function addCatalogHeading(category) {
@@ -321,17 +439,21 @@ function addCatalogHeading(category) {
 async function loadProducts() {
   if (!ui.grid) return;
   const category = getPageCategory();
+  if (!DATA_FILES[category] && category !== 'home') return;
+
+  activeModelFilter = 'all';
+  renderSkeletons(category === 'home' ? 6 : 8);
+
   try {
     if (category === 'home') {
       const sets = await Promise.all(Object.keys(DATA_FILES).map(fetchProducts));
       products = sets.map(items => items[0]).filter(Boolean);
-    } else if (DATA_FILES[category]) {
+    } else {
       products = await fetchProducts(category);
       addCatalogHeading(category);
-    } else {
-      return;
+      mountModelFilters(category);
     }
-    renderProducts(products);
+    applyCatalogFilters();
   } catch (error) {
     ui.grid.innerHTML = '<p class="error">Не вдалося завантажити каталог. Відкрийте сайт через локальний сервер.</p>';
     console.error(error);
@@ -391,10 +513,7 @@ function bindEvents() {
     }
     showToast(`Замовлення ${order.id} оформлено.`);
   });
-  ui.search?.addEventListener('input', event => {
-    const query = event.target.value.toLowerCase().trim();
-    renderProducts(products.filter(product => product.name.toLowerCase().includes(query)));
-  });
+  ui.search?.addEventListener('input', applyCatalogFilters);
   ui.grid?.addEventListener('click', event => {
     const button = event.target.closest('[data-product-id]');
     if (button) addToCart(button.dataset.productId);

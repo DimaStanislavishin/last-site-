@@ -2,225 +2,232 @@
   {
     "id": 1,
     "name": "MacBook Air 13″ Intel (2018)",
-    "price": 999,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple_new-macbook-air_11162018.jpg",
+    "price": 9500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBrCMD0oe8gcC3W7K6k3t0IrsHETuqsb9HZztiezRrw&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 2,
     "name": "MacBook Air 13″ Intel (2019)",
-    "price": 1099,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple_new-macbook-air_11162018.jpg",
+    "price": 11500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnea-GL9lihDPCXtckhvyg4ZoVI_9l7CzdwLNkVyd6Dg&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 3,
     "name": "MacBook Air 13″ Intel (2020)",
-    "price": 999,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple-MacBook-Air-2020.jpg",
+    "price": 14500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEFhJoXK7oWpJEzMTK77o8vFHtk2ZRPA8tPeBxD36GVQ&s",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 4,
     "name": "MacBook Air 13″ M1",
-    "price": 999,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple_new-macbook-air-m1_11102020.jpg",
+    "price": 18000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0n6ExMzt8-fpaqgCh2ApqulIIqDzspFsrNqHpsVJlg&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 5,
     "name": "MacBook Air 13″ M2",
-    "price": 1199,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple-MacBook-Air-M2-hero-220606.jpg",
+    "price": 33000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwHS_1EutMFbHYUekTVahqBt2H9kAQLjpJDlT6DfbvcQ&s",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 6,
     "name": "MacBook Air 15″ M2",
-    "price": 1499,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-air/standard/Apple-MacBook-Air-15-inch-M2-hero-230605.jpg",
+    "price": 43000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZM2H4hxOKX0qnOhi61RBHGViyTDaMvBWzFhpbhgpSA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 7,
     "name": "MacBook Air 13″ M3",
-    "price": 1199,
-    "image": "https://www.apple.com/newsroom/images/2024/03/apple-introduces-new-macbook-air-with-m3/standard/Apple-MacBook-Air-M3-hero-240304.jpg",
+    "price": 41000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCVTgeBl_VsKidto8vqAIMJ4h-ordDhUzbZStPyh1ug&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 8,
     "name": "MacBook Air 15″ M3",
-    "price": 1499,
-    "image": "https://www.apple.com/newsroom/images/2024/03/apple-introduces-new-macbook-air-with-m3/standard/Apple-MacBook-Air-M3-15-inch-hero-240304.jpg",
+    "price": 50000,
+    "image": "https://ya-ua.fra1.digitaloceanspaces.com/uploads/previews/macbook-air-15-apple-m410cpu10gpu16gb256gb-ssdmidnight-mw1l3uaa1.webp",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 9,
     "name": "MacBook Air 13″ M4",
-    "price": 1199,
-    "image": "https://www.apple.com/newsroom/images/2025/03/apple-introduces-the-new-macbook-air-with-m4/standard/Apple-MacBook-Air-M4-hero-250305.jpg",
+    "price": 42000,
+    "image": "https://ya-ua.fra1.digitaloceanspaces.com/uploads/previews/macbook-air-13-apple-m410cpu10gpu24gb512gb-ssdsky-blue-mc6v4uaa1.webp",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 10,
     "name": "MacBook Air 15″ M4",
-    "price": 1499,
-    "image": "https://www.apple.com/newsroom/images/2025/03/apple-introduces-the-new-macbook-air-with-m4/standard/Apple-MacBook-Air-M4-15-inch-hero-250305.jpg",
+    "price": 50000,
+    "image": "https://ya-ua.fra1.digitaloceanspaces.com/uploads/previews/macbook-air-15-apple-m410cpu10gpu16gb256gb-ssdstarlight-mw1j3uaa1.webp",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 11,
     "name": "MacBook Air 13″ M5",
-    "price": 1199,
+    "price": 111000,
+    "image": "https://ya-ua.fra1.digitaloceanspaces.com/uploads/previews/macbook-air-13-apple-m510cpu10gpu24gb1tb-ssdmidnight-mdhg41.webp",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 12,
     "name": "MacBook Air 15″ M5",
-    "price": 1499,
+    "price": 71000,
+    "image": "https://ya-ua.fra1.digitaloceanspaces.com/uploads/previews/macbook-air-15-apple-m510cpu10gpu16gb512gb-ssdmidnight-mdvh41.webp",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 13,
     "name": "MacBook Pro 13″ Intel (2018)",
-    "price": 1299,
+    "price": 12000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhwk9qAasXL3mtwr4GI_IFg1xXgGMnWgID8qx0WP6hw&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 14,
     "name": "MacBook Pro 15″ Intel (2018)",
-    "price": 1799,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-15-inch-2018.jpg",
+    "price": 16000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5y1DLP2gnK12i89VggwMZo9n6hMCBEGzzAfYc-UDA-A&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 15,
     "name": "MacBook Pro 13″ Intel (2019)",
-    "price": 1299,
+    "price": 13500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7X5hK4sEIWz0h8uvOkoqUdtGlU1d3AB2791rpoqAK-w&s",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 16,
     "name": "MacBook Pro 15″ Intel (2019)",
-    "price": 1799,
+    "price": 18000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IL37ld7ErGYh0dA8XnrWDB8yPCryvU37iTE2REajyA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 17,
     "name": "MacBook Pro 16″ Intel (2019)",
-    "price": 2399,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-16-inch-2019.jpg",
+    "price": 23000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVeSne0lKnR0g2k1HZsoP8Qm2r1nvAZKUqNkFFNXM0w&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 18,
     "name": "MacBook Pro 13″ Intel (2020)",
-    "price": 1299,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-13-inch-2020.jpg",
+    "price": 16000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb55mx0ae5uDwvxiVJnlfXR1q1KMsnnpIoKQzLceXnnA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 19,
     "name": "MacBook Pro 13″ M1",
-    "price": 1299,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-13-M1-2020.jpg",
+    "price": 22000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvk7LC-9LfZy-pJqOWvHQO874J4hGvhxJXNg3Mn5C3A&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 20,
     "name": "MacBook Pro 14″ M1 Pro/Max",
-    "price": 1999,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-14-inch-2021.jpg",
+    "price": 45000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Sm6bZ5K8TA69RhWc6lm-j1ytCCuieYesxkCafgEyVFoxfQH_4Pm2XaX5M8tBI4vK2F0chpMmMWFRp4F0lW2JTiPMmty4y4Te2TH89KYnVlGTDjB2Bq1UH0hNsqTMzeu1qamOI58qpbM&usqp=CAc",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 21,
     "name": "MacBook Pro 16″ M1 Pro/Max",
-    "price": 2499,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-16-inch-2021.jpg",
+    "price": 55000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYFplDLuf8sgos0HO7ArIjUDf_NbBQET2cPqMgxt2ZA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 22,
     "name": "MacBook Pro 13″ M2",
-    "price": 1299,
-    "image": "https://www.apple.com/newsroom/images/product/macbook-pro/standard/Apple-MacBook-Pro-13-inch-M2-2022.jpg",
+    "price": 30000,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSLxZ9TxAryX-8uembLgIj_aQ8y0swvmwOqM7fk68psaP1i15-x6nCjPokBBetjzfhR9a8DR2cjw4deDN8XGrN_JIMovbwYJ9KhekQCo2JGDIhjbef6DD8zZv68hZihmvmXLbwu7oWAQ&usqp=CAc",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 23,
     "name": "MacBook Pro 14″ M2 Pro/Max",
-    "price": 1999,
-    "image": "https://www.apple.com/newsroom/images/2023/01/apple-unveils-new-macbook-pro-and-mac-mini/standard/Apple-MacBook-Pro-14-inch-M2-Pro-Max-hero-230117.jpg",
+    "price": 55000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS4b-OOFVzc5TYhqP3ZruH3t-piR_iUbLc3gz-QalwNKvwrbtihcjUEF-SpVdZQ4-w5h6vZyNjNdDhfJPBKe85gu2XFSnrngZoIyAtFxQF1gjKOVKy88v3&usqp=CAc",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 24,
     "name": "MacBook Pro 16″ M2 Pro/Max",
-    "price": 2499,
-    "image": "https://www.apple.com/newsroom/images/2023/01/apple-unveils-new-macbook-pro-and-mac-mini/standard/Apple-MacBook-Pro-16-inch-M2-Pro-Max-hero-230117.jpg",
+    "price": 65000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBiGi_jwttRY0ELc0rJuXvlnvAsfCDlWvoUZnAARwfw&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 25,
     "name": "MacBook Pro 14″ M3",
-    "price": 1799,
-    "image": "https://www.apple.com/newsroom/images/2023/10/apple-unveils-new-m3-family-of-chips/standard/Apple-MacBook-Pro-14-inch-M3-hero-231030.jpg",
+    "price": 55000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmSjuWhrNy1cKUvXNnRDVkqcXTZqfSLTF2XDpJfhytKQ&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 26,
     "name": "MacBook Pro 14″ M3 Pro/Max",
-    "price": 1999,
-    "image": "https://www.apple.com/newsroom/images/2023/10/apple-unveils-new-m3-family-of-chips/standard/Apple-MacBook-Pro-14-inch-M3-Pro-Max-hero-231030.jpg",
+    "price": 65000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEEtWC1ZKcrZDG-s0XY7EUD8cs1frwsG2DiqbM9Wv4FQ&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 27,
     "name": "MacBook Pro 16″ M3 Pro/Max",
-    "price": 2499,
-    "image": "https://www.apple.com/newsroom/images/2023/10/apple-unveils-new-m3-family-of-chips/standard/Apple-MacBook-Pro-16-inch-M3-Pro-Max-hero-231030.jpg",
+    "price": 75000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Uk2VyJMjtlE3k77sUbkTdFZvQZR7dXskO5_TBCP6Pg&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 28,
     "name": "MacBook Pro 14″ M4",
-    "price": 1799,
-    "image": "https://www.apple.com/newsroom/images/2024/10/apple-introduces-new-macbook-pro-with-m4-m4-pro-and-m4-max/standard/Apple-MacBook-Pro-14-inch-M4-hero-241030.jpg",
+    "price": 65000,
+    "image": "data:image/webp;base64,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",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 29,
     "name": "MacBook Pro 14″ M4 Pro/Max",
-    "price": 1999,
-    "image": "https://www.apple.com/newsroom/images/2024/10/apple-introduces-new-macbook-pro-with-m4-m4-pro-and-m4-max/standard/Apple-MacBook-Pro-14-inch-M4-Pro-Max-hero-241030.jpg",
+    "price": 75000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBzhWgKiFGuuAtdQT0dO2VkGQ0mg4M8t0TuqFK7gzig&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 30,
     "name": "MacBook Pro 16″ M4 Pro/Max",
-    "price": 2499,
-    "image": "https://www.apple.com/newsroom/images/2024/10/apple-introduces-new-macbook-pro-with-m4-m4-pro-and-m4-max/standard/Apple-MacBook-Pro-16-inch-M4-Pro-Max-hero-241030.jpg",
+    "price": 90000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMAs76ImfHHHRb7QZHAoH0iY9dnUQPSxCHC9UgbCyIw&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 31,
     "name": "MacBook Pro 14″ M5",
-    "price": 1799,
-    "image": "https://www.apple.com/newsroom/images/2025/10/apple-introduces-macbook-pro-with-m5/standard/Apple-MacBook-Pro-14-inch-M5-hero-251015.jpg",
+    "price": 80000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9hZvKd04-FiDMk7zhTdgGZdCCX9nUy8bZ_XXXmV9JiA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 32,
     "name": "MacBook Pro 14″ M5 Pro/Max",
-    "price": 1999,
+    "price": 110000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHGPAfs9rkX7g574JohLgIluM7h1OpwT_sHYPfqlMqcA&s=10",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   },
   {
     "id": 33,
     "name": "MacBook Pro 16″ M5 Pro/Max",
-    "price": 2499,
+    "price": 188000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYGPP-JKgVanufJyMCP9K5-AWX_cB-MQwiFC46P2GRg&s",
     "description": "Потужний MacBook для роботи, навчання, творчості та щоденних завдань."
   }
 ]

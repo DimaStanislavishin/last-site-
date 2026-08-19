@@ -2127,3 +2127,110 @@ body { overflow-x: hidden; }
   .checkout-form .cart-actions { flex-direction: column; }
   .checkout-form .cart-actions .button { width: 100%; }
 }
+
+.model-filters {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 0 0 22px;
+  padding: 2px 2px 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.model-filters::-webkit-scrollbar { display: none; }
+.model-filter {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 980px;
+  background: #e8e8ed;
+  color: #1d1d1f;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.model-filter:hover { background: #d2d2d7; }
+.model-filter.is-active {
+  background: #1d1d1f;
+  color: #fff;
+}
+.model-filter:active { transform: scale(.97); }
+
+@keyframes apple-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+@keyframes apple-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.skeleton-shimmer,
+.product-image-wrap:not(.is-ready)::before {
+  background-image: linear-gradient(90deg, #ececef 0%, #f7f7f8 45%, #ececef 90%);
+  background-size: 220% 100%;
+  animation: apple-shimmer 1.15s ease-in-out infinite;
+}
+
+.skeleton-card {
+  pointer-events: none;
+  box-shadow: none;
+}
+.skeleton-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+.skeleton-line {
+  display: block;
+  height: 12px;
+  border-radius: 999px;
+}
+.skeleton-card .product-info { gap: 12px; }
+
+.product-image-wrap {
+  position: relative;
+}
+.product-image-wrap:not(.is-ready)::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: 16px;
+  pointer-events: none;
+}
+.product-card img.product-image {
+  opacity: 0;
+  transition: opacity .55s ease;
+}
+.product-card img.product-image.is-loaded {
+  opacity: 1;
+}
+
+.product-card.is-appearing {
+  animation: apple-rise .7s cubic-bezier(.22, 1, .36, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer,
+  .product-image-wrap:not(.is-ready)::before,
+  .product-card.is-appearing {
+    animation: none;
+  }
+  .product-card img.product-image,
+  .product-card img.product-image.is-loaded {
+    opacity: 1;
+    transition: none;
+  }
+}
+}

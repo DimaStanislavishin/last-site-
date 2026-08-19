@@ -2,36 +2,36 @@
   {
     "id": 1,
     "name": "AirPods (2nd generation)",
-    "price": 129,
-    "image": "airpods-2.png",
+    "price": 3500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bV66klifN-k_v1OPj99pbeB7BJn8wI8UctyDZ8YnDw&s=10",
     "description": "Безпровідні навушники з синхронізацією Siri."
   },
   {
     "id": 2,
     "name": "AirPods (3rd generation)",
-    "price": 169,
-    "image": "airpods-3.png",
+    "price": 5000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-LnPc81u40MHaw1uZXT11r6zgDctEPYYM00Vovopr2Q&s=10",
     "description": "Зновудосконалені AirPods з режимом активного шумозниження."
   },
   {
     "id": 3,
     "name": "AirPods Pro (1st generation)",
-    "price": 249,
-    "image": "airpods-pro-1.png",
+    "price": 5500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZswmDQQe2qWr5rG4OwqZm4eUWHjCAVUDiVuM7yIfGA&s=10",
     "description": "Навушники з активним шумозниженням і прозорим режимом."
   },
   {
     "id": 4,
     "name": "AirPods Pro (2nd generation)",
-    "price": 249,
-    "image": "airpods-pro-2.png",
+    "price": 8500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QBbyWS8kdX34Mfsadm-G6oDbED73sMDzM4rostw-ew&s=10",
     "description": "Останні AirPods Pro з адаптивним звуком й USB-C."
   },
   {
     "id": 5,
     "name": "AirPods Max",
-    "price": 549,
-    "image": "airpods-max.png",
+    "price": 18000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBgTzP3_539EiZIURWEQlqmLXSLVy7iLpkjiprDPSqKg&s=10",
     "description": "Просторові навушники з аудіо Dolby Atmos."
   }
 ]
