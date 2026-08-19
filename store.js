@@ -43,16 +43,19 @@ function getFallbackImage(category, index = 0) {
 }
 
 function normalizeProducts(items, category) {
-  return items.map((item, index) => ({
-    ...item,
-    id: `${category}-${item.id}`,
-    sourceId: item.id,
-    category,
-    categoryTitle: CATEGORY_META[category].title,
-    // Product images listed in JSON were not added to the repository.
-    // These local category assets guarantee an image for every JSON item.
-    image: getFallbackImage(category, index)
-  }));
+  return items.map((item, index) => {
+    // Беремо посилання або шлях до картинки з JSON (підтримуємо поля image або img)
+    const jsonImage = typeof item.image === 'string' ? item.image.trim() : (typeof item.img === 'string' ? item.img.trim() : '');
+    return {
+      ...item,
+      id: `${category}-${item.id}`,
+      sourceId: item.id,
+      category,
+      categoryTitle: CATEGORY_META[category]?.title || category,
+      // Якщо вказана картинка в JSON — використовуємо її, інакше показуємо запасне фото
+      image: jsonImage || getFallbackImage(category, index)
+    };
+  });
 }
 
 async function fetchProducts(category) {
@@ -283,10 +286,12 @@ function renderProducts(items) {
     return;
   }
 
-  ui.grid.innerHTML = items.map(product => `
+  ui.grid.innerHTML = items.map((product, index) => {
+    const fallback = getFallbackImage(product.category, index);
+    return `
     <article class="product-card">
       <div class="product-image-wrap">
-        <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}" class="product-image" loading="lazy">
+        <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}" class="product-image" loading="lazy" onerror="this.onerror=null;this.src='${escapeHtml(fallback)}';">
       </div>
       <div class="product-info">
         <p class="product-category">${escapeHtml(product.categoryTitle)}</p>
@@ -298,7 +303,8 @@ function renderProducts(items) {
         </div>
       </div>
     </article>
-  `).join('');
+  `;
+  }).join('');
 }
 
 function addCatalogHeading(category) {

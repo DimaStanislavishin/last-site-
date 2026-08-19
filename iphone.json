@@ -3,14 +3,14 @@
     "id": 1,
     "name": "iPhone X",
     "price": 999,
-    "image": "iphone-x.png",
+    "image": "https://bigmag.ua/image/cache/catalog/archive/data/iphone-x/x-sg-2-2000x2000.jpg",
     "description": "Революційний iPhone з дисплеєм Super Retina і Face ID."
   },
   {
     "id": 2,
     "name": "iPhone XS",
     "price": 999,
-    "image": "iphone-xs.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs8SsPRXrhk32td-74SzN4RM0A8AbhQxWn64w8-W-V6w&s=10",
     "description": "Продвинутий iPhone з подвійною камерою та OLED дисплеєм."
   },
   {
